@@ -6,6 +6,7 @@ Store scripts and Style sheets for Slack Dark Mode for macOS Mojave.
 Dark Mode in Slack isn't available as of this writing.
 
 ## Usage
+[![codecov](https://codecov.io/gh/LanikSJ/slack-dark-mode/branch/master/graph/badge.svg)](https://codecov.io/gh/LanikSJ/slack-dark-mode)
 ```bash
 $ git clone https://github.com/LanikSJ/slack-dark-mode
 cd slack-dark-mode && chmod +x slack-dark-mode.sh
