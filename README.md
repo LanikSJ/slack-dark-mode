@@ -1,5 +1,5 @@
 # Slack Dark Mode for macOS Mojave
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=LanikSJ/slack-dark-mode)](https://dependabot.com)
+[![Build Status](https://travis-ci.com/LanikSJ/slack-dark-mode.svg?branch=master)](https://travis-ci.com/LanikSJ/slack-dark-mode)[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=LanikSJ/slack-dark-mode)](https://dependabot.com)
 
 ## Purpose
 Store scripts and Style sheets for Slack Dark Mode for macOS Mojave.  
