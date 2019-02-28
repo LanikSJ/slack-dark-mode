@@ -8,7 +8,7 @@ SLACK_FILEPATH="$SLACK_RESOURCES_DIR/app.asar.unpacked/src/static/ssb-interop.js
 THEME_FILEPATH="$SLACK_RESOURCES_DIR/dark-theme.css"
 
 #curl -sSL -o "$THEME_FILEPATH" "https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css"
-cp -af black.css "$THEME_FILEPATH"
+cp -af dark-theme.css "$THEME_FILEPATH"
 
 echo "Modifying Slack... "
 
