@@ -17,9 +17,9 @@ Usage
 
 ```bash
 $ git clone https://github.com/LanikSJ/slack-dark-mode
-cd slack-dark-mode && chmod +x slack-dark-mode.sh
-./slack-dark-mode.sh
+cd slack-dark-mode && source slack-dark-mode.sh
 ```
+
 Attributions
 ============
 
