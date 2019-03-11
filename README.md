@@ -19,4 +19,4 @@ All rights reserved by the original authors.
 Please report any bugs or issues you find. Thanks!
 
 ## License
-[![GPLv3 license](https://badgen.net/github/license/LanikSJ/slack-dark-mode)](http://perso.crans.org/besson/LICENSE.html)
+[![GPLv3 License](https://img.shields.io/github/license/LanikSJ/ubo-filters.svg?color=brightgreen)](http://perso.crans.org/besson/LICENSE.html)
