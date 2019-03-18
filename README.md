@@ -1,5 +1,5 @@
 # Slack Dark Mode for macOS Mojave
-[![Build Status](https://travis-ci.com/LanikSJ/slack-dark-mode.svg?branch=master)](https://travis-ci.com/LanikSJ/slack-dark-mode)[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=LanikSJ/slack-dark-mode)](https://dependabot.com)[![Known Vulnerabilities](https://snyk.io/test/github/LanikSJ/slack-dark-mode/badge.svg?targetFile=/docs/Gemfile.lock)](https://snyk.io/test/github/LanikSJ/slack-dark-mode)
+[![Build Status](https://travis-ci.com/LanikSJ/slack-dark-mode.svg?branch=master)](https://travis-ci.com/LanikSJ/slack-dark-mode)[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=LanikSJ/slack-dark-mode)](https://dependabot.com)[![Known Vulnerabilities](https://snyk.io/test/github/laniksj/slack-dark-mode/badge.svg?targetFile=/docs/Gemfile.lock)](https://snyk.io/test/github/laniksj/slack-dark-mode?targetFile=/docs/Gemfile.lock)
 
 ## Purpose
 Store scripts and Style sheets for Slack Dark Mode for macOS Mojave.  
