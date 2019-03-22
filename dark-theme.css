@@ -519,7 +519,7 @@
 
 .c-app_badge {
   background: #545454;
-  box-shadow: 0 0 2px rgba($black, 0.25);
+  box-shadow: 0 0 2px rgba(#000, 0.25);
   color: #949494;
 }
 
