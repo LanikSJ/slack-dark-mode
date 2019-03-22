@@ -660,6 +660,10 @@
   background: #545454;
 }
 
+.c-fullscreen_modal__header, .c-fullscreen_modal__body {
+  background-color: #222;
+}
+
 .c-input_select {
   background: #545454;
   border-color: #363636;
@@ -1691,7 +1695,7 @@
   color: whitesmoke !important;
 }
 
-.clear_blue {
+.channel_options_header, .clear_blue {
   color: #949494 !important;
 }
 
@@ -3917,6 +3921,10 @@
 
 .p-channel_sidebar__link--selected::before, .p-channel_sidebar__link--selected::after {
   color: #e6e6e6;
+}
+
+.p-channel-options--content_text {
+  color: #949494 !important;
 }
 
 .p-degraded_list__loading {
