@@ -517,6 +517,12 @@
   color: #949494;
 }
 
+.c-app_badge {
+  background: #545454;
+  box-shadow: 0 0 2px rgba($black, 0.25);
+  color: #949494;
+}
+
 .c-archive_footer__metadata {
   color: #949494;
 }
