@@ -517,6 +517,14 @@
   color: #949494;
 }
 
+.c-archive_footer__metadata {
+  color: #949494;
+}
+
+.c-archive_footer__title {
+  color: #c7c7c7;
+}
+
 .c-calendar_month__day_of_week_heading {
   color: #e6e6e6;
 }
@@ -6748,18 +6756,8 @@
 }
 
 #footer_archives_preview {
-  background-color: $color-base;
-  border-top: 1px solid $color-shade-dark;
-
-  .c-archive_footer {
-    &__metadata {
-      color: $base-link-color;
-    }
-
-    &__title {
-      color: $base-link-color-active;
-    }
-  }
+  background-color: #222;
+  border-top: 1px solid #363636;
 }
 
 #footer_archives_table {
