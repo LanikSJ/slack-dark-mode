@@ -1226,8 +1226,12 @@
   color: #bf360c;
 }
 
-.c-pillow_file__description, .c-pillow_file__title {
+.c-pillow_file__description, .c-pillow_file__title, .c-pillow_file__snippet__truncated {
   color: #e6e6e6;
+}
+
+.c-pillow_file__content--collapsed::after {
+    background: linear-gradient(0deg, #828282, hsla(0, 0%, 100%, 0) 40px);
 }
 
 .c-pillow_file_container .c-pillow_file__swap .c-pillow_file__slide {
