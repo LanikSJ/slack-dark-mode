@@ -1354,6 +1354,10 @@
   color: #e6e6e6;
 }
 
+.c-texty_input.focus .c-texty_input__button {
+  color: #949494
+}
+
 .c-tooltip__tip {
   background-color: #545454;
   color: #e6e6e6;
@@ -3896,7 +3900,7 @@
 }
 
 .p-channel_sidebar {
-  background-color: #363636;
+  background-color: #363636 !important;
   color: #e6e6e6;
 }
 
@@ -4293,62 +4297,16 @@
   color: #e6e6e6;
 }
 
-.p-threads_footer__input .p-message_input_field, .p-threads_footer__input--legacy .p-message_input_field,
-.p-threads_view__default_background, .p_threads_view_load_older_button, .p-threads_footer__input .p-message_input_file_button,
-.p-threads_footer__input--legacy .p-message_input_file_button {
+.p-threads_footer__input .p-message_input_field, .p-threads_footer__input--legacy .p-message_input_field {
   background: #363636;
 }
 
-.p-threads_view__divider_label {
-  background: #222;
+.p-threads_view__default_background, .p_threads_view_load_older_button, .p-threads_footer__input .p-message_input_file_button {
+  background: #363636;
 }
 
-.p-threads_view_root, .p-threads_view__footer, .p_threads_view_load_older_button, .p-threads_view_reply {
-  border-right-color: rgb(86, 87, 88);
-  border-bottom-color: rgb(86, 87, 88);
-  border-left-color: rgb(86, 87, 88);
-  border-top-color: rgb(86, 87, 88);
-}
-
-.p-threads_view_header__channel_name {
-  color: rgb(86, 87, 88);
-}
-
-.p-threads_view_header, .p-threads_view__footer, .p_threads_view_load_older_button {
-  background: #222;
-}
-
-.p-threads_view_scroller_div {
-  background: #222;
-}
-
-.p-threads_view_scroller_div:not(.loading)::before {
-  background: #222;
-}
-
-.p-threads_view_scroller_div.loading::before {
-  color: #949494;
-}
-
-.p-threads_view_scroller_div .threads_caught_up_divider .divider_line, .p-threads_view__divider_line {
-  border-top: 1px solid #363636;
-}
-
-.p-threads_view_scroller_div .threads_caught_up_divider .divider_label {
-  background: #545454;
-  color: #e6e6e6;
-}
-
-.p-threads_view_scroller_div.loading {
-  background: none;
-}
-
-.p-threads_view_scroller_div.loading::before {
-  color: #e6e6e6;
-}
-
-.p-threads_view.new_banner_is_showing::before {
-  background: #222;
+.p-threads_footer__input--legacy .p-message_input_file_button {
+  background: #363636;
 }
 
 .p-threads_view__divider_label {
