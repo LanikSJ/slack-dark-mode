@@ -4,7 +4,7 @@
 # Adopted from https://gist.github.com/a7madgamal/c2ce04dde8520f426005e5ed28da8608
 
 if [[ uname == Linux ]]; then
-  exit 0
+  echo "This Script is for macOS Only!"
 fi
 
 SLACK_RESOURCES_DIR="/Applications/Slack.app/Contents/Resources"
