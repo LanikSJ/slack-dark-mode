@@ -1097,6 +1097,13 @@
   background: #222;
 }
 
+.c-message_kit__background, .c-message_kit__message, .c-message_kit__thread_message {
+  border-right-color: rgb(86, 87, 88);
+  border-bottom-color: rgb(86, 87, 88);
+  border-left-color: rgb(86, 87, 88);
+  border-top-color: rgb(86, 87, 88);
+}
+
 .c-message_kit__file__meta {
   color: #e6e6e6;
 }
@@ -4298,8 +4305,7 @@
   background: #222;
 }
 
-.p-threads_view_root, .p-threads_view__footer, .p_threads_view_load_older_button,
-.c-message_kit__background, .c-message_kit__message, .c-message_kit__thread_message, .p-threads_view_reply {
+.p-threads_view_root, .p-threads_view__footer, .p_threads_view_load_older_button, .p-threads_view_reply {
   border-right-color: rgb(86, 87, 88);
   border-bottom-color: rgb(86, 87, 88);
   border-left-color: rgb(86, 87, 88);
