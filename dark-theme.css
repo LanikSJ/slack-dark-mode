@@ -4293,11 +4293,9 @@
   color: #e6e6e6;
 }
 
-.p-threads_footer__input .p-message_input_field, .p-threads_footer__input--legacy .p-message_input_field {
-  background: #363636;
-}
-
-.p-threads_footer__input .p-message_input_file_button, .p-threads_footer__input--legacy .p-message_input_file_button {
+.p-threads_footer__input .p-message_input_field, .p-threads_footer__input--legacy .p-message_input_field,
+.p-threads_view__default_background, .p_threads_view_load_older_button, .p-threads_footer__input .p-message_input_file_button,
+.p-threads_footer__input--legacy .p-message_input_file_button {
   background: #363636;
 }
 
