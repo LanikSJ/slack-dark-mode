@@ -8045,20 +8045,12 @@
   color: #e6e6e6;
 }
 
-a {
-  color: #949494;
-}
-
 a:hover .file_inline_icon {
   color: #949494;
 }
 
 a:hover, a:active, a:focus {
   color: #c7c7c7;
-}
-
-a:link, a:visited {
-  color: #949494;
 }
 
 a.c-member_slug--mention, a.c-member_slug--mention:hover {
