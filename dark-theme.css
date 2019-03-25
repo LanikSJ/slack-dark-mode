@@ -8049,10 +8049,6 @@ a:hover .file_inline_icon {
   color: #949494;
 }
 
-a:hover, a:active, a:focus {
-  color: #c7c7c7;
-}
-
 a.c-member_slug--mention, a.c-member_slug--mention:hover {
   background-color: #fff6d1;
   color: #363636;
