@@ -1229,6 +1229,10 @@
   background-color: #363636;
 }
 
+.c-mrkdwn__user_group--link, .c-mrkdwn__user_group--mention, .c-mrkdwn__user_group--mention:hover {
+    background: #060606;
+}
+
 .c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__subteam--mention, .c-mrkdwn__subteam--mention:hover, .mention_yellow_bg {
   color: #949494 !important;
 }
@@ -8043,10 +8047,6 @@
 
 #whats_new_tab p {
   color: #e6e6e6;
-}
-
-a:hover .file_inline_icon {
-  color: #949494;
 }
 
 a.c-member_slug--mention, a.c-member_slug--mention:hover {
