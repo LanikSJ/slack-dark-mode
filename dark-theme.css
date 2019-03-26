@@ -39,6 +39,10 @@
   border-bottom-color: #222;
 }
 
+a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
+  color: #e6e6e6;
+}
+
 .accordion_section h4 {
   color: #e6e6e6;
 }
