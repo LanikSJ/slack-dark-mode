@@ -211,6 +211,10 @@
   color: #e6e6e6;
 }
 
+.app_preview_link_slug, .internal_member_link, .internal_user_group_link {
+  background: transparent;
+}
+
 .app_card, .large_app_card {
   background-color: #222;
   border: 1px solid #363636;
@@ -1230,10 +1234,11 @@
 }
 
 .c-mrkdwn__user_group--link, .c-mrkdwn__user_group--mention, .c-mrkdwn__user_group--mention:hover {
-    background: #060606;
+  background: #060606;
 }
 
 .c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__subteam--mention, .c-mrkdwn__subteam--mention:hover, .mention_yellow_bg {
+  background-color: transparent;
   color: #949494 !important;
 }
 
