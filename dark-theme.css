@@ -4310,16 +4310,22 @@
   background: #363636;
 }
 
-.p-threads_view__default_background, .p_threads_view_load_older_button, .p-threads_footer__input .p-message_input_file_button {
-  background: #363636;
-}
-
 .p-threads_footer__input--legacy .p-message_input_file_button {
   background: #363636;
 }
 
 .p-threads_view__divider_label {
   background: #222;
+}
+
+.p-threads_view__default_background, .p_threads_view_load_older_button, .p_threads_view_load_newer_button,
+.p_threads_view_load_older_button .p-threads_footer__input .p-message_input_file_button {
+  background: #363636;
+}
+
+.p_threads_view_load_newer_button {
+  border-left: rgb(86, 87, 88);
+  border-top: rgb(86, 87, 88);
 }
 
 .p-threads_view_root, .p-threads_view__footer, .p_threads_view_load_older_button, .p-threads_view_reply {
