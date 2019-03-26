@@ -4847,7 +4847,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .rxn .emoji_rxn_count, .rxn .c-reaction__count, .c-reaction .emoji_rxn_count, .c-reaction .c-reaction__count, .c-reaction_add .emoji_rxn_count, .c-reaction_add .c-reaction__count, .c-member_slug .emoji_rxn_count, .c-member_slug .c-reaction__count {
-  color: #e6e6e6;
+  color: #1264a3;
 }
 
 .rxn, .c-reaction, .c-reaction_add, .c-member_slug {
@@ -8070,9 +8070,9 @@ a.c-member_slug--mention, a.c-member_slug--mention:hover {
 }
 
 a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
-  background: #363636;
-  border: 1px solid #545454;
-  color: #e6e6e6;
+  background: transparent;
+  border: 0px solid #545454;
+  color: #1264a3;
 }
 
 a.c-member_slug.active, a.c-member_slug:hover, .c-member_slug--link.active, .c-member_slug--link:hover, .c-mrkdwn__subteam--link.active, .c-mrkdwn__subteam--link:hover {
