@@ -4243,6 +4243,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   text-shadow: 0 1px rgba(0, 0, 0, 0.15);
 }
 
+.p-notification_bar__section {
+  color: #949494;
+}
+
 .p-oauth_nav__team-switcher .menu_launcher {
   border-color: #363636;
 }
