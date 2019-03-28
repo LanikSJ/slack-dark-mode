@@ -794,6 +794,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background-color: #363636;
 }
 
+.c-menu_item__description {
+  color: #f8f8f8;
+}
+
 .c-menu_item__header {
   color: #949494;
 }
@@ -1233,13 +1237,17 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background-color: #363636;
 }
 
+.c-mrkdwn__user_group--link {
+    color: #3aa3e3;
+}
+
 .c-mrkdwn__user_group--link, .c-mrkdwn__user_group--mention, .c-mrkdwn__user_group--mention:hover {
   background: #060606;
 }
 
 .c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__subteam--mention, .c-mrkdwn__subteam--mention:hover, .mention_yellow_bg {
   background-color: transparent;
-  color: #1264a3 !important;
+  color: #3aa3e3 !important;
 }
 
 .c-oauth_scope_info__dangerous_scope:not(:first-child), .c-oauth_scope_info__safe_scope {
@@ -2072,7 +2080,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .ent_alert a:link, .ent_alert a:visited {
-  color: #c7c7c7;
+  color: #3aa3e3;
 }
 
 .ent_alert_page.ent_alert_error {
@@ -3704,7 +3712,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .msg_inline_video_buttons_div a:visited {
-  color: #e6e6e6;
+  color: #3aa3e3;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -4318,26 +4326,20 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: #222;
 }
 
-.p-threads_view__default_background, .p_threads_view_load_older_button, .p_threads_view_load_newer_button,
+.p-threads_view__default_background, .p_threads_view_load_older_button,
 .p_threads_view_load_older_button .p-threads_footer__input .p-message_input_file_button {
   background: #363636;
 }
 
-.p_threads_view_load_newer_button {
-  border-right: rgb(86, 87, 88);
-  border-left: rgb(86, 87, 88);
-  border-top: rgb(86, 87, 88);
-  border-bottom: rgb(86, 87, 88);
+.p-threads_view_root, .p-threads_view__footer,
+.p_threads_view_load_older_button, .p-threads_view_reply {
+  border-right-color: #c7c7c7;
+  border-bottom-color: #c7c7c7;
+  border-left-color: #c7c7c7;
+  border-top-color: #c7c7c7;
 }
 
-.p-threads_view_root, .p-threads_view__footer, .p_threads_view_load_older_button, .p-threads_view_reply {
-  border-right-color: rgb(86, 87, 88);
-  border-bottom-color: rgb(86, 87, 88);
-  border-left-color: rgb(86, 87, 88);
-  border-top-color: rgb(86, 87, 88);
-}
-
-.p-threads_view_header, .p-threads_view__footer, .p_threads_view_load_older_button {
+.p_threads_view_load_newer_button, .p-threads_view_header, .p-threads_view__footer, .p_threads_view_load_older_button {
   background: #222;
 }
 
@@ -4849,7 +4851,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .rxn .emoji_rxn_count, .rxn .c-reaction__count, .c-reaction .emoji_rxn_count, .c-reaction .c-reaction__count, .c-reaction_add .emoji_rxn_count, .c-reaction_add .c-reaction__count, .c-member_slug .emoji_rxn_count, .c-member_slug .c-reaction__count {
-  color: #1264a3;
+  color: #3aa3e3;
 }
 
 .rxn, .c-reaction, .c-reaction_add, .c-member_slug {
@@ -5808,7 +5810,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .widescreen:not(.nav_open) nav#site_nav ul a:link, .widescreen:not(.nav_open) nav#site_nav ul a:visited, .widescreen:not(.nav_open) nav#site_nav ul a:hover, .widescreen:not(.nav_open) nav#site_nav ul a:active {
-  color: #c7c7c7;
+  color: #3aa3e3;
 }
 
 .yolk_orange_bg, .burnt_violet_bg, .flexpane_grey_bg {
@@ -7000,7 +7002,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #fs_modal.p-apps_browser_modal .contents_container .contents .links_container a:active, #fs_modal.p-apps_browser_modal .contents_container .contents .links_container a:hover, #fs_modal.p-apps_browser_modal .contents_container .contents .links_container a:visited {
-  color: #e6e6e6;
+  color: #3aa3e3;
 }
 
 #fs_modal.prefs_modal .badge_example {
@@ -8066,15 +8068,11 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #e6e6e6;
 }
 
-a.c-member_slug--mention, a.c-member_slug--mention:hover {
+a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link, a.c-member_slug.active,
+a.c-member_slug:hover, a.c-member_slug--mention, a.c-member_slug--mention:hover, .c-member_slug--link.active,
+.c-member_slug--link:hover, .c-mrkdwn__subteam--link.active, .c-mrkdwn__subteam--link:hover {
   background: transparent;
-  color: #1264a3;
-}
-
-a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link, a.c-member_slug.active, a.c-member_slug:hover,
-.c-member_slug--link.active, .c-member_slug--link:hover, .c-mrkdwn__subteam--link.active, .c-mrkdwn__subteam--link:hover {
-  background: transparent;
-  color: #1264a3;
+  color: #3aa3e3;
 }
 
 a.c-tabs__tab--plastic {
@@ -8090,12 +8088,8 @@ a.c-tabs__tab--plastic.c-tabs__tab--active, a.c-tabs__tab--plastic:active, a.c-t
   color: #e6e6e6;
 }
 
-a.file_download_link {
-  color: #949494;
-}
-
-a.file_download_link:hover {
-  color: #c7c7c7;
+a.file_download_link, a.file_download_link:hover {
+  color: #3aa3e3;
 }
 
 a.filetype_button_web .filetype_icon {
@@ -8114,7 +8108,7 @@ a.gsheet img, a.pdf img {
 
 a.internal_member_link {
   background: #363636;
-  color: #e6e6e6;
+  color: #3aa3e3;
 }
 
 a.p-oauth_nav__anchor {
@@ -8126,7 +8120,7 @@ a.plastic_typeahead_item {
 }
 
 a.splash_interactive__window_link {
-  color: #e6e6e6;
+  color: #3aa3e3;
 }
 
 a.two_factor_choice {
@@ -8136,7 +8130,7 @@ a.two_factor_choice {
 }
 
 a.two_factor_choice:hover .two_factor_link, a.two_factor_choice:link:hover .two_factor_link {
-  color: #e6e6e6;
+  color: #3aa3e3;
 }
 
 a.two_factor_choice:hover, a.two_factor_choice:link:hover {
@@ -8326,7 +8320,7 @@ footer ul a, #autocomplete_menu.search_menu footer.unified ul a {
 }
 
 footer ul a:link, footer ul a:visited, #autocomplete_menu.search_menu footer.unified ul a:link, #autocomplete_menu.search_menu footer.unified ul a:visited {
-  color: #e6e6e6;
+  color: #3aa3e3;
 }
 
 footer, #autocomplete_menu.search_menu footer.unified {
@@ -8340,7 +8334,7 @@ h1 a {
 }
 
 h1 a:active, h1 a:hover, h1 a:link, h1 a:visited {
-  color: #e6e6e6;
+  color: #3aa3e3;
 }
 
 h1, h2, h3, h4 {
