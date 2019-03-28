@@ -4334,34 +4334,17 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: #222;
 }
 
-<<<<<<< HEAD
-.p_threads_view_load_newer_button, .p_threads_view_load_older_button {
-  border-left: 1px solid #949494;
-  border-right: 1px solid #949494;
-}
-
-.p-threads_view__default_background, .p_threads_view_load_older_button, .p_threads_view_load_newer_button,
-=======
 .p-threads_view__default_background, .p_threads_view_load_older_button,
->>>>>>> master
 .p_threads_view_load_older_button .p-threads_footer__input .p-message_input_file_button {
   background: #363636;
 }
 
-<<<<<<< HEAD
-.p_threads_view_load_newer_button, .p-threads_view_root, .p-threads_view__footer, .p_threads_view_load_older_button, .p-threads_view_reply {
-  border-right-color: rgb(86, 87, 88);
-  border-bottom-color: rgb(86, 87, 88);
-  border-left-color: rgb(86, 87, 88);
-  border-top-color: rgb(86, 87, 88);
-=======
 .p-threads_view_root, .p-threads_view__footer,
 .p_threads_view_load_older_button, .p-threads_view_reply {
   border-right-color: #949494;
   border-bottom-color: #949494;
   border-left-color: #949494;
   border-top-color: #949494;
->>>>>>> master
 }
 
 .p_threads_view_load_newer_button, .p-threads_view_header, .p-threads_view__footer, .p_threads_view_load_older_button {
