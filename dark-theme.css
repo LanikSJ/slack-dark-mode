@@ -4852,7 +4852,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .rxn, .c-reaction, .c-reaction_add, .c-member_slug {
   background: #363636;
-  border: 1px solid #545454;
+  border: 0px solid #545454;
 }
 
 .rxn.active .emoji_rxn_count, .rxn:hover .emoji_rxn_count, .c-reaction.active .emoji_rxn_count, .c-reaction:hover .emoji_rxn_count, .c-reaction_add.active .emoji_rxn_count, .c-reaction_add:hover .emoji_rxn_count, .c-member_slug.active .emoji_rxn_count, .c-member_slug:hover .emoji_rxn_count {
