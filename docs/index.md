@@ -20,6 +20,10 @@ $ git clone https://github.com/LanikSJ/slack-dark-mode
 cd slack-dark-mode && source slack-dark-mode.sh
 ```
 
+Screenshot
+============
+![Screenshot](https://github.com/LanikSJ/slack-dark-mode/raw/master/images/screenshot.png "Screenshot")
+
 Attributions
 ============
 
