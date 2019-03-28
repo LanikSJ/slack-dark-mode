@@ -556,7 +556,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-channel_name, .c-channel_name__text, .c-channel_name__text--inline {
-    color: #f8f8f8;
+  color: #f8f8f8;
 }
 
 .c-date_picker__dropdown {
@@ -680,10 +680,6 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .c-fullscreen_modal__header, .c-fullscreen_modal__body {
   background-color: #222;
-}
-
-.c-channel_name {
-  color: rgb(86, 87, 88);
 }
 
 .c-input_select {
@@ -1243,7 +1239,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__subteam--mention, .c-mrkdwn__subteam--mention:hover, .mention_yellow_bg {
   background-color: transparent;
-  color: #949494 !important;
+  color: #1264a3 !important;
 }
 
 .c-oauth_scope_info__dangerous_scope:not(:first-child), .c-oauth_scope_info__safe_scope {
@@ -4328,8 +4324,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .p_threads_view_load_newer_button {
+  border-right: rgb(86, 87, 88);
   border-left: rgb(86, 87, 88);
   border-top: rgb(86, 87, 88);
+  border-bottom: rgb(86, 87, 88);
 }
 
 .p-threads_view_root, .p-threads_view__footer, .p_threads_view_load_older_button, .p-threads_view_reply {
@@ -4344,11 +4342,11 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .p-threads_view_header__participant_list, .p-threads_view_header__channel_name {
-    color: #f8f8f8;
+  color: #f8f8f8;
 }
 
 .p-threads_view__divider_label {
-    color: #f8f8f8;
+  color: #f8f8f8;
 }
 
 .p-threads_view_scroller_div {
