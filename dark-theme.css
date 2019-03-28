@@ -4847,12 +4847,12 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .rxn .emoji_rxn_count, .rxn .c-reaction__count, .c-reaction .emoji_rxn_count, .c-reaction .c-reaction__count, .c-reaction_add .emoji_rxn_count, .c-reaction_add .c-reaction__count, .c-member_slug .emoji_rxn_count, .c-member_slug .c-reaction__count {
-  color: #e6e6e6;
+  color: #1264a3;
 }
 
 .rxn, .c-reaction, .c-reaction_add, .c-member_slug {
   background: #363636;
-  border: 1px solid #545454;
+  border: 0px solid #545454;
 }
 
 .rxn.active .emoji_rxn_count, .rxn:hover .emoji_rxn_count, .c-reaction.active .emoji_rxn_count, .c-reaction:hover .emoji_rxn_count, .c-reaction_add.active .emoji_rxn_count, .c-reaction_add:hover .emoji_rxn_count, .c-member_slug.active .emoji_rxn_count, .c-member_slug:hover .emoji_rxn_count {
@@ -8065,19 +8065,14 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 a.c-member_slug--mention, a.c-member_slug--mention:hover {
-  background-color: #fff6d1;
-  color: #363636;
+  background: transparent;
+  color: #1264a3;
 }
 
-a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
-  background: #363636;
-  border: 1px solid #545454;
-  color: #e6e6e6;
-}
-
-a.c-member_slug.active, a.c-member_slug:hover, .c-member_slug--link.active, .c-member_slug--link:hover, .c-mrkdwn__subteam--link.active, .c-mrkdwn__subteam--link:hover {
-  background: #424242;
-  color: #e6e6e6;
+a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link, a.c-member_slug.active, a.c-member_slug:hover,
+.c-member_slug--link.active, .c-member_slug--link:hover, .c-mrkdwn__subteam--link.active, .c-mrkdwn__subteam--link:hover {
+  background: transparent;
+  color: #1264a3;
 }
 
 a.c-tabs__tab--plastic {
