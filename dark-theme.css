@@ -709,6 +709,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #e6e6e6;
 }
 
+.c-link .c-message__reply_count > a, a:link, a:visited {
+  color: #3aa3e3;
+}
+
 .c-member .external_team_badge {
   background-color: #545454;
   box-shadow: 0 0 0 2px #545454;
@@ -4333,10 +4337,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .p-threads_view_root, .p-threads_view__footer,
 .p_threads_view_load_older_button, .p-threads_view_reply {
-  border-right-color: #c7c7c7;
-  border-bottom-color: #c7c7c7;
-  border-left-color: #c7c7c7;
-  border-top-color: #c7c7c7;
+  border-right-color: #949494;
+  border-bottom-color: #949494;
+  border-left-color: #949494;
+  border-top-color: #949494;
 }
 
 .p_threads_view_load_newer_button, .p-threads_view_header, .p-threads_view__footer, .p_threads_view_load_older_button {
