@@ -4231,6 +4231,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   text-shadow: 0 1px rgba(0, 0, 0, 0.15);
 }
 
+.p-notification_bar__section {
+  color: #949494;
+}
+
 .p-oauth_nav__team-switcher .menu_launcher {
   border-color: #363636;
 }
@@ -4318,19 +4322,17 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: #222;
 }
 
+.p_threads_view_load_newer_button, .p_threads_view_load_older_button {
+  border-left: 1px solid #949494;
+  border-right: 1px solid #949494;
+}
+
 .p-threads_view__default_background, .p_threads_view_load_older_button, .p_threads_view_load_newer_button,
 .p_threads_view_load_older_button .p-threads_footer__input .p-message_input_file_button {
   background: #363636;
 }
 
-.p_threads_view_load_newer_button {
-  border-right: rgb(86, 87, 88);
-  border-left: rgb(86, 87, 88);
-  border-top: rgb(86, 87, 88);
-  border-bottom: rgb(86, 87, 88);
-}
-
-.p-threads_view_root, .p-threads_view__footer, .p_threads_view_load_older_button, .p-threads_view_reply {
+.p_threads_view_load_newer_button, .p-threads_view_root, .p-threads_view__footer, .p_threads_view_load_older_button, .p-threads_view_reply {
   border-right-color: rgb(86, 87, 88);
   border-bottom-color: rgb(86, 87, 88);
   border-left-color: rgb(86, 87, 88);
