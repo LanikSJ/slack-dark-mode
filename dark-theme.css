@@ -555,8 +555,8 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background-color: #545454;
 }
 
-.c-channel_name__text, .c-channel_name__text--inline {
-  color: rgb(86, 87, 88);
+.c-channel_name, .c-channel_name__text, .c-channel_name__text--inline {
+    color: #f8f8f8;
 }
 
 .c-date_picker__dropdown {
@@ -4339,12 +4339,16 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   border-top-color: rgb(86, 87, 88);
 }
 
-.p-threads_view_header__channel_name {
-  color: rgb(86, 87, 88);
-}
-
 .p-threads_view_header, .p-threads_view__footer, .p_threads_view_load_older_button {
   background: #222;
+}
+
+.p-threads_view_header__participant_list, .p-threads_view_header__channel_name {
+    color: #f8f8f8;
+}
+
+.p-threads_view__divider_label {
+    color: #f8f8f8;
 }
 
 .p-threads_view_scroller_div {
