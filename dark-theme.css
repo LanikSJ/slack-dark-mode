@@ -682,10 +682,6 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background-color: #222;
 }
 
-.c-channel_name {
-  color: rgb(86, 87, 88);
-}
-
 .c-input_select {
   background: #545454;
   border-color: #363636;
