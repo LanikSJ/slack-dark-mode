@@ -4339,12 +4339,16 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: #363636;
 }
 
-.p-threads_view_root, .p-threads_view__footer,
-.p_threads_view_load_older_button, .p-threads_view_reply {
+.p-threads_view_root, .p-threads_view__footer, .p_threads_view_load_older_button, .p-threads_view_reply {
   border-right-color: #949494;
   border-bottom-color: #949494;
   border-left-color: #949494;
   border-top-color: #949494;
+}
+
+.p_threads_view_load_newer_button, .p_threads_view_load_older_button {
+  border-left: 1px solid #949494;
+  border-right: 1px solid #949494;
 }
 
 .p_threads_view_load_newer_button, .p-threads_view_header, .p-threads_view__footer, .p_threads_view_load_older_button {
