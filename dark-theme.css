@@ -682,6 +682,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background-color: #222;
 }
 
+.c-icon {
+  color: #f8f8f8;
+}
+
 .c-input_select {
   background: #545454;
   border-color: #363636;
@@ -709,7 +713,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #e6e6e6;
 }
 
-.c-link .c-message__reply_count > a, a:link, a:visited {
+.c-link .c-message__reply_count>a, a:link, a:visited {
   color: #3aa3e3;
 }
 
@@ -934,7 +938,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-message__reply_bar_description {
-  color: #949494;
+  color: #f8f8f8;
 }
 
 .c-message__reply_bar:hover .c-message__reply_bar_arrow, .c-message__reply_bar--focus .c-message__reply_bar_arrow {
@@ -1242,7 +1246,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-mrkdwn__user_group--link {
-    color: #3aa3e3;
+  color: #3aa3e3;
 }
 
 .c-mrkdwn__user_group--link, .c-mrkdwn__user_group--mention, .c-mrkdwn__user_group--mention:hover {
@@ -1377,6 +1381,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .c-texty_input.focus .c-texty_input__button {
   color: #949494
+}
+
+.c-timestamp__label {
+  color: #f8f8f8;
 }
 
 .c-tooltip__tip {
@@ -4066,7 +4074,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .p-emoji_picker__emoji_deluxe_label {
-  color: #949494;
+  color: #f8f8f8;
 }
 
 .p-emoji_picker__footer .p-emoji_picker__heading {
@@ -4213,6 +4221,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: #363636;
   border-color: #545454;
   color: #e6e6e6;
+}
+
+.p-flexpane_header__control {
+  color: #f8f8f8;
 }
 
 .p-message_pane .c-message_list.c-virtual_list--scrollbar>.c-scrollbar__hider {
