@@ -642,6 +642,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: #363636;
 }
 
+.c-dialog_speed_bump {
+  background-color: #545454;
+}
+
 .c-dialog__title {
   color: #e6e6e6;
 }
@@ -682,6 +686,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background-color: #222;
 }
 
+.c-hint {
+  color: #f8f8f8;
+}
+
 .c-icon {
   color: #f8f8f8;
 }
@@ -711,6 +719,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .c-label__text {
   color: #e6e6e6;
+}
+
+.c-link--button {
+  color: #3aa3e3;
 }
 
 .c-link .c-message__reply_count>a, a:link, a:visited {
@@ -1010,12 +1022,16 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #e6e6e6;
 }
 
+.c-message_attachment__author {
+  color: #f8f8f8;
+}
+
 .c-message_attachment__author .c-message_attachment__autor--distinct {
-  color: #949494;
+  color: #f8f8f8;
 }
 
 .c-message_attachment__author_link+.c-message_attachment__author_link {
-  color: #949494;
+  color: #f8f8f8;
 }
 
 .c-message_attachment__border {
@@ -3809,6 +3825,14 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 .p-apps_browser__category_section--tutorial .p-apps_browser__app--selected {
   background: #363636;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.p-app_dialog__title_text {
+  color: #f8f8f8;
+}
+
+.p-app_dialog_elements .c-label:last-child [class^=c-input] {
+  color: #f8f8f8;
 }
 
 .p-block_kit_date_picker_calendar_wrapper .c-calendar_view_header__title_btn {
