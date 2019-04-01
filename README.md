@@ -14,6 +14,9 @@ Dark Mode in Slack isn't available as of this writing.
 $ git clone https://github.com/LanikSJ/slack-dark-mode
 cd slack-dark-mode && source slack-dark-mode.sh
 ```
+## Screenshot
+![Screenshot](https://github.com/LanikSJ/slack-dark-mode/raw/master/images/screenshot.png "Screenshot")
+
 ## Attributions
 Some scripts were "borrowed" from [mmrko](https://gist.github.com/mmrko) [Gist](https://gist.github.com/mmrko/9b0e65f6bcc1fca57089c32c2228aa39)  
 ©️ All rights reserved by the original authors.  
