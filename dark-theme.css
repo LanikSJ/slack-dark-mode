@@ -906,6 +906,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #949494;
 }
 
+.c-message__content>span>code {
+  color: #FF9800;
+}
+
 .c-message__edited_label {
   color: #949494;
 }
@@ -1265,18 +1269,22 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background-color: #363636;
 }
 
+.c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight,
+.c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__subteam--mention, .c-mrkdwn__subteam--mention:hover, .mention_yellow_bg {
+  background-color: transparent;
+  color: #3aa3e3 !important;
+}
+
+.c-mrkdwn__pre {
+  color: #FF9800;
+}
+
 .c-mrkdwn__user_group--link {
   color: #3aa3e3;
 }
 
 .c-mrkdwn__user_group--link, .c-mrkdwn__user_group--mention, .c-mrkdwn__user_group--mention:hover {
   background: #060606;
-}
-
-.c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight,
-.c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__subteam--mention, .c-mrkdwn__subteam--mention:hover, .mention_yellow_bg {
-  background-color: transparent;
-  color: #3aa3e3 !important;
 }
 
 .c-oauth_scope_info__dangerous_scope:not(:first-child), .c-oauth_scope_info__safe_scope {
