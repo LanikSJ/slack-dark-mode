@@ -906,7 +906,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #949494;
 }
 
-.c-message__content > span > code {
+.c-message__content>span>code {
   color: #FF9800;
 }
 
