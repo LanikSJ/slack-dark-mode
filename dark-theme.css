@@ -539,6 +539,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #c7c7c7;
 }
 
+.c-button-unstyled {
+  color: #f8f8f8;
+}
+
 .c-calendar_month__day_of_week_heading {
   color: #e6e6e6;
 }
@@ -4055,6 +4059,14 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .p-channel-options--content_text {
   color: #949494 !important;
+}
+
+.p-custom_status_input__clear_icon {
+  color: #f8f8f8;
+}
+
+.p-custom_status_input__custom_expiration_picker .c-input_select__selected_value--placeholder {
+  color: #f8f8f8;
 }
 
 .p-degraded_list__loading {
