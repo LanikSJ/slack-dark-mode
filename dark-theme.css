@@ -1269,7 +1269,8 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: #060606;
 }
 
-.c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__subteam--mention, .c-mrkdwn__subteam--mention:hover, .mention_yellow_bg {
+.c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight,
+.c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__subteam--mention, .c-mrkdwn__subteam--mention:hover, .mention_yellow_bg {
   background-color: transparent;
   color: #3aa3e3 !important;
 }
@@ -1352,7 +1353,8 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #e6e6e6;
 }
 
-.c-search_modal .popover>div, .c-search_modal .c-search__input_box, .c-search_modal:not(.c-search_modal--primarysearch) .popover>div, .c-search_modal:not(.c-search_modal--primarysearch) .c-search__input_box {
+.c-search_modal .popover>div, .c-search_modal .c-search__input_box,
+.c-search_modal:not(.c-search_modal--primarysearch) .popover>div, .c-search_modal:not(.c-search_modal--primarysearch) .c-search__input_box {
   background: #363636;
   border-color: #545454;
   color: #e6e6e6;
@@ -1400,7 +1402,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-timestamp__label {
-  color: #f8f8f8;
+  color: #949494;
 }
 
 .c-tooltip__tip {
@@ -1432,7 +1434,8 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background-color: #0cbf72;
 }
 
-.c-tooltip__tip--success.c-tooltip__tip--bottom::after, .c-tooltip__tip--success.c-tooltip__tip--bottom-left::after, .c-tooltip__tip--success.c-tooltip__tip--bottom-right::after {
+.c-tooltip__tip--success.c-tooltip__tip--bottom::after, .c-tooltip__tip--success.c-tooltip__tip--bottom-left::after,
+.c-tooltip__tip--success.c-tooltip__tip--bottom-right::after {
   border-bottom-color: #0cbf72;
 }
 
@@ -1444,7 +1447,8 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   border-right-color: #0cbf72;
 }
 
-.c-tooltip__tip--success.c-tooltip__tip--top::after, .c-tooltip__tip--success.c-tooltip__tip--top-left::after, .c-tooltip__tip--success.c-tooltip__tip--top-right::after {
+.c-tooltip__tip--success.c-tooltip__tip--top::after, .c-tooltip__tip--success.c-tooltip__tip--top-left::after,
+.c-tooltip__tip--success.c-tooltip__tip--top-right::after {
   border-top-color: #0cbf72;
 }
 
@@ -1460,7 +1464,8 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   border-top-color: #545454;
 }
 
-.c-unified_member__display-name, .c-unified_member__secondary-name, .c-unified_member__title, .c-unified_member__other-names, .c-unified_member__other-names {
+.c-unified_member__display-name, .c-unified_member__secondary-name, .c-unified_member__title,
+.c-unified_member__other-names, .c-unified_member__other-names {
   color: #e6e6e6 !important;
 }
 
@@ -1479,6 +1484,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .c-virtual_list__item--focus:focus .c-message_list__focus_indicator {
   box-shadow: inset 0 0 0 3px rgba(130, 130, 130, 0.8);
+}
+
+.c-virtual_list.c-virtual_list--scrollbar.c-scrollbar.c-scrollbar--hidden>div.c-scrollbar__hider {
+  background-color: #222;
 }
 
 .c3 line, .c3 path {
@@ -3835,6 +3844,37 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #f8f8f8;
 }
 
+.p-app_space_profile__info {
+  border-bottom: 1px solid #222;
+  background-color: #222;
+}
+
+.p-app_space_profile__side--links {
+  background-color: #222;
+}
+
+.p-app_space_profile__slash_commands {
+  border-top: 1px solid #545454;
+  border-bottom: 1px solid #545454;
+  background: #222;
+}
+
+.p-app_space_profile__slash_command:last-child {
+  background-color: #222;
+}
+
+.p-app_space_profile__slash_command strong {
+  color: #f8f8f8;
+}
+
+.p-app_space_profile__slash_command_desc {
+  color: #c7c7c7;
+}
+
+.p-app_space__subheader__helper {
+  color: #f8f8f8;
+}
+
 .p-block_kit_date_picker_calendar_wrapper .c-calendar_view_header__title_btn {
   background: #545454;
   border-color: #363636;
@@ -5366,6 +5406,12 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .supports_custom_scrollbar #messages_container::after {
   background: none !important;
+}
+
+.supports_custom_scrollbar:not(.slim_scrollbar) #app_space_scroller_div,
+.supports_custom_scrollbar:not(.slim_scrollbar) #archive_msgs_scroller_div,
+.supports_custom_scrollbar:not(.slim_scrollbar) #msgs_scroller_div {
+  background-color: #222;
 }
 
 .t-no-header .legal-hero.o-hero.v--short {
