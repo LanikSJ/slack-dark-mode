@@ -3887,6 +3887,12 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #f8f8f8;
 }
 
+.p-app_space_profile__screenshots {
+  border-top: 1px solid #949494;
+  border-bottom: 1px solid #949494;
+  background: #222;
+}
+
 .p-block_kit_date_picker_calendar_wrapper .c-calendar_view_header__title_btn {
   background: #545454;
   border-color: #363636;

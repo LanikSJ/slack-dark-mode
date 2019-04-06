@@ -10,12 +10,20 @@ addons:
 
 language: bash
 
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode10
+      rvm: system
+  fast_finish: true
+
 env:
   global:
     - CODECOV_TOKEN=fb8d8ddb-9ae5-4007-9736-2b174694998d
     - PATH=${PATH}:${HOME}/kcov/bin
 
 before_install:
+- /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 - wget https://github.com/SimonKagstrom/kcov/archive/master.tar.gz
 
 install:
