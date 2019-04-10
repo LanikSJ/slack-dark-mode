@@ -1313,6 +1313,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: linear-gradient(0deg, #828282, hsla(0, 0%, 100%, 0) 40px);
 }
 
+.c-pillow_file__post__content code, .c-pillow_file__post__content pre {
+  background: #222;
+}
+
 .c-pillow_file_container .c-pillow_file__swap .c-pillow_file__slide {
   background-color: #000;
 }
