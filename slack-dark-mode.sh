@@ -10,15 +10,8 @@ THEME_FILEPATH="$SLACK_RESOURCES_DIR/dark-theme.css"
 
 #curl -sSL -o "$THEME_FILEPATH" "https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css"
 
-OWNER=$(stat -f "%Su" /Applications/Slack.app)
-if [[ $OWNER == root ]]; then
-  echo "Add Dark Theme to Slack... "
-  sudo cp -af dark-theme.css "$THEME_FILEPATH"
-  echo $SLACK_EVENT_LISTENER | sudo tee -a "$SLACK_FILEPATH"
-else
-  echo "Add Dark Theme to Slack... "
-  cp -af dark-theme.css "$THEME_FILEPATH"
-  echo $SLACK_EVENT_LISTENER >> "$SLACK_FILEPATH"
-fi
+echo "Adding Dark Theme Code to Slack... "
+sudo cp -af dark-theme.css "$THEME_FILEPATH"
+sudo tee -a "$SLACK_FILEPATH" < $SLACK_EVENT_LISTENER
 
 echo "Done! After executing this script, hit refresh (⌘ + R) or restart Slack for changes to take effect."
