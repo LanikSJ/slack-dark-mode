@@ -8,10 +8,16 @@ SLACK_FILEPATH="$SLACK_RESOURCES_DIR/app.asar.unpacked/src/static/ssb-interop.js
 THEME_FILEPATH="$SLACK_RESOURCES_DIR/dark-theme.css"
 
 #curl -sSL -o "$THEME_FILEPATH" "https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css"
-sudo cp -af dark-theme.css "$THEME_FILEPATH"
 
-echo "Modifying Slack... "
-
-cat event-listener.js | sudo tee -a "$SLACK_FILEPATH"
+OWNER=$(stat -f "%Su %Sg" /Applications/Slack.app |awk '{print $1}')
+if [[ $OWNER == root ]]; then 
+  sudo cp -af dark-theme.css "$THEME_FILEPATH"
+  echo "Add Dark Theme to Slack... " 
+  cat event-listener.js | sudo tee -a "$SLACK_FILEPATH"
+else 
+  cp -af dark-theme.css "$THEME_FILEPATH
+  echo "Add Dark Theme to Slack... " 
+  cat event-listener.js >> "$SLACK_FILEPATH"
+fi
 
 echo "Done! After executing this script, hit refresh (⌘ + R) or restart Slack for changes to take effect."
