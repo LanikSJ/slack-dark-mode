@@ -15,7 +15,7 @@ if [[ $OWNER == root ]]; then
   echo "Add Dark Theme to Slack... " 
   cat event-listener.js | sudo tee -a "$SLACK_FILEPATH"
 else 
-  cp -af dark-theme.css "$THEME_FILEPATH
+  cp -af dark-theme.css "$THEME_FILEPATH"
   echo "Add Dark Theme to Slack... " 
   cat event-listener.js >> "$SLACK_FILEPATH"
 fi
