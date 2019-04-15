@@ -17,7 +17,7 @@ THEME_FILEPATH="$SLACK_RESOURCES_DIR/dark-theme.css"
 
 echo "Adding Dark Theme Code to Slack... "
 sudo cp -af dark-theme.css "$THEME_FILEPATH"
-sudo sed -i -e s@SLACK_DARK_THEME_PATH@$THEME_FILEPATH@g $SLACK_EVENT_LISTENER
+sed -i -e s@SLACK_DARK_THEME_PATH@$THEME_FILEPATH@g $SLACK_EVENT_LISTENER
 sudo tee -a "$SLACK_FILEPATH" < $SLACK_EVENT_LISTENER
 
 echo "Done! After executing this script, hit refresh (⌘ + R) or restart Slack for changes to take effect."
