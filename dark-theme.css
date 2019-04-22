@@ -698,6 +698,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #f8f8f8;
 }
 
+.c-input_select__secondary_member_name {
+  color: #949494;
+}
+
 .c-input_select {
   background: #545454;
   border-color: #363636;
