@@ -571,6 +571,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background-color: #363636;
 }
 
+.c-fullscreen_modal__close--with_header .c-deprecated-icon {
+    color: #c7c7c7;
+}
+
 .c-dialog .p-custom_status_input__duration_picker_select .c-input_select__selected_value--placeholder {
   color: #e6e6e6;
 }
@@ -688,6 +692,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .c-fullscreen_modal__body {
   color: #e6e6e6;
+  background-color: #222;
 }
 
 .c-fullscreen_modal__header {
@@ -727,6 +732,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   border-color: #828282;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   color: #e6e6e6;
+}
+
+.c-label__subtext {
+  color: #949494;
 }
 
 .c-label__text {
