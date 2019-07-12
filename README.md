@@ -7,8 +7,8 @@
 Store scripts and Style sheets for Slack Dark Mode for macOS Mojave.  
 Dark Mode in Slack isn't available as of this writing.  
 
-## Issues
-***This project only applies if you're using Slack version less then 4.***  
+## Notice
+***As of this writing this project only works with Slack 4.0+.***  
 
 ## Usage
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e88f5c76dfdf418e9c2571943437ae23)](https://www.codacy.com/app/Lanik/slack-dark-mode?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LanikSJ/slack-dark-mode&amp;utm_campaign=Badge_Grade)
@@ -32,4 +32,3 @@ Please report any bugs or issues you find. Thanks!
 
 ## Donate
 [![Patreon](https://img.shields.io/badge/patreon-donate-red.svg)](https://www.patreon.com/laniksj/overview)
-

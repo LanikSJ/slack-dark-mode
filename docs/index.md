@@ -12,6 +12,11 @@ Purpose
 Store scripts and Style sheets for Slack Dark Mode for macOS Mojave.  
 Dark Mode in Slack isn't available as of this writing.
 
+Notice
+============
+
+***As of this writing this project only works with Slack 4.0+.***  
+
 Usage
 ============
 
