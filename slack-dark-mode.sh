@@ -12,7 +12,7 @@ if [[ -d $LINUX_SLACK_RESOURCES_DIR ]]; then SLACK_RESOURCES_DIR=$LINUX_SLACK_RE
 if [[ "$1" == "-u" ]]; then UPDATE_ONLY="true"; fi
 
 SLACK_EVENT_LISTENER="event-listener.js"
-SLACK_FILEPATH="$SLACK_RESOURCES_DIR/app.asar.unpacked/dist/ssb-interop.js"
+SLACK_FILEPATH="$SLACK_RESOURCES_DIR/app.asar.unpacked/dist/ssb-interop.bundle.js"
 THEME_FILEPATH="$SLACK_RESOURCES_DIR/dark-theme.css"
 
 #curl -sSL -o "$THEME_FILEPATH" "https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css"
