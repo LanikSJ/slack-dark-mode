@@ -1060,7 +1060,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-message_attachment__author_name {
-  color: #f8f8f8
+  color: #f8f8f8;
 }
 
 .c-message_attachment__border {
@@ -3923,12 +3923,12 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .p-archives_banner {
-  background-color: #363636
+  background-color: #363636;
 }
 
 .p-archives_banner__data_range {
-  background-color: #222
-  color: #f8f8f8
+  background-color: #222;
+  color: #f8f8f8;
 }
 
 .p-archives_banner__jump {
@@ -4361,6 +4361,19 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .p-flexpane_header__control {
   color: #f8f8f8;
+}
+
+.p-help_modal__footer {
+  background-color: #363636;
+}
+
+.p-help_modal__shortcuts__button {
+  background-color: #363636;
+  color: #f8f8f8;
+}
+
+.p-help_search__list__item:focus {
+  background-color: #222;
 }
 
 .p-message_pane .c-message_list.c-virtual_list--scrollbar>.c-scrollbar__hider {
