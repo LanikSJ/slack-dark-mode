@@ -41,7 +41,7 @@ else
 fi
 
 # Insert the CSS File Location in JS
-sudo sed -i -e 's/SLACK_DARK_THEME_PATH/$THEME_FILEPATH/g' $SLACK_FILEPATH
+sudo sed -i -e s@SLACK_DARK_THEME_PATH@$THEME_FILEPATH@g $SLACK_FILEPATH
 
 # Pack the Asar Archive for Slack
 sudo npx asar pack $SLACK_RESOURCES_DIR/app.asar.unpacked $SLACK_RESOURCES_DIR/app.asar
