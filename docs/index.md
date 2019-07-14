@@ -15,7 +15,7 @@ Dark Mode in Slack isn't available as of this writing.
 Notice
 ============
 
-***As of this writing this project only works with Slack 4.0+.***  
+Due to the changes in Slack 4.0+ this project will not be compatible with Slack Version 3.4 or below.   
 
 Usage
 ============
@@ -24,6 +24,11 @@ Usage
 $ git clone https://github.com/LanikSJ/slack-dark-mode
 cd slack-dark-mode && source slack-dark-mode.sh
 ```
+or to update only:
+```bash
+$ git clone https://github.com/LanikSJ/slack-dark-mode
+cd slack-dark-mode && ./slack-dark-mode.sh -u
+````
 
 Screenshot
 ============
