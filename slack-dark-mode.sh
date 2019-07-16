@@ -3,6 +3,12 @@
 # Homebaked Slack Dark Mode. After executing this script restart Slack for changes to take effect.
 # Adopted from https://gist.github.com/a7madgamal/c2ce04dde8520f426005e5ed28da8608
 
+if [[ $EUID -ne 0 ]]; then
+  >&2 echo "You are not root."
+  >&2 echo "This script requires sudo privileges."
+  exit 1
+fi
+
 OSX_SLACK_RESOURCES_DIR="/Applications/Slack.app/Contents/Resources"
 LINUX_SLACK_RESOURCES_DIR="/usr/lib/slack/resources"
 UPDATE_ONLY="false"
