@@ -13,8 +13,8 @@ echo && echo "This script requires sudo privileges." && echo "You'll need to pro
 
 type npx
 if [[ "$?" != "0" ]]; then echo "Please install Node for your OS.  macOS users will also need to install Homebrew from https://brew.sh"
-if [[ -f $SLACK_DIRECT_LOCAL_SETTINGS ]]; then sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' $SLACK_DIRECT_LOCAL_SETTINGS
-if [[ -f $SLACK_STORE_LOCAL_SETTINGS ]]; then sudo sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' $SLACK_STORE_LOCAL_SETTINGS
+if [[ -f $SLACK_DIRECT_LOCAL_SETTINGS ]]; then sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' $SLACK_DIRECT_LOCAL_SETTINGS; fi
+if [[ -f $SLACK_STORE_LOCAL_SETTINGS ]]; then sudo sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' $SLACK_STORE_LOCAL_SETTINGS; fi
 
 if [[ -d $OSX_SLACK_RESOURCES_DIR ]]; then SLACK_RESOURCES_DIR=$OSX_SLACK_RESOURCES_DIR; fi
 if [[ -d $LINUX_SLACK_RESOURCES_DIR ]]; then SLACK_RESOURCES_DIR=$LINUX_SLACK_RESOURCES_DIR; fi
