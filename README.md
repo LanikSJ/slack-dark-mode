@@ -15,12 +15,12 @@ Due to the changes in Slack 4.0+ this project will not be compatible with Slack 
 [![codecov](https://codecov.io/gh/LanikSJ/slack-dark-mode/branch/master/graph/badge.svg)](https://codecov.io/gh/LanikSJ/slack-dark-mode)
 ```bash
 $ git clone https://github.com/LanikSJ/slack-dark-mode
-cd slack-dark-mode && source slack-dark-mode.sh
+cd slack-dark-mode && chmod +x slack-dark-mode.sh && ./slack-dark-mode.sh
 ```
 or to update only:
 ```bash
 $ git clone https://github.com/LanikSJ/slack-dark-mode
-cd slack-dark-mode && ./slack-dark-mode.sh -u
+cd slack-dark-mode && chmod +x slack-dark-mode.sh && ./slack-dark-mode.sh -u
 ````
 ## Screenshot
 ![Screenshot](https://github.com/LanikSJ/slack-dark-mode/raw/master/images/screenshot.png "Screenshot")
