@@ -3,9 +3,18 @@
 # Homebaked Slack Dark Mode. After executing this script restart Slack for changes to take effect.
 # Adopted from https://gist.github.com/a7madgamal/c2ce04dde8520f426005e5ed28da8608
 
+SLACK_DIRECT_LOCAL_SETTINGS="~/Library/Application\ Support/Slack/local-settings.json"
+SLACK_STORE_LOCAL_SETTINGS="~/Library/Containers/com.tinyspeck.slackmacgap/Data/Library/Application\ Support/Slack/local-settings.json"
 OSX_SLACK_RESOURCES_DIR="/Applications/Slack.app/Contents/Resources"
 LINUX_SLACK_RESOURCES_DIR="/usr/lib/slack/resources"
 UPDATE_ONLY="false"
+
+echo && echo "This script requires sudo privileges." && echo "You'll need to provide your password."
+
+type npx
+if [[ "$?" != "0" ]]; then echo "Please install Node for your OS.  macOS users will also need to install Homebrew from https://brew.sh"
+if [[ -f $SLACK_DIRECT_LOCAL_SETTINGS ]] then sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' $SLACK_DIRECT_LOCAL_SETTINGS
+if [[ -f $SLACK_STORE_LOCAL_SETTINGS ]] then sudo sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' $SLACK_STORE_LOCAL_SETTINGS
 
 if [[ -d $OSX_SLACK_RESOURCES_DIR ]]; then SLACK_RESOURCES_DIR=$OSX_SLACK_RESOURCES_DIR; fi
 if [[ -d $LINUX_SLACK_RESOURCES_DIR ]]; then SLACK_RESOURCES_DIR=$LINUX_SLACK_RESOURCES_DIR; fi
