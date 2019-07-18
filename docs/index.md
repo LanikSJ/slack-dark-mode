@@ -16,6 +16,7 @@ Notice
 ============
 
 Due to the changes in Slack 4.0+ this project will not be compatible with Slack Version 3.4 or below.   
+If you're looking for 3.4.x compatible settings please refer to [this](https://github.com/LanikSJ/slack-dark-mode/tree/466ff22d5b606b6d5b2edeff54f4cd7a3bafc39c).   
 
 Usage
 ============
