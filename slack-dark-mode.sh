@@ -29,8 +29,6 @@ THEME_FILEPATH="$SLACK_RESOURCES_DIR/dark-theme.css"
 if [[ "$UPDATE_ONLY" == "true" ]]; then echo && echo "Updating Dark Theme Code for Slack... "; fi
 if [[ "$UPDATE_ONLY" == "false" ]]; then echo && echo "Adding Dark Theme Code to Slack... "; fi
 
-echo "This script requires sudo privileges." && echo "You'll need to provide your password."
-
 # Copy CSS to Slack Folder
 sudo cp -af dark-theme.css "$THEME_FILEPATH"
 
