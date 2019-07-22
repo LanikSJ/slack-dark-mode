@@ -8181,8 +8181,8 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #team_menu.active, #team_menu:hover {
-  background: #363636 !important;
-  border-bottom-color: #363636 !important;
+  background: #222 !important;
+  border-bottom-color: #222 !important;
 }
 
 #team_tab #member_preview_scroller .member_details .member_name {
