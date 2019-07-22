@@ -37,7 +37,7 @@ install:
 - cd ../.. && rm -rf kcov-master && mkdir -p coverage
 
 script:
-- kcov coverage slack-dark-mode.sh
+- coverage slack-dark-mode.sh
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
