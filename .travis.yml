@@ -33,7 +33,7 @@ before_install:
 install:
 - sudo -H pip3 install -U codacy-coverage codecov pip
 - tar xzf master.tar.gz && cd kcov-master && mkdir build && cd build
-- cmake -DCMAKE_INSTALL_PREFIX=${HOME}/kcov .. && make && make install
+- cmake -DCMAKE_INSTALL_PREFIX=${HOME}/kcov .. && make && sudo make install
 - cd ../.. && rm -rf kcov-master && mkdir -p coverage
 
 script:
