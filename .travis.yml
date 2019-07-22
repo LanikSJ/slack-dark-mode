@@ -29,17 +29,17 @@ env:
 before_install:
 - wget https://github.com/SimonKagstrom/kcov/archive/master.tar.gz
 - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-- brew cask install slack
+- brew update && brew cask install slack
 
 install:
-- sudo -H pip3 install -U pip && sudo -H pip3 install -U codacy-coverage coverage
+- pip3 install -U pip && pip3 install -U codacy-coverage
 - tar xzf master.tar.gz && cd kcov-master && mkdir build && cd build
 - cmake -DCMAKE_INSTALL_PREFIX=${HOME}/kcov .. && make && sudo make install
 - cd ../.. && rm -rf kcov-master && mkdir -p coverage
 
 script:
-- kcov coverage slack-dark-mode.sh && coverage xml
+- sudo kcov coverage slack-dark-mode.sh
 
 after_success:
-- bash <(curl -s https://codecov.io/bash)
-- cd coverage/coverage && ls -alh && python-codacy-coverage -r coverage.xml
+- bash <(curl -s https://codecov.io/bash) && find . -iname coverage.xml
+- cd coverage/coverage && python-codacy-coverage -r coverage.xml
