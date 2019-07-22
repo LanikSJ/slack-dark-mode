@@ -10,8 +10,6 @@ addons:
 
 language: bash
 
-sudo: required
-
 matrix:
   include:
     - os: osx
@@ -37,8 +35,9 @@ install:
 - cd ../.. && rm -rf kcov-master && mkdir -p coverage
 
 script:
-- sudo kcov coverage slack-dark-mode.sh
+- kcov coverage slack-dark-mode.sh
+- coverage xml
 
 after_success:
-- bash <(curl -s https://codecov.io/bash) && ls -alh
-- cd coverage && python-codacy-coverage -r coverage.xml
+- bash <(curl -s https://codecov.io/bash)
+- python-codacy-coverage -r coverage.xml
