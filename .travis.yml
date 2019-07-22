@@ -10,6 +10,8 @@ addons:
 
 language: bash
 
+sudo: required
+
 matrix:
   include:
     - os: osx
