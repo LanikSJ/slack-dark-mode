@@ -32,7 +32,7 @@ before_install:
 - brew cask install slack
 
 install:
-- sudo pip3 install -U pip && sudo pip3 install -U codacy-coverage coverage
+- sudo -H pip3 install -U pip && sudo -H pip3 install -U codacy-coverage coverage
 - tar xzf master.tar.gz && cd kcov-master && mkdir build && cd build
 - cmake -DCMAKE_INSTALL_PREFIX=${HOME}/kcov .. && make && sudo make install
 - cd ../.. && rm -rf kcov-master && mkdir -p coverage
