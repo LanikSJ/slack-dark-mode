@@ -29,12 +29,12 @@ env:
 before_install:
 - wget https://github.com/SimonKagstrom/kcov/archive/master.tar.gz
 - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-- brew update && brew cask install slack
+- brew cask install slack
 
 install:
 - pip3 install -U pip && pip3 install -U codacy-coverage coverage
 - tar xzf master.tar.gz && cd kcov-master && mkdir build && cd build
-- cmake -DCMAKE_INSTALL_PREFIX=${HOME}/kcov .. && make && sudo make install
+- cmake -DCMAKE_INSTALL_PREFIX=${HOME}/kcov .. && make && make install
 - cd ../.. && rm -rf kcov-master && mkdir -p coverage
 
 script:
