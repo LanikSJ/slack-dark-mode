@@ -4577,6 +4577,14 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: #222;
 }
 
+.p-unreads_view__header {
+  background-color: #222;
+}
+
+.p-unreads_view__header__channel_name {
+  color: #f8f8f8;
+}
+
 .page_apps_directory_home .nav_title {
   color: #e6e6e6 !important;
 }
