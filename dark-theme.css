@@ -4053,7 +4053,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .p-channel_sidebar {
-  background-color: #363636 !important;
+  background-color: #222 !important;
   color: #e6e6e6;
 }
 
@@ -4575,6 +4575,14 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .p-threads_view.new_banner_is_showing::before {
   background: #222;
+}
+
+.p-unreads_view__header {
+  background-color: #222;
+}
+
+.p-unreads_view__header__channel_name {
+  color: #f8f8f8;
 }
 
 .page_apps_directory_home .nav_title {
@@ -8158,8 +8166,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #team_menu {
-  background: #363636;
-  border-bottom: 2px solid #363636;
+  background: #222;
+  background-color: #222;
+  border-color: #222 !important;
+  border-bottom: 2px solid #222;
   color: #e6e6e6;
 }
 
