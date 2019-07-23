@@ -32,7 +32,6 @@ before_install:
 - brew update && brew cask install slack
 
 install:
-- sudo -H pip3 install -U pip && sudo -H pip3 install -U codacy-coverage
 - tar xzf master.tar.gz && cd kcov-master && mkdir build && cd build
 - cmake -DCMAKE_INSTALL_PREFIX=${HOME}/kcov .. && make && sudo make install
 - cd ../.. && rm -rf kcov-master && mkdir -p coverage
@@ -42,4 +41,3 @@ script:
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
-- cd coverage/slack-dark-mode.sh.* && python-codacy-coverage -r cobertura.xml
