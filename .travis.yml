@@ -42,4 +42,4 @@ script:
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
-- cd coverage/slack-dark-mode.sh.* && python-codacy-coverage -r cov.xml
+- cd coverage/slack-dark-mode.sh.* && python-codacy-coverage -r cobertura.xml
