@@ -7,8 +7,11 @@ addons:
       - libiberty-dev
       - python3
       - python3-pip
+      - zlib1g-dev
 
 language: bash
+
+sudo: required
 
 matrix:
   include:
@@ -19,6 +22,7 @@ matrix:
 
 env:
   global:
+    - CODACY_PROJECT_TOKEN=c5d5d1cd62e84f38b0e77baa82d8a655
     - CODECOV_TOKEN=fb8d8ddb-9ae5-4007-9736-2b174694998d
     - PATH=${PATH}:${HOME}/kcov/bin
 
@@ -29,11 +33,11 @@ before_install:
 
 install:
 - tar xzf master.tar.gz && cd kcov-master && mkdir build && cd build
-- cmake -DCMAKE_INSTALL_PREFIX=${HOME}/kcov .. && make && make install
+- cmake -DCMAKE_INSTALL_PREFIX=${HOME}/kcov .. && make && sudo make install
 - cd ../.. && rm -rf kcov-master && mkdir -p coverage
 
 script:
-- kcov coverage slack-dark-mode.sh
+- sudo kcov coverage slack-dark-mode.sh
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
