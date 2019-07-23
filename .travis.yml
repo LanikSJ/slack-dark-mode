@@ -41,5 +41,5 @@ script:
 - sudo kcov coverage slack-dark-mode.sh
 
 after_success:
-- bash <(curl -s https://codecov.io/bash) && ls -alh coverage/slack-dark-mode.sh*
-- cd coverage/slack-dark-mode.sh* && python-codacy-coverage -r coverage.xml
+- bash <(curl -s https://codecov.io/bash) && cd coverage/slack-dark-mode.sh*
+- python-codacy-coverage -r sonarqube.xml
