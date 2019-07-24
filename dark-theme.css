@@ -572,7 +572,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-fullscreen_modal__close--with_header .c-deprecated-icon {
-    color: #c7c7c7;
+  color: #c7c7c7;
 }
 
 .c-dialog .p-custom_status_input__duration_picker_select .c-input_select__selected_value--placeholder {

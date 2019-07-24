@@ -4,8 +4,7 @@
 # doing an automatic merge. For more information about associations see:
 # https://developer.github.com/v4/reference/enum/commentauthorassociation/
 minApprovals:
-  MEMBER: 1
-  COLLABORATOR: 2
+  OWNER: 1
 
 # The maximum number of reviews from each association that request changes to the pull request.
 # Setting this number higher than 0 will allow automatic merging while changes are still requested.
@@ -26,7 +25,7 @@ updateBranch: true
 # This is the equivalent of clicking the 'Delete branch' button shown on merged pull requests.
 # Note: this only works when the branch of the pull request resides in the same repository as
 #       the pull request itself.
-deleteBranchAfterMerge: false
+deleteBranchAfterMerge: true
 
 # In what way a pull request needs to be merged. This can be:
 # * merge: creates a merge commit, combining the commits from the pull request on top of
