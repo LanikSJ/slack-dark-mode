@@ -1,3 +1,8 @@
+.p-unreads_view__header{
+ background: #545454 !important;
+ color: #222 !important;
+}
+
 ::-moz-placeholder {
   color: #e6e6e6 !important;
   filter: none;
