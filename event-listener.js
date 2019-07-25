@@ -7,7 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
     encoding: 'utf-8'
   }, function(err, css) {
     if (!err) {
-      $("<style></style>").appendTo('head').html(css + tt__customCss);
+      const head = document.getElementsByTagName('head')[0];
+      const style = document.createElement('style');
+      style.innerHTML = css + tt__customCss;
+
+      head.appendChild(style);
     }
   });
 });
