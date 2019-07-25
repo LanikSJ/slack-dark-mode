@@ -4382,7 +4382,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .p-message_pane .c-message_list.c-virtual_list--scrollbar>.c-scrollbar__hider::before {
   background: #222;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #363636;
 }
 
 .p-message_pane .p-message_pane__top_banners:not(:empty)+div .c-message_list:not(.c-virtual_list--scrollbar):before, .p-message_pane .p-message_pane__top_banners:not(:empty)+div .c-message_list.c-virtual_list--scrollbar>.c-scrollbar__hider:before {
@@ -9371,6 +9371,36 @@ ts-thread .thread_messages {
 ts-thread {
   background: #222;
 }
+
+.p-workspace {
+  background: #222;
+}
+
+.p-classic_nav__model__title__info {
+  color: rgba(230, 230, 230, .7);
+}
+
+.p-classic_nav__right__search__placeholder {
+  color: #f8f8f8 !important;
+}
+
+.p-classic_nav__right__search {
+  border: 1px solid rgba(54, 54, 54, .7) !important;
+}
+
+.p-workspace__input .p-message_input_field {
+  background-color: #363636 !important;
+}
+
+footer.p-workspace__primary_view_footer {
+  background-color: #222;
+}
+
+.p-unreads_view__header {
+  background: #222 !important;
+}
+
+.menu ul li a:not(.inline_menu_link) {color: #fff !important;}
 
 ts-thread ts-message.new_reply {
   background: #222;
