@@ -14,9 +14,6 @@ echo && echo "This script requires sudo privileges." && echo "You'll need to pro
 
 type npx
 if [[ "$?" != "0" ]]; then echo "Please install Node for your OS.  macOS users will also need to install Homebrew from https://brew.sh"; fi
-if [[ -f "$MYHOME/$SLACK_DIRECT_LOCAL_SETTINGS" ]]; then sed -i tmp 's/"bootSonic":"once"/"bootSonic":"never"/g' "$MYHOME/$SLACK_DIRECT_LOCAL_SETTINGS"; fi
-if [[ -f "$MYHOME/$SLACK_STORE_LOCAL_SETTINGS" ]]; then sudo sed -i tmp 's/"bootSonic":"once"/"bootSonic":"never"/g' "$MYHOME/$SLACK_STORE_LOCAL_SETTINGS"; fi
-
 if [[ -d $OSX_SLACK_RESOURCES_DIR ]]; then SLACK_RESOURCES_DIR=$OSX_SLACK_RESOURCES_DIR; fi
 if [[ -d $LINUX_SLACK_RESOURCES_DIR ]]; then SLACK_RESOURCES_DIR=$LINUX_SLACK_RESOURCES_DIR; fi
 if [[ "$1" == "-u" ]]; then UPDATE_ONLY="true"; fi
@@ -34,6 +31,10 @@ if [[ "$UPDATE_ONLY" == "false" ]]; then echo && echo "Adding Dark Theme Code to
 sudo cp -af dark-theme.css "$THEME_FILEPATH"
 
 if [[ "$UPDATE_ONLY" == "false" ]]; then
+  # Modify Local Settings
+  if [[ -f "$MYHOME/$SLACK_DIRECT_LOCAL_SETTINGS" ]]; then sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' "$MYHOME/$SLACK_DIRECT_LOCAL_SETTINGS"; fi
+  if [[ -f "$MYHOME/$SLACK_STORE_LOCAL_SETTINGS" ]]; then sudo sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' "$MYHOME/$SLACK_STORE_LOCAL_SETTINGS"; fi
+
   # Unpack Asar Archive for Slack
   sudo npx asar extract $SLACK_RESOURCES_DIR/app.asar $SLACK_RESOURCES_DIR/app.asar.unpacked
 

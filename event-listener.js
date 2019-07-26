@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
   fs.readFile(filePath, {
     encoding: 'utf-8'
   }, function(err, css) {
-      if (!err) {
-          var styleEl = document.createElement("style");
-          styleEl.innerHTML = css;
-          document.querySelector("head").append(styleEl);
+    if (!err) {
+      var styleEl = document.createElement("style");
+      styleEl.innerHTML = css;
+      document.querySelector("head").append(styleEl);
     }
   });
 });

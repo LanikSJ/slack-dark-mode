@@ -4590,6 +4590,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #f8f8f8;
 }
 
+.p-workspace__primary_view_body {
+  background-color: #222;
+}
+
 .page_apps_directory_home .nav_title {
   color: #e6e6e6 !important;
 }
