@@ -31,6 +31,20 @@ $ git clone https://github.com/LanikSJ/slack-dark-mode
 cd slack-dark-mode && chmod +x slack-dark-mode.sh && ./slack-dark-mode.sh -u
 ````
 
+For windows users, use the `slack-dark-mode.ps1` script:
+
+```powershell
+PS ~/> git clone https://github.com/LanikSJ/slack-dark-mode
+PS ~/> cd slack-dark-mode; .\slack-dark-mode.ps1
+```
+
+or to update only:
+
+```powershell
+PS ~/> git clone https://github.com/LanikSJ/slack-dark-mode
+PS ~/> cd slack-dark-mode; .\slack-dark-mode.ps1 -UpdateOnly
+```
+
 Screenshot
 ============
 ![Screenshot](https://github.com/LanikSJ/slack-dark-mode/raw/master/images/screenshot.png "Screenshot")
