@@ -61,23 +61,15 @@ if (-not $UpdateOnly) {
         $src = $src.Substring(0, $src.IndexOf("// BEGIN CUSTOM THEME"))
     }
 
+    $patch = Get-Content -Path (Join-Path -Path $PSScriptRoot -ChildPath "event-listener.js") -Raw
+    $patch = $patch.Replace("SLACK_DARK_THEME_PATH", $themeFile.Replace("\", "/"))
+
     $src.Trim() + @"
 
 
-    // BEGIN CUSTOM THEME
-    document.addEventListener('DOMContentLoaded', function() {
-        const fs = require('fs');
-        const filePath = "$($themeFile.Replace("\", "/"))";
-        const tt__customCss = '.menu ul li a:not(.inline_menu_link) {color: #fff !important;}'
-        fs.readFile(filePath, {
-          encoding: 'utf-8'
-        }, function(err, css) {
-          if (!err) {
-            `$("<style></style>").appendTo('head').html(css + tt__customCss);
-          }
-        });
-      });
-    // END CUSTOM THEME
+// BEGIN CUSTOM THEME
+$patch
+// END CUSTOM THEME
 "@ | Set-Content -Path $ssbInterop
 
     Write-Output "Packing asar archive"
