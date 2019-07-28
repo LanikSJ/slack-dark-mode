@@ -28,7 +28,7 @@ $ git clone https://github.com/LanikSJ/slack-dark-mode && cd slack-dark-mode \
 && osascript -e 'tell application "Slack" to quit' \
 && killall Slack && sleep 60 && open -a "/Applications/Slack.app"
 ```
-or to update only:
+or to update CSS only:
 ```bash
 $ git clone https://github.com/LanikSJ/slack-dark-mode && cd slack-dark-mode \
 && chmod +x slack-dark-mode.sh && ./slack-dark-mode.sh -u \
@@ -40,7 +40,7 @@ For Windows Users:
 PS ~/> git clone https://github.com/LanikSJ/slack-dark-mode
 PS ~/> cd slack-dark-mode; .\slack-dark-mode.ps1
 ```
-or to update only:
+or to update CSS only:
 ```powershell
 PS ~/> git clone https://github.com/LanikSJ/slack-dark-mode
 PS ~/> cd slack-dark-mode; .\slack-dark-mode.ps1 -UpdateOnly
