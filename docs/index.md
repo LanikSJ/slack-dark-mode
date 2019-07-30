@@ -21,15 +21,30 @@ If you're looking for 3.4.x compatible settings please refer to [this](https://g
 Usage
 ============
 
+For macOS Users:
 ```bash
-$ git clone https://github.com/LanikSJ/slack-dark-mode
-cd slack-dark-mode && chmod +x slack-dark-mode.sh && ./slack-dark-mode.sh
+$ git clone https://github.com/LanikSJ/slack-dark-mode && cd slack-dark-mode \
+&& chmod +x slack-dark-mode.sh && ./slack-dark-mode.sh \
+&& osascript -e 'tell application "Slack" to quit' \
+&& killall Slack && sleep 60 && open -a "/Applications/Slack.app"
 ```
-or to update only:
+or to update CSS only:
 ```bash
-$ git clone https://github.com/LanikSJ/slack-dark-mode
-cd slack-dark-mode && chmod +x slack-dark-mode.sh && ./slack-dark-mode.sh -u
+$ git clone https://github.com/LanikSJ/slack-dark-mode && cd slack-dark-mode \
+&& chmod +x slack-dark-mode.sh && ./slack-dark-mode.sh -u \
+&& osascript -e 'tell application "Slack" to quit' \
+&& killall Slack && sleep 60 && open -a "/Applications/Slack.app"
 ````
+For Windows Users:
+```powershell
+PS ~/> git clone https://github.com/LanikSJ/slack-dark-mode
+PS ~/> cd slack-dark-mode; .\slack-dark-mode.ps1
+```
+or to update CSS only:
+```powershell
+PS ~/> git clone https://github.com/LanikSJ/slack-dark-mode
+PS ~/> cd slack-dark-mode; .\slack-dark-mode.ps1 -UpdateOnly
+```
 
 Screenshot
 ============
