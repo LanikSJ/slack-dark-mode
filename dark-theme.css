@@ -3,6 +3,7 @@
   --main-dark-highlight: #363636; /* Text input, dividers */
   --main-highlight: #545454; /* Message bar top (new messages), Currently selected chat, Nes messages line */
   --main-text: #e6e6e6; /* Main text in the chat windows */
+  --sidebar-bg-color: #222; /* Sidebar background color */
   --text-hover: #c7c7c7; /* Based on the usage should be link hover color */
 }
 
@@ -4060,6 +4061,14 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .p-channel_insights_activity_bar_container:hover {
   background-color: rgba(0, 0, 0, 0.05);
+}
+
+.p-workspace__sidebar {
+  background: var(--sidebar-bg-color) !important;
+}
+
+.p-channel_sidebar__static_list {
+  background: var(--sidebar-bg-color) !important;
 }
 
 .p-channel_sidebar .c-custom_scrollbar__thumb_vertical, .p-channel_sidebar .c-scrollbar__bar {
@@ -9388,6 +9397,10 @@ ts-thread {
 
 .p-workspace {
   background: var(--main-bg-color);
+}
+
+.p-classic_nav__team_header {
+  background: var(--sidebar-bg-color) !important;
 }
 
 .p-classic_nav__model__title__info {
