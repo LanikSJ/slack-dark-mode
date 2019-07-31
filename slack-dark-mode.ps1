@@ -50,10 +50,10 @@ if (-not $UpdateOnly) {
     $unpacked = Join-Path -Path $resources -ChildPath "app.asar.unpacked"
 
     Write-Output "Unpacking asar archive"
-    &npx asar extract $asar $unpacked
+    &npx asar extract "$asar" "$unpacked"
 
     Write-Output "Adding Hook"
-    $ssbInterop = Join-Path -Path $unpacked -ChildPath "dist" | Join-Path -ChildPath "ssb-interop.bundle.js"
+    $ssbInterop = Join-Path -Path "$unpacked" -ChildPath "dist" | Join-Path -ChildPath "ssb-interop.bundle.js"
     $src = Get-Content -Raw $ssbInterop
 
     if ($src.Contains("// BEGIN CUSTOM THEME")) {
@@ -73,7 +73,7 @@ $patch
 "@ | Set-Content -Path $ssbInterop
 
     Write-Output "Packing asar archive"
-    &npx asar pack $unpacked $asar
+    &npx asar pack "$unpacked" "$asar"
 
     Write-Output "Adding workaround to ensure theme boots"
     $localSettingsPath = Join-Path -Path $env:APPDATA -ChildPath "Slack" | Join-Path -ChildPath "local-settings.json"
