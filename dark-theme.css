@@ -4088,7 +4088,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .p-channel_sidebar__badge, .p-channel_sidebar__banner--mentions {
-  background: var(--highlight-and-warnings);
+  background: var(--highlight-and-warnings) !important;
 }
 
 .p-channel_sidebar__channel--im .c-presence--away {
