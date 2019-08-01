@@ -5,6 +5,9 @@
   --main-text: #e6e6e6; /* Main text in the chat windows */
   --sidebar-bg-color: #222; /* Sidebar background color */
   --text-hover: #c7c7c7; /* Based on the usage should be link hover color */
+  --highlight-and-warnings: #bf360c; /* General hightlighs and warnings (important and new stuff) */
+  --highlight-and-warnings-light: #ef440f; /* Light hightlighs and warnings */
+  --main-code: #FF9800; /* General code text */
 }
 
 
@@ -87,7 +90,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .admin_invite_row .delete_row:hover, .admin_invite_row .hide_custom_message:hover, .admin_invites_custom_message_container .delete_row:hover, .admin_invites_custom_message_container .hide_custom_message:hover {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 .admin_invite_row.delete_highlight, .admin_invites_custom_message_container.delete_highlight {
@@ -170,7 +173,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .admin_list_item.invite_item.bouncing .email {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 .admin_list_item.invite_item.bouncing {
@@ -453,7 +456,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .btn_warning, .btn_danger {
-  background-color: #bf360c !important;
+  background-color: var(--highlight-and-warnings) !important;
 }
 
 .btn-danger .caret, .btn-info .caret, .btn-inverse .caret, .btn-primary .caret, .btn-success .caret, .btn-warning .caret {
@@ -483,11 +486,11 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .btn.btn_attachment.btn_danger {
-  border-color: #bf360c;
+  border-color: var(--highlight-and-warnings);
 }
 
 .btn.btn_attachment.btn_danger:hover, .btn.btn_attachment.btn_danger:focus {
-  border-color: #ef440f;
+  border-color: var(--highlight-and-warnings-light);
 }
 
 .btn.btn_attachment.btn_primary {
@@ -503,14 +506,14 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .btn.btn_outline.btn_danger, .btn.btn_outline.btn_warning {
-  background-color: #bf360c !important;
+  background-color: var(--highlight-and-warnings) !important;
   color: var(--main-text) !important;
 }
 
 .btn.btn_outline.btn_danger:focus, .btn.btn_outline.btn_danger:hover, .btn.btn_outline.btn_warning:focus, .btn.btn_outline.btn_warning:hover {
   background-color: var(--main-bg-color) !important;
-  border-color: #bf360c !important;
-  color: #bf360c !important;
+  border-color: var(--highlight-and-warnings) !important;
+  color: var(--highlight-and-warnings) !important;
 }
 
 .btn.btn_outline.disabled {
@@ -939,7 +942,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-message__content>span>code {
-  color: #FF9800;
+  color: var(--main-code);
 }
 
 .c-message__edited_label {
@@ -958,7 +961,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-message__editor__warning {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 .c-message__file_meta {
@@ -1254,7 +1257,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-message--pinned .c-message__label__icon {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 .c-message--pinned, .c-message--sli_highlight:not(.c-message--sli_highlight_negative), .c-message--starred {
@@ -1312,7 +1315,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-mrkdwn__pre {
-  color: #FF9800;
+  color: var(--main-code);
 }
 
 .c-mrkdwn__user_group--link {
@@ -1328,7 +1331,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-oauth_scope_info__dangerous_scopes {
-  border-left-color: #bf360c;
+  border-left-color: var(--highlight-and-warnings);
   border-right-color: var(--main-highlight);
   border-top-color: var(--main-highlight);
 }
@@ -1338,7 +1341,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-oauth_scope_info__spacer_icon {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 .c-pillow_file__description, .c-pillow_file__title, .c-pillow_file__snippet__truncated {
@@ -1623,7 +1626,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .candy_red_bg {
-  background-color: #bf360c !important;
+  background-color: var(--highlight-and-warnings) !important;
 }
 
 .card h3 a {
@@ -1779,7 +1782,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .channel_title .channel_name_container .muted_icon:hover {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 .channel_title .channel_name_container .ts_icon_shared_channel.away, .channel_title .channel_name_container .mpdm_member.away {
@@ -1791,7 +1794,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .channels_list_holder .unread_highlights {
-  background: #bf360c;
+  background: var(--highlight-and-warnings);
   color: var(--main-text);
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
@@ -1879,11 +1882,11 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .cm-invalidchar, .cm-s-default .cm-error {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 .cm-negative {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 .cm-positive {
@@ -2181,7 +2184,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .ent_alert_page.ent_alert_error {
-  background: #bf360c;
+  background: var(--highlight-and-warnings);
 }
 
 .ent_alert_page.ent_alert_success {
@@ -2253,8 +2256,8 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .ent_callout__meter_bar_fill--limit_reached {
-  background: #bf360c;
-  border-color: #bf360c;
+  background: var(--highlight-and-warnings);
+  border-color: var(--highlight-and-warnings);
 }
 
 .ent_callout__meter_bar_gleam {
@@ -2557,7 +2560,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .enterprise .btn.candy_red {
-  color: #bf360c !important;
+  color: var(--highlight-and-warnings) !important;
 }
 
 .enterprise {
@@ -3088,7 +3091,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .help_pages.help_pages .c-form__container .c-form__feedback {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 .help_pages.help_pages .c-form__input, .help_pages.help_pages .c-input {
@@ -3104,7 +3107,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .help_pages.help_pages .c-form__notice.is-error {
-  border-left-color: #bf360c;
+  border-left-color: var(--highlight-and-warnings);
 }
 
 .help_pages.help_pages .c-nav--footer {
@@ -3524,7 +3527,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .menu ul li a.delete_link {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 .menu ul li i {
@@ -3551,7 +3554,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .menu ul li.highlighted a.delete_link {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 .menu_launcher_large {
@@ -3625,7 +3628,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .menu:not(.keyboard_active) ul li:hover:not(.disabled) a.delete_link {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 .menu.avatar_menu ul li a {
@@ -3768,7 +3771,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .moscow_red, .yolk_orange, .mustard_yellow, .candy_red_on_hover:hover, .moscow_red_on_hover:hover {
-  color: #bf360c !important;
+  color: var(--highlight-and-warnings) !important;
 }
 
 .msg_inline_attachment_collapser, .msg_inline_attachment_expander, .msg_inline_img_collapser, .msg_inline_img_expander, .msg_inline_media_toggler, .msg_inline_room_preview_collapser, .msg_inline_room_preview_expander {
@@ -4085,7 +4088,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .p-channel_sidebar__badge, .p-channel_sidebar__banner--mentions {
-  background: #bf360c;
+  background: var(--highlight-and-warnings) !important;
 }
 
 .p-channel_sidebar__channel--im .c-presence--away {
@@ -4166,7 +4169,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .p-detail_dangerous_scope {
-  border-left-color: #bf360c;
+  border-left-color: var(--highlight-and-warnings);
   border-right-color: var(--main-highlight);
 }
 
@@ -4865,7 +4868,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .pinned_item.delete_mode {
-  border-color: #bf360c !important;
+  border-color: var(--highlight-and-warnings) !important;
 }
 
 .plastic_row .chevron {
@@ -5318,7 +5321,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .slackbot_response_fieldset .delete_response:hover {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 .sli_expert_search {
@@ -5449,7 +5452,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .sssh-error {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 .sssh-header {
@@ -5694,7 +5697,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .tab_menu .tab.active, .tab_menu .tab:active, .tab_menu .tab:focus {
-  box-shadow: inset 0 -4px 0 0 #bf360c;
+  box-shadow: inset 0 -4px 0 0 var(--highlight-and-warnings);
   color: var(--main-text);
 }
 
@@ -5997,7 +6000,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .unshare_link i.ts_icon_minus_circle_small:hover::before {
-  color: #bf360c !important;
+  color: var(--highlight-and-warnings) !important;
 }
 
 .user_group_invite_member_small .add_icon {
@@ -6148,7 +6151,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #api_nav .footer_nav .footer_signature {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 #api_nav .footer_nav a {
@@ -6181,7 +6184,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #archives_return.warning {
-  background: #bf360c;
+  background: var(--highlight-and-warnings);
 }
 
 #at_channel_warning_dialog {
@@ -6305,7 +6308,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #autocomplete_menu.search_menu li.highlighted .delete_btn:focus, #autocomplete_menu.search_menu li.highlighted .delete_btn:hover, #autocomplete_menu.search_menu.unified li.highlighted .delete_btn:focus, #autocomplete_menu.search_menu.unified li.highlighted .delete_btn:hover {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 #autocomplete_menu.search_menu li.highlighted .modifier_icon, #autocomplete_menu.search_menu.unified li.highlighted .modifier_icon {
@@ -6331,7 +6334,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #autocomplete_menu.search_menu:not(.keyboard_active) li:focus .delete_btn:focus, #autocomplete_menu.search_menu:not(.keyboard_active) li:focus .delete_btn:hover, #autocomplete_menu.search_menu:not(.keyboard_active) li:hover .delete_btn:focus, #autocomplete_menu.search_menu:not(.keyboard_active) li:hover .delete_btn:hover, #autocomplete_menu.search_menu .results.unified:not(.keyboard_active) li:focus .delete_btn:focus, #autocomplete_menu.search_menu .results.unified:not(.keyboard_active) li:focus .delete_btn:hover, #autocomplete_menu.search_menu .results.unified:not(.keyboard_active) li:hover .delete_btn:focus, #autocomplete_menu.search_menu .results.unified:not(.keyboard_active) li:hover .delete_btn:hover, #autocomplete_menu.search_menu.unified:not(.keyboard_active) li:focus .delete_btn:focus, #autocomplete_menu.search_menu.unified:not(.keyboard_active) li:focus .delete_btn:hover, #autocomplete_menu.search_menu.unified:not(.keyboard_active) li:hover .delete_btn:focus, #autocomplete_menu.search_menu.unified:not(.keyboard_active) li:hover .delete_btn:hover, #autocomplete_menu.search_menu.unified .results.unified:not(.keyboard_active) li:focus .delete_btn:focus, #autocomplete_menu.search_menu.unified .results.unified:not(.keyboard_active) li:focus .delete_btn:hover, #autocomplete_menu.search_menu.unified .results.unified:not(.keyboard_active) li:hover .delete_btn:focus, #autocomplete_menu.search_menu.unified .results.unified:not(.keyboard_active) li:hover .delete_btn:hover {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 #autocomplete_menu.search_menu:not(.keyboard_active) li:focus .modifier_icon, #autocomplete_menu.search_menu:not(.keyboard_active) li:hover .modifier_icon, #autocomplete_menu.search_menu .results.unified:not(.keyboard_active) li:focus .modifier_icon, #autocomplete_menu.search_menu .results.unified:not(.keyboard_active) li:hover .modifier_icon, #autocomplete_menu.search_menu.unified:not(.keyboard_active) li:focus .modifier_icon, #autocomplete_menu.search_menu.unified:not(.keyboard_active) li:hover .modifier_icon, #autocomplete_menu.search_menu.unified .results.unified:not(.keyboard_active) li:focus .modifier_icon, #autocomplete_menu.search_menu.unified .results.unified:not(.keyboard_active) li:hover .modifier_icon {
@@ -6469,7 +6472,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #channel_specific_settings .revert_to_default:hover {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 #channel_specific_settings tr {
@@ -6634,7 +6637,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #connection_div {
-  background: #bf360c;
+  background: var(--highlight-and-warnings);
 }
 
 #connection_status #connection_label {
@@ -6894,8 +6897,8 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #edit_team_profile_edit .row.option_row.show_remove_action i:hover {
-  background-color: #bf360c;
-  border-color: #bf360c !important;
+  background-color: var(--highlight-and-warnings);
+  border-color: var(--highlight-and-warnings) !important;
   color: var(--main-text);
 }
 
@@ -7109,7 +7112,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #flex_menu_toggle.unread #help_icon_circle_count {
-  background-color: #bf360c;
+  background-color: var(--highlight-and-warnings);
   color: #fff;
 }
 
@@ -7240,7 +7243,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #fs_modal.prefs_modal .badge_example {
-  background: #bf360c;
+  background: var(--highlight-and-warnings);
 }
 
 #fs_modal.prefs_modal .channel_overrides_row .channel_overrides_summary {
@@ -7290,7 +7293,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #fs_modal.prefs_modal #prefs_sidebar #prefs_sidebar_theme::after {
-  background: #bf360c;
+  background: var(--highlight-and-warnings);
   border-radius: 3px;
   content: "Light sidebar themes (e.g. Hoth) will break this Stylish theme.";
   display: block;
@@ -7331,7 +7334,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #im_browser .im_browser_row .im_unread_cnt {
-  background: #bf360c;
+  background: var(--highlight-and-warnings);
   color: var(--main-text);
 }
 
@@ -7363,7 +7366,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #im_browser_tokens .member_token.ra {
-  background: #bf360c;
+  background: var(--highlight-and-warnings);
 }
 
 #im_browser_tokens {
@@ -7911,7 +7914,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #recent_mentions_toggle:hover {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 #reply_container .inline_message_input_container .message_input div, #reply_container .inline_message_input_container textarea, .reply_input_container .inline_message_input_container .message_input div, .reply_input_container .inline_message_input_container textarea {
@@ -8121,7 +8124,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #space_alert.error {
-  background-color: #bf360c;
+  background-color: var(--highlight-and-warnings);
 }
 
 #space_find_bar {
@@ -8141,7 +8144,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 #space_find_bar #space_find_info.no_matches {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 #space_find_bar #space_find_next .ts_icon {
@@ -8479,7 +8482,7 @@ body.api .reverse_header {
 }
 
 body.api .scopes_to_methods .selected code {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 body.api .scopes_to_methods .selected li {
@@ -8523,8 +8526,8 @@ body.api span.btn {
 }
 
 body.api span.deprecation, body.api span.warning {
-  background-color: #bf360c;
-  border-color: #bf360c;
+  background-color: var(--highlight-and-warnings);
+  border-color: var(--highlight-and-warnings);
 }
 
 body.loading #team_menu, body.loading #quick_switcher_btn, body.loading #team_menu_overlay, body.loading #col_channels_overlay, body.loading #col_channels {
@@ -8552,7 +8555,7 @@ div.CodeMirror span.CodeMirror-matchingbracket {
 }
 
 div.CodeMirror span.CodeMirror-nonmatchingbracket {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 footer ul a, #autocomplete_menu.search_menu footer.unified ul a {
@@ -8773,7 +8776,7 @@ nav .comments_close:hover::before {
 }
 
 nav .comments_open.unread span.notif {
-  background-color: #bf360c;
+  background-color: var(--highlight-and-warnings);
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15);
 }
 
@@ -8829,7 +8832,7 @@ nav #space_status {
 }
 
 nav #space_status.slightly_concerned {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 nav.top.apps_nav .nav_title a {
@@ -8968,7 +8971,7 @@ ts-jumper ol li .channel_not_member, ts-jumper ol li .team_username, ts-jumper o
 }
 
 ts-jumper ol li .unread_count {
-  background: #bf360c;
+  background: var(--highlight-and-warnings);
   color: var(--main-text);
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -9369,7 +9372,7 @@ ts-thread .collapse_inline_thread_container:hover, ts-thread .view_all_replies_c
 }
 
 ts-thread .new_reply_indicator .blue_dot {
-  color: #bf360c;
+  color: var(--highlight-and-warnings);
 }
 
 ts-thread .reply_input_container .collapsed_input_placeholder, ts-thread .reply_input_container .join_channel_from_thread_container, ts-thread .reply_input_container .reply_limited_in_general {
