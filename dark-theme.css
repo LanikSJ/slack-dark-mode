@@ -1177,6 +1177,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: var(--main-bg-color);
 }
 
+.c-message_kit__message {
+  background-color: var(--main-bg-color);
+}
+
 .c-message_kit__background, .c-message_kit__message, .c-message_kit__thread_message {
   border-right-color: rgb(86, 87, 88);
   border-bottom-color: rgb(86, 87, 88);
