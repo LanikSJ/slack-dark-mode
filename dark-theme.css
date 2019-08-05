@@ -1078,7 +1078,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-message_attachment__author_name {
-  color: #f8f8f8;
+  color: #f8f8f8 !important;
 }
 
 .c-message_attachment__border {
