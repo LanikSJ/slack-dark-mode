@@ -4,7 +4,6 @@
   --main-highlight: #545454; /* Message bar top (new messages), Currently selected chat, Nes messages line */
   --main-text: #e6e6e6; /* Main text in the chat windows */
   --secondary-text: #e6e6e6B3; /* Secondary text (70% of main text) */
-  --sidebar-bg-color: #222; /* Sidebar background color */
   --text-hover: #c7c7c7; /* Based on the usage should be link hover color */
   --highlight-and-warnings: #bf360c; /* General hightlighs and warnings (important and new stuff) */
   --highlight-and-warnings-light: #ef440f; /* Light hightlighs and warnings */
@@ -1182,6 +1181,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   border-bottom-color: rgb(86, 87, 88);
   border-left-color: rgb(86, 87, 88);
   border-top-color: rgb(86, 87, 88);
+}
+
+.c-message_kit__message {
+  background-color: var(--main-bg-color);
 }
 
 .c-message_kit__file__meta {
@@ -4072,11 +4075,11 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .p-workspace__sidebar {
-  background: var(--sidebar-bg-color) !important;
+  background: var(--main-bg-color) !important;
 }
 
 .p-channel_sidebar__static_list {
-  background: var(--sidebar-bg-color) !important;
+  background: var(--main-bg-color) !important;
 }
 
 .p-channel_sidebar .c-custom_scrollbar__thumb_vertical, .p-channel_sidebar .c-scrollbar__bar {
@@ -4617,7 +4620,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .p-workspace__primary_view_body {
-  background-color: #222;
+  background-color: var(--main-bg-color) !important;
 }
 
 .page_apps_directory_home .nav_title {
@@ -9412,7 +9415,7 @@ ts-thread {
 }
 
 .p-classic_nav__team_header {
-  background: var(--sidebar-bg-color) !important;
+  background: var(--main-bg-color) !important;
 }
 
 .p-classic_nav__model__title__info {
