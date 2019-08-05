@@ -3,7 +3,7 @@
   --main-dark-highlight: #363636; /* Text input, dividers */
   --main-highlight: #545454; /* Message bar top (new messages), Currently selected chat, Nes messages line */
   --main-text: #e6e6e6; /* Main text in the chat windows */
-  --secondary-text: #B3e6e6e6; /* Secondary text (70% of main text) */
+  --secondary-text: #e6e6e6B3; /* Secondary text (70% of main text) */
   --sidebar-bg-color: #222; /* Sidebar background color */
   --text-hover: #c7c7c7; /* Based on the usage should be link hover color */
   --highlight-and-warnings: #bf360c; /* General hightlighs and warnings (important and new stuff) */
