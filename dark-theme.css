@@ -4621,7 +4621,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .p-workspace__primary_view_body {
-  background-color: var(--main-text) !important;
+  background-color: var(--main-bg-color) !important;
 }
 
 .page_apps_directory_home .nav_title {
