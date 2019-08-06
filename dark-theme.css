@@ -4557,6 +4557,32 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: var(--main-dark-highlight);
 }
 
+.p-user_group_base_row__list_item {
+  background: var(--thread-bg-color);
+  border-bottom: 1px solid var(--main-dark-highlight) !important;
+}
+
+.p-user_group_base_row__list_item:hover {
+  background: var(--main-dark-highlight);
+}
+
+.p-member_directory__member_row {
+  background: var(--thread-bg-color);
+  border-bottom: 1px solid var(--main-dark-highlight) !important;
+}
+
+.p-member_directory__member_row:hover {
+  background: var(--main-dark-highlight);
+}
+
+.c-member__primary_content {
+  color: var(--main-text);
+}
+
+.c-base_entity__subtext {
+  color: var(--secondary-text);
+}
+
 .p-threads_view {
   background: var(--main-bg-color);
 }
