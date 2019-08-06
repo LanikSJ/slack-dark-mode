@@ -4557,6 +4557,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: var(--main-dark-highlight);
 }
 
+.p-threads_view {
+  background: var(--main-bg-color);
+}
+
 .p-threads_view__divider_label {
   background: var(--main-bg-color);
 }
