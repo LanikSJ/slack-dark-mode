@@ -11,6 +11,8 @@
   --secondary-text: #e6e6e6B3;
   /* Sidebar background color */
   --sidebar-bg-color: #222;
+  /* Thread background color */
+  --thread-bg-color: #222;
   /* Based on the usage should be link hover color */
   --text-hover: #c7c7c7;
   /* General hightlighs and warnings (important and new stuff) */
@@ -1177,14 +1179,6 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #949494;
 }
 
-.c-message_kit__gutter__left, .c-message_kit__gutter__right, .c-message_kit__background {
-  background: var(--main-bg-color);
-}
-
-.c-message_kit__message {
-  background-color: var(--main-bg-color);
-}
-
 .c-message_kit__background, .c-message_kit__message, .c-message_kit__thread_message {
   border-right-color: rgb(86, 87, 88);
   border-bottom-color: rgb(86, 87, 88);
@@ -1563,16 +1557,8 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: var(--main-text);
 }
 
-.c-virtual_list__item {
-  background: var(--main-bg-color);
-}
-
 .c-virtual_list__item--focus:focus .c-message_list__focus_indicator {
   box-shadow: inset 0 0 0 3px rgba(130, 130, 130, 0.8);
-}
-
-.c-virtual_list.c-virtual_list--scrollbar.c-scrollbar.c-scrollbar--hidden>div.c-scrollbar__hider {
-  background-color: var(--main-bg-color);
 }
 
 .c3 line, .c3 path {
@@ -4094,6 +4080,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .p-workspace__sidebar {
   background: var(--sidebar-bg-color) !important;
+}
+
+.p-workspace__secondary_view_contents {
+  background: var(--thread-bg-color) !important;
 }
 
 .p-channel_sidebar__static_list {
