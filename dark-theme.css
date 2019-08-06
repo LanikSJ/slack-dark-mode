@@ -771,6 +771,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #3aa3e3;
 }
 
+.c-link--button:hover {
+  color: #3aa3e3;
+}
+
 .c-link .c-message__reply_count>a, a:link, a:visited {
   color: #3aa3e3;
 }
@@ -876,6 +880,11 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   border-color: #424242;
 }
 
+.c-button {
+  color: var(--main-text);
+  background-color: var(--main-dark-highlight);
+}
+
 .c-message .c-button--outline {
   background-color: var(--main-dark-highlight);
   color: #949494;
@@ -883,6 +892,14 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .c-message .c-button--outline:hover {
   color: var(--text-hover);
+}
+
+.c-button .c-button--outline {
+  color: var(--main-text) !important;
+}
+
+.c-button .c-icon {
+  color: var(--main-text) !important;
 }
 
 .c-message .c-button--primary {
