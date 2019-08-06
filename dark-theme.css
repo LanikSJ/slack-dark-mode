@@ -4407,20 +4407,16 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #f8f8f8;
 }
 
-.p-help_search__list__item:focus {
+.p-help_search__list__item:focus, .p-member_profile_card, .p-member_profile_card__name {
   background-color: var(--main-bg-color);
 }
 
-.p-member_profile_card {
-  background-color: var(--man-bg-color);
-}
-
-.p-member_profile_card__name {
-  background-color: var(--main-bg-color);
-}
-
-.p-message_pane .c-message_list.c-virtual_list--scrollbar>.c-scrollbar__hider {
+.p-member_profile_field__label, .p-message_pane .c-message_list.c-virtual_list--scrollbar>.c-scrollbar__hider {
   background: var(--main-bg-color);
+}
+
+.p-member_profile_field__label{
+  color: #f8f8f8;
 }
 
 .p-message_pane .c-message_list.c-virtual_list--scrollbar>.c-scrollbar__hider::before {
