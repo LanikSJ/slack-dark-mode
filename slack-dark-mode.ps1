@@ -45,6 +45,10 @@ if (-not (Test-Path -Path $themeFile)) {
 Write-Output "Fetching Theme from $CSSUrl"
 Invoke-WebRequest -UseBasicParsing -Method GET -Uri $CSSUrl | Select-Object -ExpandProperty Content | Set-Content -Path $themeFile
 
+if (Test-Path ./custom-dark-theme.css) {
+    cat ./custom-dark-theme.css | Add-Content $themeFile
+}
+
 if (-not $UpdateOnly) {
     $asar = Join-Path -Path $resources -ChildPath "app.asar"
     $unpacked = Join-Path -Path $resources -ChildPath "app.asar.unpacked"
