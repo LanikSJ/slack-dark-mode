@@ -25,6 +25,7 @@ if [[ "$1" == "-u" ]]; then UPDATE_ONLY="true"; fi
 SLACK_EVENT_LISTENER="event-listener.js"
 SLACK_FILEPATH="$SLACK_RESOURCES_DIR/app.asar.unpacked/dist/ssb-interop.bundle.js"
 THEME_FILEPATH="$SLACK_RESOURCES_DIR/dark-theme.css"
+CUSTOM_THEME_FILEPATH="$SLACK_RESOURCES_DIR/custom-dark-theme.css"
 
 #curl -sSL -o "$THEME_FILEPATH" "https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css"
 
@@ -38,6 +39,8 @@ if [[ -z $HOME ]]; then HOME=$(ls -d ~); fi
 
 # Copy CSS to Slack Folder
 sudo cp -af dark-theme.css "$THEME_FILEPATH"
+sudo cp -af custom-dark-theme.css "$CUSTOM_THEME_FILEPATH"
+sudo sed -i -E "s|^@import url.*|@import url(\"$CUSTOM_THEME_FILEPATH\")|g" $THEME_FILEPATH # update the dark theme css with customcss path
 
 if [[ "$UPDATE_ONLY" == "false" ]]; then
     # Modify Local Settings

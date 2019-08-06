@@ -9479,3 +9479,5 @@ ts-thread ts-message.new_reply {
 ts-thread ts-message.new_reply:hover {
   background: var(--main-dark-highlight);
 }
+
+@import url(/custom-dark-theme.css)

@@ -1,0 +1,10 @@
+/*
+This file is meant to be temporary and shown as an example.
+This file should NOT be committed at the end of this PR and will be added to .gitignore later.
+This will allow users to make their own custom file that will not get overwritten by github updates.
+*/
+
+:root {
+    --sidebar-bg-color: rgb(45, 45, 45); /* Sidebar background color */
+    --thread-bg-color:  rgb(45, 45, 45);
+}
