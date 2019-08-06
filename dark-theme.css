@@ -1,20 +1,24 @@
 :root {
-  --main-bg-color: #222; /* General background */
-  --main-dark-highlight: #363636; /* Text input, dividers */
-  --main-highlight: #545454; /* Message bar top (new messages), Currently selected chat, Nes messages line */
-  --main-text: #e6e6e6; /* Main text in the chat windows */
-  --secondary-text: #e6e6e6B3; /* Secondary text (70% of main text) */
-  --sidebar-bg-color: #222; /* Sidebar background color */
-  --text-hover: #c7c7c7; /* Based on the usage should be link hover color */
-  --highlight-and-warnings: #bf360c; /* General hightlighs and warnings (important and new stuff) */
-  --highlight-and-warnings-light: #ef440f; /* Light hightlighs and warnings */
-  --main-code: #FF9800; /* General code text */
-}
-
-
-.p-unreads_view__header{
- background: var(--main-highlight) !important;
- color: var(--main-bg-color) !important;
+  /* General background */
+  --main-bg-color: #222;
+  /* Text input, dividers */
+  --main-dark-highlight: #363636;
+  /* Message bar top (new messages), Currently selected chat, Nes messages line */
+  --main-highlight: #545454;
+  /* Main text in the chat windows */
+  --main-text: #e6e6e6;
+  /* Secondary text (70% of main text) */
+  --secondary-text: #e6e6e6B3;
+  /* Sidebar background color */
+  --sidebar-bg-color: #222;
+  /* Based on the usage should be link hover color */
+  --text-hover: #c7c7c7;
+  /* General hightlighs and warnings (important and new stuff) */
+  --highlight-and-warnings: #bf360c;
+  /* Light hightlighs and warnings */
+  --highlight-and-warnings-light: #ef440f;
+  /* General code text */
+  --main-code: #FF9800;
 }
 
 ::-moz-placeholder {
@@ -1177,6 +1181,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: var(--main-bg-color);
 }
 
+.c-message_kit__message {
+  background-color: var(--main-bg-color);
+}
+
 .c-message_kit__background, .c-message_kit__message, .c-message_kit__thread_message {
   border-right-color: rgb(86, 87, 88);
   border-bottom-color: rgb(86, 87, 88);
@@ -1327,6 +1335,15 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: #060606;
 }
 
+.c-multi_select_input {
+  border: 1px solid #949494;
+  background-color: #616061;
+}
+
+.c-multi_select_input__input--initial {
+  background-color: #949494;
+}
+
 .c-oauth_scope_info__dangerous_scope:not(:first-child), .c-oauth_scope_info__safe_scope {
   border-top-color: var(--main-highlight);
 }
@@ -1467,6 +1484,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .c-timestamp__label {
   color: #949494;
+}
+
+.c-token, .c-token--large {
+  background: #616061;
 }
 
 .c-tooltip__tip {
@@ -4403,12 +4424,16 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #f8f8f8;
 }
 
-.p-help_search__list__item:focus {
+.p-help_search__list__item:focus, .p-member_profile_card, .p-member_profile_card__name {
   background-color: var(--main-bg-color);
 }
 
-.p-message_pane .c-message_list.c-virtual_list--scrollbar>.c-scrollbar__hider {
+.p-member_profile_field__label, .p-message_pane .c-message_list.c-virtual_list--scrollbar>.c-scrollbar__hider {
   background: var(--main-bg-color);
+}
+
+.p-member_profile_field__label {
+  color: #f8f8f8;
 }
 
 .p-message_pane .c-message_list.c-virtual_list--scrollbar>.c-scrollbar__hider::before {
@@ -4609,11 +4634,17 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .p-unreads_view__header {
-  background-color: var(--main-bg-color);
+  background-color: var(--main-bg-color) !important;
+  background: var(--main-highlight) !important;
+  color: var(--main-bg-color) !important;
 }
 
 .p-unreads_view__header__channel_name {
   color: #f8f8f8;
+}
+
+.p-workspace__primary_view_body {
+  background-color: var(--main-bg-color) !important;
 }
 
 .page_apps_directory_home .nav_title {
@@ -9447,7 +9478,9 @@ footer.p-workspace__primary_view_footer {
   background: var(--main-bg-color) !important;
 }
 
-.menu ul li a:not(.inline_menu_link) {color: #fff !important;}
+.menu ul li a:not(.inline_menu_link) {
+  color: #fff !important;
+}
 
 ts-thread ts-message.new_reply {
   background: var(--main-bg-color);
