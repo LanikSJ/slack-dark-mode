@@ -872,6 +872,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #fff;
 }
 
+.c-menu_item__shortcut {
+  color: var(--main-text);
+}
+
 .c-message .c-button {
   border-color: #424242;
 }
@@ -1214,11 +1218,11 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 .c-message_list__unread_divider__label {
   background: var(--main-bg-color);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
-  color: var(--main-highlight);
+  color: #e01e5a;
 }
 
 .c-message_list__unread_divider__separator {
-  border-color: var(--main-highlight);
+  border-color: #e01e5a;
 }
 
 .c-message--custom_response .c-message__label__icon, .c-message--sli_highlight .c-message__label__icon {
@@ -9430,6 +9434,14 @@ ts-thread {
 
 .p-classic_nav__team_header {
   background: var(--sidebar-bg-color) !important;
+}
+
+.p-classic_nav__team_menu__blurb__name {
+  color: var(--main-text);
+}
+
+.p-classic_nav__team_menu__blurb__sub {
+  color: var(--main-text);
 }
 
 .p-classic_nav__model__title__info {
