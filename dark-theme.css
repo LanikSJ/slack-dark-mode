@@ -4411,6 +4411,14 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background-color: var(--main-bg-color);
 }
 
+.p-member_profile_card {
+  background-color: var(--man-bg-color);
+}
+
+.p-member_profile_card__name {
+  background-color: var(--main-bg-color);
+}
+
 .p-message_pane .c-message_list.c-virtual_list--scrollbar>.c-scrollbar__hider {
   background: var(--main-bg-color);
 }
