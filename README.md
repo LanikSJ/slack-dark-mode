@@ -46,7 +46,7 @@ You can tweak your own css colors by creating a new file called `custom-dark-the
 ![Screenshot](https://github.com/LanikSJ/slack-dark-mode/raw/master/images/screenshot.png "Screenshot")
 
 ## Attributions
-Some scripts were "borrowed" from [mmrko](https://gist.github.com/mmrko) [Gist](https://gist.github.com/mmrko/9b0e65f6bcc1fca57089c32c2228aa39)
+Some scripts were "borrowed" from [mmrko](https://gist.github.com/mmrko) [Gist](https://gist.github.com/mmrko/9b0e65f6bcc1fca57089c32c2228aa39)  
 ©️ All rights reserved by the original authors.
 
 ## Bugs
