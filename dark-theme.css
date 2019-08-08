@@ -4570,6 +4570,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: var(--main-text);
 }
 
+.p-threads_flexpane__separator_count {
+  color: var(--main-text);
+}
+
 .p-threads_footer__input .p-message_input_field, .p-threads_footer__input--legacy .p-message_input_field {
   background: var(--main-dark-highlight);
 }
