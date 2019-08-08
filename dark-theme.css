@@ -1459,7 +1459,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-select_button__content {
-  color: var(--main-dark-highlight);
+  color: var(--main-text);
 }
 
 .c-tabs__tab {
@@ -4001,6 +4001,22 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: var(--main-dark-highlight);
   border-color: var(--main-highlight);
   color: var(--main-text);
+}
+
+.p-dm_browser_modal__list_heading{
+  color: var(--main-text);
+}
+
+.p-dm_browser_modal__list_row_meta {
+  color: var(--main-text);
+}
+
+.p-channel_browser_section_header {
+  color: var(--main-text);
+}
+
+.p-channel_browser_list_item__create_info {
+  color: var(--secondary-text);
 }
 
 .p-channel_insights .c-member__title {
