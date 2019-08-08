@@ -9487,6 +9487,10 @@ ts-thread {
   background: var(--sidebar-bg-color) !important;
 }
 
+.p-classic_nav__team_messages_progress_bar_text {
+  fill: var(--main-text) !important;
+}
+
 .p-classic_nav__team_menu__blurb__name {
   color: var(--main-text);
 }
