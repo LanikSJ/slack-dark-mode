@@ -725,7 +725,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-hint {
-  color: #f8f8f8;
+  color: var(--secondary-text);
 }
 
 .c-icon {
@@ -6856,6 +6856,50 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 #details_tab .created_by {
   color: var(--main-text);
+}
+
+.p-channel_name_input__label_title strong {
+  color: var(--main-text);
+}
+
+.p-channel_name_input__label_title  {
+  color: var(--secondary-text);
+}
+
+.p-channel_create_modal__label_title strong {
+  color: var(--main-text);
+}
+
+.p-channel_create_modal__label_title {
+  color: var(--secondary-text);
+}
+
+.p-channel_create_modal__input_subtext {
+  color: var(--secondary-text);
+}
+
+.p-invite_users_input__label_title strong {
+  color: var(--main-text);
+}
+
+.p-invite_users_input__label_title {
+  color: var(--secondary-text);
+}
+
+.p-invite_users_input__input_subtext {
+  color: var(--secondary-text);
+}
+
+.p-channel_create_modal__sub_section_copy_title strong {
+  color: var(--main-text);
+}
+
+.p-channel_create_modal__sub_section_copy_title {
+  color: var(--secondary-text);
+}
+
+.p-channel_create_modal__sub_section_copy_body {
+  color: var(--secondary-text);
 }
 
 #details_tab .feature_sli_channel_insights .channel_created_section .creator_link, #details_tab .feature_sli_channel_insights .channel_purpose_section .channel_purpose_text {
