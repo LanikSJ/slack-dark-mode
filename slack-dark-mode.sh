@@ -15,7 +15,7 @@ type npx
 if [[ "$?" != "0" ]]; then echo "Please install Node for your OS.  macOS users will also need to install Homebrew from https://brew.sh"; fi
 
 if [[ -d $OSX_SLACK_RESOURCES_DIR ]]; then
-  SLACK_RESOURCES_DIR=$OSX_SLACK_RESOURCES_DIR
+    SLACK_RESOURCES_DIR=$OSX_SLACK_RESOURCES_DIR
 fi
 
 if [[ -d $LINUX_SLACK_RESOURCES_DIR ]]; then SLACK_RESOURCES_DIR=$LINUX_SLACK_RESOURCES_DIR; fi
@@ -31,7 +31,7 @@ THEME_FILEPATH="$SLACK_RESOURCES_DIR/dark-theme.css"
 if [[ "$UPDATE_ONLY" == "true" ]]; then echo && echo "Updating Dark Theme Code for Slack... "; fi
 
 if [[ "$UPDATE_ONLY" == "false" ]]; then
-  echo && echo "Adding Dark Theme Code to Slack... "
+    echo && echo "Adding Dark Theme Code to Slack... "
 fi
 
 if [[ -z $HOME ]]; then HOME=$(ls -d ~); fi
@@ -41,27 +41,27 @@ sudo cp -af dark-theme.css "$THEME_FILEPATH"
 
 # if we have a custom file, append to the end.
 if [[ -f custom-dark-theme.css ]]; then
-  echo "Adding custom css"
-  cat custom-dark-theme.css >> "$THEME_FILEPATH"
+    echo "Adding custom css"
+    cat custom-dark-theme.css >> "$THEME_FILEPATH"
 fi
 
 if [[ "$UPDATE_ONLY" == "false" ]]; then
-  # Modify Local Settings
-  if [[ -f "$HOME/$SLACK_DIRECT_LOCAL_SETTINGS" ]]; then sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' "$HOME/$SLACK_DIRECT_LOCAL_SETTINGS"; fi
+    # Modify Local Settings
+    if [[ -f "$HOME/$SLACK_DIRECT_LOCAL_SETTINGS" ]]; then sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' "$HOME/$SLACK_DIRECT_LOCAL_SETTINGS"; fi
 
-  if [[ -f "$HOME/$SLACK_STORE_LOCAL_SETTINGS" ]]; then sudo sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' "$HOME/$SLACK_STORE_LOCAL_SETTINGS"; fi
+    if [[ -f "$HOME/$SLACK_STORE_LOCAL_SETTINGS" ]]; then sudo sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' "$HOME/$SLACK_STORE_LOCAL_SETTINGS"; fi
 
-  # Unpack Asar Archive for Slack
-  sudo npx asar extract $SLACK_RESOURCES_DIR/app.asar $SLACK_RESOURCES_DIR/app.asar.unpacked
+    # Unpack Asar Archive for Slack
+    sudo npx asar extract $SLACK_RESOURCES_DIR/app.asar $SLACK_RESOURCES_DIR/app.asar.unpacked
 
-  # Add JS Code to Slack
-  sudo tee -a "$SLACK_FILEPATH" < $SLACK_EVENT_LISTENER
+    # Add JS Code to Slack
+    sudo tee -a "$SLACK_FILEPATH" < $SLACK_EVENT_LISTENER
 
-  # Insert the CSS File Location in JS
-  sudo sed -i -e s@SLACK_DARK_THEME_PATH@$THEME_FILEPATH@g $SLACK_FILEPATH
+    # Insert the CSS File Location in JS
+    sudo sed -i -e s@SLACK_DARK_THEME_PATH@$THEME_FILEPATH@g $SLACK_FILEPATH
 
-  # Pack the Asar Archive for Slack
-  sudo npx asar pack $SLACK_RESOURCES_DIR/app.asar.unpacked $SLACK_RESOURCES_DIR/app.asar
+    # Pack the Asar Archive for Slack
+    sudo npx asar pack $SLACK_RESOURCES_DIR/app.asar.unpacked $SLACK_RESOURCES_DIR/app.asar
 fi
 
 echo && echo "Done! After executing this script restart Slack for changes to take effect."

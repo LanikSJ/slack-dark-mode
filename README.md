@@ -40,7 +40,8 @@ PS ~/> git clone https://github.com/LanikSJ/slack-dark-mode
 PS ~/> cd slack-dark-mode; .\slack-dark-mode.ps1 -UpdateOnly
 ```
 
-You can tweak your own css colors by creating a new file called `custom-dark-theme.css`, which will be used to overwrite the current theme.
+You can tweak your own css colors by creating a new file called `custom-dark-theme.css`,    
+which will be used to overwrite the current theme.
 
 ## Screenshot
 ![Screenshot](https://github.com/LanikSJ/slack-dark-mode/raw/master/images/screenshot.png "Screenshot")
