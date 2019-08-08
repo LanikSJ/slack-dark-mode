@@ -39,23 +39,29 @@ if [[ -z $HOME ]]; then HOME=$(ls -d ~); fi
 # Copy CSS to Slack Folder
 sudo cp -af dark-theme.css "$THEME_FILEPATH"
 
+# if we have a custom file, append to the end.
+if [[ -f custom-dark-theme.css ]]; then
+  echo "Adding custom css"
+  cat custom-dark-theme.css >> "$THEME_FILEPATH"
+fi
+
 if [[ "$UPDATE_ONLY" == "false" ]]; then
-    # Modify Local Settings
-    if [[ -f "$HOME/$SLACK_DIRECT_LOCAL_SETTINGS" ]]; then sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' "$HOME/$SLACK_DIRECT_LOCAL_SETTINGS"; fi
+  # Modify Local Settings
+  if [[ -f "$HOME/$SLACK_DIRECT_LOCAL_SETTINGS" ]]; then sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' "$HOME/$SLACK_DIRECT_LOCAL_SETTINGS"; fi
 
-    if [[ -f "$HOME/$SLACK_STORE_LOCAL_SETTINGS" ]]; then sudo sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' "$HOME/$SLACK_STORE_LOCAL_SETTINGS"; fi
+  if [[ -f "$HOME/$SLACK_STORE_LOCAL_SETTINGS" ]]; then sudo sed -i 's/"bootSonic":"once"/"bootSonic":"never"/g' "$HOME/$SLACK_STORE_LOCAL_SETTINGS"; fi
 
-    # Unpack Asar Archive for Slack
-    sudo npx asar extract $SLACK_RESOURCES_DIR/app.asar $SLACK_RESOURCES_DIR/app.asar.unpacked
+  # Unpack Asar Archive for Slack
+  sudo npx asar extract $SLACK_RESOURCES_DIR/app.asar $SLACK_RESOURCES_DIR/app.asar.unpacked
 
-    # Add JS Code to Slack
-    sudo tee -a "$SLACK_FILEPATH" < $SLACK_EVENT_LISTENER
+  # Add JS Code to Slack
+  sudo tee -a "$SLACK_FILEPATH" < $SLACK_EVENT_LISTENER
 
-    # Insert the CSS File Location in JS
-    sudo sed -i -e s@SLACK_DARK_THEME_PATH@$THEME_FILEPATH@g $SLACK_FILEPATH
+  # Insert the CSS File Location in JS
+  sudo sed -i -e s@SLACK_DARK_THEME_PATH@$THEME_FILEPATH@g $SLACK_FILEPATH
 
-    # Pack the Asar Archive for Slack
-    sudo npx asar pack $SLACK_RESOURCES_DIR/app.asar.unpacked $SLACK_RESOURCES_DIR/app.asar
+  # Pack the Asar Archive for Slack
+  sudo npx asar pack $SLACK_RESOURCES_DIR/app.asar.unpacked $SLACK_RESOURCES_DIR/app.asar
 fi
 
 echo && echo "Done! After executing this script restart Slack for changes to take effect."

@@ -30,6 +30,7 @@ before_install:
 - wget https://github.com/SimonKagstrom/kcov/archive/master.tar.gz
 - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 - brew update && brew cask install slack
+- touch custom-dark-theme.css
 
 install:
 - tar xzf master.tar.gz && cd kcov-master && mkdir build && cd build
