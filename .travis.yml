@@ -18,6 +18,8 @@ matrix:
     - os: osx
       osx_image: xcode10
       rvm: system
+    - os: linux
+      dist: bionic
   fast_finish: true
 
 env:
@@ -28,10 +30,10 @@ env:
 
 before_install:
 - wget https://github.com/SimonKagstrom/kcov/archive/master.tar.gz
-- /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-- brew update && brew cask install slack
-- brew install snapcraft
-- sudo snap install slack --classic
+- if [ "$TRAVIS_OS_NAME" = "osx" ]; then /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ; fi
+- if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew update && brew cask install slack ; fi
+- if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo snap install slack --classic ; fi
+- if [ "$TRAVIS_OS_NAME" = "linux" ]; then brew update ; fi
 - touch custom-dark-theme.css
 
 install:
@@ -40,8 +42,8 @@ install:
 - cd ../.. && rm -rf kcov-master && mkdir -p coverage
 
 script:
-- sudo kcov coverage slack-dark-mode.sh
-- sudo kcov coverage snap-slack-dark-mode.sh
+- if [ "$TRAVIS_OS_NAME" = "osx" ]; then sudo kcov coverage slack-dark-mode.sh; fi
+- if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo kcov coverage snap-slack-dark-mode.sh; fi
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
