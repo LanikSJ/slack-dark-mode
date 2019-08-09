@@ -50,7 +50,7 @@ sudo cp -af dark-theme.css "$THEME_FILEPATH"
 # if we have a custom file, append to the end.
 if [[ -f custom-dark-theme.css ]]; then
     echo "Adding custom css"
-    sudo cat custom-dark-theme.css >> "$THEME_FILEPATH"
+    cat custom-dark-theme.css >> "$THEME_FILEPATH"
 fi
 
 if [[ "$UPDATE_ONLY" == "false" ]]; then
@@ -72,11 +72,11 @@ if [[ "$UPDATE_ONLY" == "false" ]]; then
     if ! [[ $isTabbed ]]; then
         echo "Installing new crontab to apply on reboot..."
         # Save current crontab
-        sudo crontab -l > tab.tmp
+        sudo crontab -l | sudo tee tab.tmp
         # Add new tab
         echo "@reboot sudo mount --bind -o nodev,ro /opt/slack-dark/app.asar /snap/slack/current/usr/lib/slack/resources/app.asar" >> tab.tmp
         # replace crontab
         sudo crontab tab.tmp
-        rm tab.tmp
+        sudo rm tab.tmp
     fi
 fi

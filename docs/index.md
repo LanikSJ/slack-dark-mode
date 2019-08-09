@@ -37,7 +37,7 @@ $ git clone https://github.com/LanikSJ/slack-dark-mode && cd slack-dark-mode \
 ````
 For SNAP users: Since snap is a 'read-only' file system, we have to mount the changes. The script automatically insert a new crontab so it will persist through reboots.\
 Since the way SNAPS work are different, we can easily revert to light mode as well with the script.
-```
+```bash
 ./snap-slack-dark-mode.sh [-u] [-light]
 ```
 For Windows Users:
