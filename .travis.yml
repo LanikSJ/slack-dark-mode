@@ -20,7 +20,6 @@ matrix:
       rvm: system
     - os: linux
       dist: bionic
-      language: node_js
   fast_finish: true
 
 env:
@@ -34,6 +33,7 @@ before_install:
 - if [ "$TRAVIS_OS_NAME" = "osx" ]; then /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ; fi
 - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew update && brew cask install slack ; fi
 - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo snap install slack --classic ; fi
+- if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get install nodejs ; fi
 - touch custom-dark-theme.css
 
 install:
