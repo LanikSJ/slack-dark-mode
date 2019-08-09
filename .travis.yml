@@ -20,6 +20,7 @@ matrix:
       rvm: system
     - os: linux
       dist: bionic
+      language: node_js
   fast_finish: true
 
 env:
