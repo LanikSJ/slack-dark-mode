@@ -9,6 +9,11 @@ UPDATE_ONLY="false"
 
 if ! [[ -d $SLACK_RESOURCES_DIR ]]; then echo "You do not have snap version of slack installed."; exit; fi
 
+unmount_slack () {
+    echo "Making sure slack is unmounted."
+    sudo killall slack 2>/dev/null
+    sudo umount /snap/slack/current/usr/lib/slack/resources/app.asar 2>/dev/null
+}
 
 for arg in "$@"; do
     shift
@@ -16,8 +21,7 @@ for arg in "$@"; do
         -u) UPDATE_ONLY="true" ;;
         -light)
             echo "Removing Dark mode"
-            sudo killall slack 2>/dev/null
-            sudo umount /snap/slack/current/usr/lib/slack/resources/app.asar
+            unmount_slack
             exit
             ;;
         *) echo "Option doesn't exist"; exit 1 ;;
@@ -30,10 +34,10 @@ type npx
 if [[ "$?" != "0" ]]; then echo "Please install Node"; exit; fi
 
 # ensure we don't have the mount already
-sudo umount /snap/slack/current/usr/lib/slack/resources/app.asar 2>/dev/null
+unmount_slack
 
 # make sure we have a directory to mount the adjusted file from.
-sudo mkdir -p "$ssb_js_dir/app.asar.unpacked/dist/"
+sudo mkdir -p "$ssb_js_dir"
 
 SLACK_EVENT_LISTENER="event-listener.js"
 SLACK_FILEPATH="$ssb_js_dir/app.asar.unpacked/dist/ssb-interop.bundle.js"
@@ -58,7 +62,7 @@ if [[ "$UPDATE_ONLY" == "false" ]]; then
     sudo npx asar extract $SLACK_RESOURCES_DIR/app.asar $ssb_js_dir/app.asar.unpacked
 
     # Add JS Code to Slack
-    cat $SLACK_EVENT_LISTENER | sudo tee -a "$SLACK_FILEPATH"
+    sudo bash -c "cat $SLACK_EVENT_LISTENER >> $SLACK_FILEPATH"
 
     # Insert the CSS File Location in JS
     sudo sed -i -e s@SLACK_DARK_THEME_PATH@$THEME_FILEPATH@g $SLACK_FILEPATH
