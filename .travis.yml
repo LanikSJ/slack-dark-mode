@@ -39,6 +39,7 @@ install:
 - tar xzf master.tar.gz && cd kcov-master && mkdir build && cd build
 - cmake -DCMAKE_INSTALL_PREFIX=${HOME}/kcov .. && make && sudo make install
 - cd ../.. && rm -rf kcov-master && mkdir -p coverage
+- if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo ln -s ${HOME}/kcov/bin/kcov /usr/bin/kcov ; fi
 
 script:
 - if [ "$TRAVIS_OS_NAME" = "osx" ]; then sudo kcov coverage slack-dark-mode.sh; fi
