@@ -33,7 +33,6 @@ before_install:
 - if [ "$TRAVIS_OS_NAME" = "osx" ]; then /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ; fi
 - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew update && brew cask install slack ; fi
 - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo snap install slack --classic ; fi
-- if [ "$TRAVIS_OS_NAME" = "linux" ]; then brew update ; fi
 - touch custom-dark-theme.css
 
 install:
