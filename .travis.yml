@@ -39,6 +39,7 @@ install:
 
 script:
 - sudo kcov coverage slack-dark-mode.sh
+- sudo kcov coverage snap-slack-dark-mode.sh
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
