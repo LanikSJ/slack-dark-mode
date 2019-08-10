@@ -33,6 +33,7 @@ before_install:
 - if [ "$TRAVIS_OS_NAME" = "osx" ]; then /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ; fi
 - if [ "$TRAVIS_OS_NAME" = "osx" ]; then brew update && brew cask install slack ; fi
 - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo snap install slack --classic ; fi
+- if [ "$TRAVIS_OS_NAME" = "linux" ]; then curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - ; fi
 - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get install nodejs ; fi
 - touch custom-dark-theme.css
 
@@ -43,7 +44,7 @@ install:
 - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo ln -s ${HOME}/kcov/bin/kcov /usr/bin/kcov ; fi
 
 script:
-- if [ "$TRAVIS_OS_NAME" = "osx" ]; then sudo kcov coverage slack-dark-mode.sh; fi
+# - if [ "$TRAVIS_OS_NAME" = "osx" ]; then sudo kcov coverage slack-dark-mode.sh; fi
 - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo kcov coverage snap-slack-dark-mode.sh; fi
 
 after_success:
