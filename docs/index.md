@@ -9,14 +9,14 @@ title: Slack Dark Mode
 Purpose
 ============
 
-Store scripts and Style sheets for Slack Dark Mode for macOS Mojave.  
+Store scripts and Style sheets for Slack Dark Mode for macOS Mojave.\
 Dark Mode in Slack isn't available as of this writing.
 
 Notice
 ============
 
-Due to the changes in Slack 4.0+ this project will not be compatible with Slack Version 3.4 or below.   
-If you're looking for 3.4.x compatible settings please refer to [this](https://github.com/LanikSJ/slack-dark-mode/tree/466ff22d5b606b6d5b2edeff54f4cd7a3bafc39c).   
+Due to the changes in Slack 4.0+ this project will not be compatible with Slack Version 3.4 or below.\
+If you're looking for 3.4.x compatible settings please refer to [this](https://github.com/LanikSJ/slack-dark-mode/tree/466ff22d5b606b6d5b2edeff54f4cd7a3bafc39c).
 
 Usage
 ============
@@ -35,6 +35,11 @@ $ git clone https://github.com/LanikSJ/slack-dark-mode && cd slack-dark-mode \
 && osascript -e 'tell application "Slack" to quit' \
 && killall Slack && sleep 60 && open -a "/Applications/Slack.app"
 ````
+For SNAP users: Since snap is a 'read-only' file system, we have to mount the changes. The script automatically insert a new crontab so it will persist through reboots.\
+Since the way SNAPS work are different, we can easily revert to light mode as well with the script.
+```bash
+./snap-slack-dark-mode.sh [-u] [-light]
+```
 For Windows Users:
 ```powershell
 PS ~/> git clone https://github.com/LanikSJ/slack-dark-mode
@@ -55,8 +60,8 @@ Screenshot
 Attributions
 ============
 
-Scripts was "borrowed" from [mmrko](https://gist.github.com/mmrko) [Gist](https://gist.github.com/mmrko/9b0e65f6bcc1fca57089c32c2228aa39)  
-All rights reserved by the original authors.  
+Scripts was "borrowed" from [mmrko](https://gist.github.com/mmrko) [Gist](https://gist.github.com/mmrko/9b0e65f6bcc1fca57089c32c2228aa39)\
+©️ All rights reserved by the original authors.
 
 Bugs
 ============
