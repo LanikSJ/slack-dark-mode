@@ -8,10 +8,12 @@ Store scripts and Style sheets for Slack Desktop Dark Mode.\
 Native Dark Mode in Slack isn't available as of this writing.
 
 The following platforms are supported in this repo via scripts:
-* macOS Mojave: [slack-dark-mode.s](slack-dark-mode.s)
-* Linux: [slack-dark-mode.sh](slack-dark-mode.sh)
-  * Linux SNAP installs: [snap-slack-dark-mode.sh](snap-slack-dark-mode.sh)
-* Windows: [slack-dark-mode.ps1](slack-dark-mode.ps1)
+  * macOS Mojave: [slack-dark-mode.sh](slack-dark-mode.sh)
+  
+  * Linux: [slack-dark-mode.sh](slack-dark-mode.sh)
+    * Linux SNAP installs: [snap-slack-dark-mode.sh](snap-slack-dark-mode.sh)
+    
+  * Windows: [slack-dark-mode.ps1](slack-dark-mode.ps1)
 
 ## Notice
 Due to the changes in Slack 4.0+ this project will not be compatible with Slack Version 3.4 or below.\
@@ -23,20 +25,20 @@ If you're looking for 3.4.x compatible settings please refer to [this](https://g
 
 In general, you should completely close out of slack before or after you run the install scripts. This will ensure that everything is properly updated. Once the script has been run the first time, if you ever need to update the CSS styles, you can simply use `ctrl + r` to reload slack and update the CSS, if the scripts below do not automatically close slack for you.
 
-### For all systems:
+### For all systems
 First, clone the repository
 ```bash
 $ git clone https://github.com/LanikSJ/slack-dark-mode 
 $ cd slack-dark-mode
 ```
 Then shutdown slack and please reference for your operating system:
-#### For macOS and basic Linux installs:
+#### For macOS and basic Linux installs
 ```bash
 $ ./slack-dark-mode.sh
 # or to update CSS only:
 $ ./slack-dark-mode.sh -u
 ```
-#### For Linux SNAP installs: 
+#### For Linux SNAP installs
 Since snap is a 'read-only' file system, we have to mount the changes.\
 The script automatically insert a new crontab so it will persist through reboots.\
 Since the way SNAPS work are different, we can easily revert to light mode as well with the script.\
@@ -49,7 +51,7 @@ $ ./snap-slack-dark-mode.sh -u
 $ ./snap-slack-dark-mode.sh -light
 ```
 
-#### For Windows Users:
+#### For Windows Users
 Open Powershell in Admin mode:\
 Note: This script will automatically kill slack each time you update.
 ```powershell
