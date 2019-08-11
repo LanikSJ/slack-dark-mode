@@ -6,7 +6,7 @@
 
 ## Purpose
 
-Store scripts and Style sheets for Slack Desktop Dark Mode.\\
+Store scripts and Style sheets for Slack Desktop Dark Mode.\
 Native Dark Mode in Slack isn't available as of this writing.
 
 The following platforms are supported in this repo via scripts:
@@ -18,7 +18,7 @@ The following platforms are supported in this repo via scripts:
 
 ## Notice
 
-Due to the changes in Slack 4.0+ this project will not be compatible with Slack Version 3.4 or below.\\
+Due to the changes in Slack 4.0+ this project will not be compatible with Slack Version 3.4 or below.\
 If you're looking for 3.4.x compatible settings please refer to [this](https://github.com/LanikSJ/slack-dark-mode/tree/466ff22d5b606b6d5b2edeff54f4cd7a3bafc39c).
 
 ## Usage
@@ -49,9 +49,9 @@ $ ./slack-dark-mode.sh -u
 
 #### For Linux SNAP installs
 
-Since snap is a 'read-only' file system, we have to mount the changes.\\
-The script automatically insert a new crontab so it will persist through reboots.\\
-Since the way SNAPS work are different, we can easily revert to light mode as well with the script.\\
+Since snap is a 'read-only' file system, we have to mount the changes.\
+The script automatically insert a new crontab so it will persist through reboots.\
+Since the way SNAPS work are different, we can easily revert to light mode as well with the script.\
 Note: This script will automatically kill slack when the `-u` flag is not used to ensure the mount is not busy.
 
 ```bash
@@ -64,7 +64,7 @@ $ ./snap-slack-dark-mode.sh -light
 
 #### For Windows Users
 
-Open Powershell in Admin mode:\\
+Open Powershell in Admin mode:\
 Note: This script will automatically kill slack each time you update.
 
 ```powershell
@@ -81,7 +81,7 @@ If you want to make your own tweaks to the css, you can create a file called `cu
 
 ## Attributions
 
-Some scripts were "borrowed" from [mmrko](https://gist.github.com/mmrko) [Gist](https://gist.github.com/mmrko/9b0e65f6bcc1fca57089c32c2228aa39)\\
+Some scripts were "borrowed" from [mmrko](https://gist.github.com/mmrko) [Gist](https://gist.github.com/mmrko/9b0e65f6bcc1fca57089c32c2228aa39)\
 ©️ All rights reserved by the original authors.
 
 ## Bugs
