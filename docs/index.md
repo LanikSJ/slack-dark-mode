@@ -9,8 +9,14 @@ title: Slack Dark Mode
 Purpose
 ============
 
-Store scripts and Style sheets for Slack Dark Mode for macOS Mojave.\
-Dark Mode in Slack isn't available as of this writing.
+Store scripts and Style sheets for Slack Desktop Dark Mode.\
+Native Dark Mode in Slack isn't available as of this writing.
+
+The following platforms are supported in this repo via scripts:
+* macOS Mojave: [slack-dark-mode.s](slack-dark-mode.s)
+* Linux: [slack-dark-mode.sh](slack-dark-mode.sh)
+  * Linux SNAP installs: [snap-slack-dark-mode.sh](snap-slack-dark-mode.sh)
+* Windows: [slack-dark-mode.ps1](slack-dark-mode.ps1)
 
 Notice
 ============
@@ -21,37 +27,43 @@ If you're looking for 3.4.x compatible settings please refer to [this](https://g
 Usage
 ============
 
-For macOS Users:
+In general, you should completely close out of slack before or after you run the install scripts. This will ensure that everything is properly updated. Once the script has been run the first time, if you ever need to update the CSS styles, you can simply use `ctrl + r` to reload slack and update the CSS, if the scripts below do not automatically close slack for you.
+
+### For all systems:
+First, clone the repository
 ```bash
-$ git clone https://github.com/LanikSJ/slack-dark-mode && cd slack-dark-mode \
-&& chmod +x slack-dark-mode.sh && ./slack-dark-mode.sh \
-&& osascript -e 'tell application "Slack" to quit' \
-&& killall Slack && sleep 60 && open -a "/Applications/Slack.app"
+$ git clone https://github.com/LanikSJ/slack-dark-mode 
+$ cd slack-dark-mode
 ```
-or to update CSS only:
+Then shutdown slack and please reference for your operating system:
+#### For macOS and basic Linux installs:
 ```bash
-$ git clone https://github.com/LanikSJ/slack-dark-mode && cd slack-dark-mode \
-&& chmod +x slack-dark-mode.sh && ./slack-dark-mode.sh -u \
-&& osascript -e 'tell application "Slack" to quit' \
-&& killall Slack && sleep 60 && open -a "/Applications/Slack.app"
-````
-For SNAP users: Since snap is a 'read-only' file system, we have to mount the changes. The script automatically insert a new crontab so it will persist through reboots.\
-Since the way SNAPS work are different, we can easily revert to light mode as well with the script.
-```bash
-./snap-slack-dark-mode.sh [-u] [-light]
+$ ./slack-dark-mode.sh
+# or to update CSS only:
+$ ./slack-dark-mode.sh -u
 ```
-For Windows Users:
+#### For Linux SNAP installs: 
+Since snap is a 'read-only' file system, we have to mount the changes.\
+The script automatically insert a new crontab so it will persist through reboots.\
+Since the way SNAPS work are different, we can easily revert to light mode as well with the script.\
+Note: This script will automatically kill slack when the `-u` flag is not used to ensure the mount is not busy.
+```bash
+$ ./snap-slack-dark-mode.sh
+# or to update CSS only:
+$ ./snap-slack-dark-mode.sh -u
+# or to revert to Light mode
+$ ./snap-slack-dark-mode.sh -light
+```
+
+#### For Windows Users:
+Open Powershell in Admin mode:\
+Note: This script will automatically kill slack each time you update.
 ```powershell
-PS ~/> git clone https://github.com/LanikSJ/slack-dark-mode
-PS ~/> cd slack-dark-mode; .\slack-dark-mode.ps1
+PS ~/> .\slack-dark-mode.ps1
+# or to update CSS only:
+PS ~/> .\slack-dark-mode.ps1 -UpdateOnly
 ```
-or to update CSS only:
-```powershell
-PS ~/> git clone https://github.com/LanikSJ/slack-dark-mode
-PS ~/> cd slack-dark-mode; .\slack-dark-mode.ps1 -UpdateOnly
-```
-You can tweak your own css colors by creating a new file called custom-dark-theme.css,
-which will be used to overwrite the current theme.
+If you want to make your own tweaks to the css, you can create a file called `custom-dark-theme.css` in the root of the repository, which will be appended to the end of the main css so you can easily keep your changes through updates of the repo.
 
 Screenshot
 ============

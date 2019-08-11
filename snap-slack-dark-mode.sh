@@ -33,9 +33,6 @@ echo && echo "This script requires sudo privileges." && echo "You'll need to pro
 type npx
 if [[ "$?" != "0" ]]; then echo "Please install Node"; exit; fi
 
-# ensure we don't have the mount already
-unmount_slack
-
 # make sure we have a directory to mount the adjusted file from.
 sudo mkdir -p "$ssb_js_dir"
 
@@ -58,6 +55,9 @@ if [[ -f custom-dark-theme.css ]]; then
 fi
 
 if [[ "$UPDATE_ONLY" == "false" ]]; then
+    # ensure we don't have the mount already
+    unmount_slack
+    
     # Unpack Asar Archive for Slack
     sudo npx asar extract $SLACK_RESOURCES_DIR/app.asar $ssb_js_dir/app.asar.unpacked
 
