@@ -21,7 +21,7 @@ If you're looking for 3.4.x compatible settings please refer to [this](https://g
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e88f5c76dfdf418e9c2571943437ae23)](https://www.codacy.com/app/Lanik/slack-dark-mode?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LanikSJ/slack-dark-mode&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/LanikSJ/slack-dark-mode/branch/master/graph/badge.svg)](https://codecov.io/gh/LanikSJ/slack-dark-mode)
 
-In general, you should completely close out of slack before or after you run the install scripts. This will ensure that everything is properly updated. Once script has been run the first time, if you ever need to update the CSS styles, you can simply use `ctrl + r` to reload slack and update the CSS, if the scripts below do not automatically close slack for you.
+In general, you should completely close out of slack before or after you run the install scripts. This will ensure that everything is properly updated. Once the script has been run the first time, if you ever need to update the CSS styles, you can simply use `ctrl + r` to reload slack and update the CSS, if the scripts below do not automatically close slack for you.
 
 ### For all systems:
 First, clone the repository
