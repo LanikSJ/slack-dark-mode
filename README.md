@@ -9,7 +9,7 @@ Native Dark Mode in Slack isn't available as of this writing.
 
 The following platforms are supported in this repo via scripts:
 * macOS Mojave: [slack-dark-mode.s](slack-dark-mode.s)
-  * Linux: [slack-dark-mode.sh](slack-dark-mode.sh)
+* Linux: [slack-dark-mode.sh](slack-dark-mode.sh)
   * Linux SNAP installs: [snap-slack-dark-mode.sh](snap-slack-dark-mode.sh)
 * Windows: [slack-dark-mode.ps1](slack-dark-mode.ps1)
 
