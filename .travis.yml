@@ -36,9 +36,13 @@ install:
 - tar xzf master.tar.gz && cd kcov-master && mkdir build && cd build
 - cmake -DCMAKE_INSTALL_PREFIX=${HOME}/kcov .. && make && sudo make install
 - cd ../.. && rm -rf kcov-master && mkdir -p coverage
+- mkdir -p coverage-light
 
 script:
 - sudo kcov coverage slack-dark-mode.sh
+- sudo kcov coverage-light slack-dark-mode.sh --light
+- sudo kcov coverage-update slack-dark-mode.sh -u
 
 after_success:
+- sudo kcov coverage-not-option slack-dark-mode.sh -not-an-option
 - bash <(curl -s https://codecov.io/bash)
