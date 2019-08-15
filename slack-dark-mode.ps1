@@ -50,7 +50,7 @@ if (-not (Test-Path -Path $themeFile)) {
 }
 
 Write-Output "Fetching Theme from $CSSUrl"
-cat ./dark-theme.css | Set-Content -Path $themeFile # add the theme from the repo
+Get-Content ./dark-theme.css | Set-Content -Path $themeFile # add the theme from the repo
 
 if (Test-Path ./custom-dark-theme.css) {
     Get-Content ./custom-dark-theme.css | Add-Content $themeFile
