@@ -18,8 +18,6 @@ for arg in "$@"; do
     esac
 done
 
-exit
-
 echo && echo "This script requires sudo privileges." && echo "You'll need to provide your password."
 
 type npx
