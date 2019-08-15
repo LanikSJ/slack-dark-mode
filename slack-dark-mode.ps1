@@ -43,7 +43,7 @@ if (-not (Test-Path -Path $themeFile)) {
 }
 
 Write-Output "Fetching Theme from $CSSUrl"
-Invoke-WebRequest -UseBasicParsing -Method GET -Uri $CSSUrl | Select-Object -ExpandProperty Content | Set-Content -Path $themeFile
+cat ./dark-theme.css | Set-Content -Path $themeFile # add the theme from the repo
 
 if (Test-Path ./custom-dark-theme.css) {
     cat ./custom-dark-theme.css | Add-Content $themeFile
