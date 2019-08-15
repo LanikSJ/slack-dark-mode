@@ -37,6 +37,7 @@ $themeFile = Join-Path -Path $resources -ChildPath "custom_theme.css"
 
 if ($LightMode -eq $true) {
     Write-Output "Removing Dark Theme.."
+    Write-Output "Please refresh Slack (ctrl + R)"
     Remove-Item $themeFile
     exit
 }
