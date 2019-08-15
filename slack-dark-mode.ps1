@@ -3,7 +3,8 @@
 Param(
     [string] $CSSUrl = "https://raw.githubusercontent.com/LanikSJ/slack-dark-mode/master/dark-theme.css",
     [string] $SlackBase = $null,
-    [switch] $UpdateOnly
+    [switch] $UpdateOnly,
+    [switch] $LightMode
 )
 
 if (-not (Get-Command -Name "npx" -ErrorAction SilentlyContinue)) {
@@ -34,6 +35,12 @@ if ([string]::IsNullOrWhiteSpace($SlackBase)) {
 $resources = Join-Path -Path $latestPath -ChildPath "resources"
 $themeFile = Join-Path -Path $resources -ChildPath "custom_theme.css"
 
+if ($LightMode -eq $true) {
+    Write-Output "Removing Dark Theme.."
+    Remove-Item $themeFile
+    exit
+}
+
 Write-Output "Stopping Slack"
 Get-Process *slack* | Stop-Process -Force
 
@@ -46,7 +53,7 @@ Write-Output "Fetching Theme from $CSSUrl"
 cat ./dark-theme.css | Set-Content -Path $themeFile # add the theme from the repo
 
 if (Test-Path ./custom-dark-theme.css) {
-    cat ./custom-dark-theme.css | Add-Content $themeFile
+    Get-Content ./custom-dark-theme.css | Add-Content $themeFile
 }
 
 if (-not $UpdateOnly) {
