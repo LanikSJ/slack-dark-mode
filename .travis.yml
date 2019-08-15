@@ -38,11 +38,17 @@ install:
 - cd ../.. && rm -rf kcov-master && mkdir -p coverage
 - mkdir -p coverage-light
 
+jobs:
+  allow_failures:
+    - script: sudo kcov coverage-not-option slack-dark-mode.sh -not-an-option
+
 script:
 - sudo kcov coverage slack-dark-mode.sh
 - sudo kcov coverage-light slack-dark-mode.sh --light
 - sudo kcov coverage-update slack-dark-mode.sh -u
-- sudo kcov coverage-not-option slack-dark-mode.sh -not-an-option
 
 after_success:
-- bash <(curl -s https://codecov.io/bash)
+- echo ""
+
+after_script:
+  - bash <(curl -s https://codecov.io/bash)
