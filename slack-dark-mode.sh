@@ -7,12 +7,13 @@ SLACK_DIRECT_LOCAL_SETTINGS="Library/Application\ Support/Slack/local-settings.j
 SLACK_STORE_LOCAL_SETTINGS="Library/Containers/com.tinyspeck.slackmacgap/Data/Library/Application\ Support/Slack/local-settings.json"
 OSX_SLACK_RESOURCES_DIR="/Applications/Slack.app/Contents/Resources"
 LINUX_SLACK_RESOURCES_DIR="/usr/lib/slack/resources"
+UPDATE_ONLY="false"
 
 for arg in "$@"; do
     shift
     case "$arg" in
         -u) UPDATE_ONLY="true" ;;
-        -light) LIGHT_MODE="true"
+        -light) LIGHT_MODE="true" ;;
         *) echo "Option doesn't exist"; exit 1 ;;
     esac
 done
