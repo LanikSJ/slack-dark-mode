@@ -12,11 +12,13 @@ UPDATE_ONLY="false"
 for arg in "$@"; do
     shift
     case "$arg" in
-        -u) UPDATE_ONLY="true" ;;
-        -light) LIGHT_MODE="true" ;;
+        -[uU]|--[uU]pdate) UPDATE_ONLY="true" ;;
+        -[lL]|--[lL]ight) LIGHT_MODE="true" ;;
         *) echo "Option doesn't exist"; exit 1 ;;
     esac
 done
+
+exit
 
 echo && echo "This script requires sudo privileges." && echo "You'll need to provide your password."
 

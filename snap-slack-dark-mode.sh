@@ -18,8 +18,8 @@ unmount_slack () {
 for arg in "$@"; do
     shift
     case "$arg" in
-        -u) UPDATE_ONLY="true" ;;
-        -light)
+        -[uU]|--[uU]pdate) UPDATE_ONLY="true" ;;
+        -[lL]|--[lL]ight)
             echo "Removing Dark mode"
             unmount_slack
             exit
@@ -57,7 +57,7 @@ fi
 if [[ "$UPDATE_ONLY" == "false" ]]; then
     # ensure we don't have the mount already
     unmount_slack
-    
+
     # Unpack Asar Archive for Slack
     sudo npx asar extract $SLACK_RESOURCES_DIR/app.asar $ssb_js_dir/app.asar.unpacked
 
