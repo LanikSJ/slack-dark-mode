@@ -47,7 +47,7 @@ if [[ -z $HOME ]]; then HOME=$(ls -d ~); fi
 if [[ "$LIGHT_MODE" == "true" ]]; then
     echo "Removing Dark Theme.."
     echo "Please refresh slack (ctrl/cmd + R)"
-    sudo rm $THEME_FILEPATH
+    sudo rm -f $THEME_FILEPATH
     exit
 fi
 
