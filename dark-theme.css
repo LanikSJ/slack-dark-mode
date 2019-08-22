@@ -9591,8 +9591,8 @@ ts-thread {
   background-color: var(--main-dark-highlight) !important;
 }
 
-footer.p-workspace__primary_view_footer {
-  background-color: var(--main-bg-color);
+.workspace__primary_view_footer {
+  background-color: var(--main-bg-color) !important;
 }
 
 .p-unreads_view__header {
