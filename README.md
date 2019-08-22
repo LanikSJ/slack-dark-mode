@@ -32,7 +32,7 @@ If you're looking for 3.4.x compatible settings please refer to [this](https://g
 
 In general, you should completely close out of Slack before or after you run the install scripts. This will ensure that everything is properly updated. Once the script has been run the first time, if you ever need to update the CSS styles, you can simply use `ctrl + r` or `cmd + r` in macOS to reload Slack and update the CSS, if the scripts below do not automatically close Slack for you.
 
-### For all systems
+## For All Systems/OS
 
 First, clone the repository
 
@@ -43,7 +43,7 @@ $ cd slack-dark-mode
 
 Then shutdown Slack and please reference for your operating system:
 
-#### For macOS and basic Linux installs
+### For macOS and basic Linux installs
 
 ```bash
 $ ./slack-dark-mode.sh
@@ -51,7 +51,7 @@ $ ./slack-dark-mode.sh
 $ ./slack-dark-mode.sh -u
 ```
 
-#### For Linux SNAP installs
+### For Linux SNAP installs
 
 Since snap is a 'read-only' file system, we have to mount the changes.  
 The script automatically insert a new crontab so it will persist through reboots.  
@@ -66,7 +66,7 @@ $ ./snap-slack-dark-mode.sh -u
 $ ./snap-slack-dark-mode.sh -light
 ```
 
-#### For Windows Users
+### For Windows Users
 
 Open Powershell in Admin mode:  
 Note: This script will automatically kill Slack each time you update.
