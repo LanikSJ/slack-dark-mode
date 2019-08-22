@@ -43,7 +43,7 @@ $ cd slack-dark-mode
 
 Then shutdown Slack and please reference for your operating system:
 
-### For macOS and basic Linux installs
+### For macOS and Linux
 
 ```bash
 $ ./slack-dark-mode.sh
