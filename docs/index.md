@@ -18,7 +18,7 @@ title: Slack Dark Mode
         -   [Update CSS Only (SNAP)](#update-css-only--snap-)
         -   [Revert to Light Mode (SNAP)](#revert-to-light-mode--snap-)
     -   [For Windows Users](#for-windows-users)
-        -   [Update CSS Only (SNAP)](#update-css-only--windows-)
+        -   [Update CSS Only (Windows)](#update-css-only--windows-)
 -   [Attributions](#attributions)
 -   [Bugs](#bugs)
 -   [License](#license)
