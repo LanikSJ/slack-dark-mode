@@ -6,22 +6,22 @@ layout: home
 title: Slack Dark Mode
 ---
 
--   [Slack Desktop Dark Mode](#slack-desktop-dark-mode)
-    -   [Purpose](#purpose)  
-    -   [Screenshot](#screenshot)  
-    -   [Notice](#notice)  
-    -   [Usage](#usage)  
-    -   [For All Systems/OS](#for-all-systems-os)  
-        -   [For macOS and Linux](#for-macos-and-linux)  
-        -   [Update CSS Only](#update-css-only)  
-    -   [For Linux SNAP](#for-linux-snap)  
-        -   [Update CSS Only](#update-css-only-1)  
-        -   [Revert to Light mode](#revert-to-light-mode)  
-    -   [For Windows Users](#for-windows-users)  
-    -   [Attributions](#attributions)  
-    -   [Bugs](#bugs)  
-    -   [License](#license)  
-    -   [Donate](#donate)  
+-   [Purpose](#purpose)  
+-   [Screenshot](#screenshot)  
+-   [Notice](#notice)  
+-   [Usage](#usage)  
+-   [For All Systems/OS](#for-all-systems-os)  
+    -   [For macOS and Linux](#for-macos-and-linux)  
+    -   [Update CSS Only](#update-css-only)  
+    -   [Revert to Light Mode](#revert-to-light-mode)  
+-   [For Linux SNAP](#for-linux-snap)  
+    -   [Update CSS Only](#update-css-only-1)  
+    -   [Revert to Light Mode](#revert-to-light-mode-1)  
+-   [For Windows Users](#for-windows-users)  
+-   [Attributions](#attributions)  
+-   [Bugs](#bugs)  
+-   [License](#license)  
+-   [Donate](#donate)  
 
 # Purpose
 
