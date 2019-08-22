@@ -16,6 +16,8 @@
         -   [Update CSS Only (SNAP)](#update-css-only--snap-)
         -   [Revert to Light Mode (SNAP)](#revert-to-light-mode--snap-)
     -   [For Windows Users](#for-windows-users)
+        -   [Update CSS Only (Windows)](#update-css-only--windows-)
+        -   [Revert to Light Mode (Windows)](#revert-to-light-mode--windows-)
 -   [Attributions](#attributions)
 -   [Bugs](#bugs)
 -   [License](#license)
@@ -98,7 +100,7 @@ Note: This script will automatically kill Slack when the `-u` flag is not used t
 #### Revert to Light Mode (SNAP)
 
 ```bash
-./snap-slack-dark-mode.sh -light
+./snap-slack-dark-mode.sh -l
 ```
 
 ### For Windows Users
@@ -107,9 +109,19 @@ Open Powershell in Admin mode:
 Note: This script will automatically kill Slack each time you update.
 
 ```powershell
-PS ~/> .\slack-dark-mode.ps1
-# or to update CSS only:
-PS ~/> .\slack-dark-mode.ps1 -UpdateOnly
+.\slack-dark-mode.ps1
+```
+
+#### Update CSS Only (Windows)
+
+```powershell
+.\slack-dark-mode.ps1 -UpdateOnly
+```
+
+#### Revert to Light Mode (Windows)
+
+```powershell
+.\slack-dark-mode.ps1 -LightMode
 ```
 
 If you want to make your own tweaks to the css, you can create a file called `custom-dark-theme.css` in the root of the repository, which will be appended to the end of the main css so you can easily keep your changes through updates of the repo.
