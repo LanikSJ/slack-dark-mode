@@ -31,7 +31,7 @@ If you're looking for 3.4.x compatible settings please refer to [this](https://g
 
 In general, you should completely close out of Slack before or after you run the install scripts. This will ensure that everything is properly updated. Once the script has been run the first time, if you ever need to update the CSS styles, you can simply use `ctrl + r` or `cmd + r` in macOS to reload Slack and update the CSS, if the scripts below do not automatically close Slack for you.
 
-## For all systems
+## For All Systems/OS
 
 First, clone the repository
 

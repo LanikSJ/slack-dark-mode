@@ -9622,3 +9622,23 @@ ts-thread ts-message.new_reply:hover {
 .p-message_pane_input__preview div {
   color: var(--main-text) !important;
 }
+
+.c-select_button {
+  background-color: var(--main-dark-highlight) !important;
+}
+
+div[role=listbox] {
+  background-color: var(--main-dark-highlight) !important;
+}
+
+.c-select_options_list__option {
+  color: var(--main-text) !important;
+}
+
+.c-select_options_list__option--selected {
+  color: #3aa3e3 !important;
+}
+
+.c-select_options_list__option--active {
+  color: var(--main-text) !important;
+}
