@@ -99,7 +99,7 @@ Note: This script will automatically kill Slack when the `-u` flag is not used t
 #### Revert to Light Mode (SNAP)
 
 ```bash
-./snap-slack-dark-mode.sh -light
+./snap-slack-dark-mode.sh -l
 ```
 
 ### For Windows Users
