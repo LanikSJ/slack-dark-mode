@@ -5,21 +5,21 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/laniksj/slack-dark-mode/badge.svg?targetFile=/docs/Gemfile.lock)](https://snyk.io/test/github/laniksj/slack-dark-mode?targetFile=/docs/Gemfile.lock)
 
 -   [Slack Desktop Dark Mode](#slack-desktop-dark-mode)
-    -   [Purpose](#purpose)
-    -   [Screenshot](#screenshot)
-    -   [Notice](#notice)
-    -   [Usage](#usage)
-    -   [For All Systems/OS](#for-all-systems-os)
-        -   [For macOS and Linux](#for-macos-and-linux)
-        -   [Update CSS Only](#update-css-only)
-    -   [For Linux SNAP](#for-linux-snap)
-        -   [Update CSS Only](#update-css-only-1)
-        -   [Revert to Light mode](#revert-to-light-mode)
-    -   [For Windows Users](#for-windows-users)
-    -   [Attributions](#attributions)
-    -   [Bugs](#bugs)
-    -   [License](#license)
-    -   [Donate](#donate)
+    -   [Purpose](#purpose)  
+    -   [Screenshot](#screenshot)  
+    -   [Notice](#notice)  
+    -   [Usage](#usage)  
+    -   [For All Systems/OS](#for-all-systems-os)  
+        -   [For macOS and Linux](#for-macos-and-linux)  
+        -   [Update CSS Only](#update-css-only)  
+    -   [For Linux SNAP](#for-linux-snap)  
+        -   [Update CSS Only](#update-css-only-1)  
+        -   [Revert to Light mode](#revert-to-light-mode)  
+    -   [For Windows Users](#for-windows-users)  
+    -   [Attributions](#attributions)  
+    -   [Bugs](#bugs)  
+    -   [License](#license)  
+    -   [Donate](#donate)  
 
 ## Purpose
 
@@ -72,6 +72,12 @@ Then shutdown Slack and please reference for your operating system:
 ./slack-dark-mode.sh -u
 ```
 
+### Revert to Light Mode
+
+```bash
+./slack-dark-mode.sh -l
+```
+
 ## For Linux SNAP
 
 Since snap is a 'read-only' file system, we have to mount the changes.
@@ -89,7 +95,7 @@ Note: This script will automatically kill Slack when the `-u` flag is not used t
 ./snap-slack-dark-mode.sh -u
 ```
 
-### Revert to Light mode4
+### Revert to Light Mode
 
 ```bash
 ./snap-slack-dark-mode.sh -light
