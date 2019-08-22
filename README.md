@@ -4,6 +4,23 @@
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=LanikSJ/slack-dark-mode)](https://dependabot.com)
 [![Known Vulnerabilities](https://snyk.io/test/github/laniksj/slack-dark-mode/badge.svg?targetFile=/docs/Gemfile.lock)](https://snyk.io/test/github/laniksj/slack-dark-mode?targetFile=/docs/Gemfile.lock)
 
+-   [Slack Desktop Dark Mode](#slack-desktop-dark-mode)
+    -   [Purpose](#purpose)
+    -   [Screenshot](#screenshot)
+    -   [Notice](#notice)
+    -   [Usage](#usage)
+    -   [For All Systems/OS](#for-all-systems-os)
+        -   [For macOS and Linux](#for-macos-and-linux)
+        -   [Update CSS Only](#update-css-only)
+    -   [For Linux SNAP](#for-linux-snap)
+        -   [Update CSS Only](#update-css-only-1)
+        -   [Revert to Light mode](#revert-to-light-mode)
+    -   [For Windows Users](#for-windows-users)
+    -   [Attributions](#attributions)
+    -   [Bugs](#bugs)
+    -   [License](#license)
+    -   [Donate](#donate)
+
 ## Purpose
 
 Store scripts and Style sheets for Slack Desktop Dark Mode.  
@@ -37,8 +54,8 @@ In general, you should completely close out of Slack before or after you run the
 First, clone the repository
 
 ```bash
-$ git clone https://github.com/LanikSJ/slack-dark-mode
-$ cd slack-dark-mode
+git clone https://github.com/LanikSJ/slack-dark-mode
+cd slack-dark-mode
 ```
 
 Then shutdown Slack and please reference for your operating system:
@@ -46,27 +63,39 @@ Then shutdown Slack and please reference for your operating system:
 ### For macOS and Linux
 
 ```bash
-$ ./slack-dark-mode.sh
-# or to update CSS only:
-$ ./slack-dark-mode.sh -u
+./slack-dark-mode.sh
 ```
 
-### For Linux SNAP installs
+### Update CSS Only
 
-Since snap is a 'read-only' file system, we have to mount the changes.  
-The script automatically insert a new crontab so it will persist through reboots.  
-Since the way SNAPS work are different, we can easily revert to light mode as well with the script.  
+```bash
+./slack-dark-mode.sh -u
+```
+
+## For Linux SNAP
+
+Since snap is a 'read-only' file system, we have to mount the changes.
+The script automatically insert a new crontab so it will persist through reboots.
+Since the way SNAPS work are different, we can easily revert to light mode as well with the script.
 Note: This script will automatically kill Slack when the `-u` flag is not used to ensure the mount is not busy.
 
 ```bash
-$ ./snap-slack-dark-mode.sh
-# or to update CSS only:
-$ ./snap-slack-dark-mode.sh -u
-# or to revert to Light mode
-$ ./snap-slack-dark-mode.sh -light
+./snap-slack-dark-mode.sh
 ```
 
-### For Windows Users
+### Update CSS Only
+
+```bash
+./snap-slack-dark-mode.sh -u
+```
+
+### Revert to Light mode4
+
+```bash
+./snap-slack-dark-mode.sh -light
+```
+
+## For Windows Users
 
 Open Powershell in Admin mode:  
 Note: This script will automatically kill Slack each time you update.
