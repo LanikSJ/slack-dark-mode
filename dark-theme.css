@@ -2008,8 +2008,12 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .CodeMirror {
-  background: #000;
+  background: var(--main-dark-highlight) !important;
   border: 1px solid var(--main-dark-highlight);
+  color: var(--main-text) !important;
+}
+
+.CodeMirror-code div::before {
   color: var(--main-text) !important;
 }
 
@@ -9591,8 +9595,8 @@ ts-thread {
   background-color: var(--main-dark-highlight) !important;
 }
 
-footer.p-workspace__primary_view_footer {
-  background-color: var(--main-bg-color);
+.workspace__primary_view_footer {
+  background-color: var(--main-bg-color) !important;
 }
 
 .p-unreads_view__header {
@@ -9609,4 +9613,32 @@ ts-thread ts-message.new_reply {
 
 ts-thread ts-message.new_reply:hover {
   background: var(--main-dark-highlight);
+}
+
+.p-message_pane_input__preview {
+  background-color: var(--main-dark-highlight) !important;
+}
+
+.p-message_pane_input__preview div {
+  color: var(--main-text) !important;
+}
+
+.c-select_button {
+  background-color: var(--main-dark-highlight) !important;
+}
+
+div[role=listbox] {
+  background-color: var(--main-dark-highlight) !important;
+}
+
+.c-select_options_list__option {
+  color: var(--main-text) !important;
+}
+
+.c-select_options_list__option--selected {
+  color: #3aa3e3 !important;
+}
+
+.c-select_options_list__option--active {
+  color: var(--main-text) !important;
 }
