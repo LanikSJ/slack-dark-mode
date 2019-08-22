@@ -11,7 +11,7 @@ title: Slack Dark Mode
 -   [Notice](#notice)
 -   [Usage](#usage)
     -   [For All Systems/OS](#for-all-systems-os)
-        -   [For macOS and Linux](#for-macos-and-linux)
+    -   [For macOS and Linux](#for-macos-and-linux)
         -   [Update CSS Only](#update-css-only)
         -   [Revert to Light Mode](#revert-to-light-mode)
     -   [For Linux SNAP](#for-linux-snap)
@@ -59,7 +59,7 @@ cd slack-dark-mode
 
 Then shutdown Slack and please reference for your operating system:
 
-#### For macOS and Linux
+### For macOS and Linux
 
 ```bash
 ./slack-dark-mode.sh
