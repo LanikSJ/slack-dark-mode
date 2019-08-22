@@ -4,7 +4,7 @@
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=LanikSJ/slack-dark-mode)](https://dependabot.com)
 [![Known Vulnerabilities](https://snyk.io/test/github/laniksj/slack-dark-mode/badge.svg?targetFile=/docs/Gemfile.lock)](https://snyk.io/test/github/laniksj/slack-dark-mode?targetFile=/docs/Gemfile.lock)
 
-# Purpose
+## Purpose
 
 Store scripts and Style sheets for Slack Desktop Dark Mode.  
 Native Dark Mode in Slack isn't available as of this writing.
@@ -16,16 +16,16 @@ The following platforms are supported in this repo via scripts:
     -   SNAP [snap-slack-dark-mode.sh](snap-slack-dark-mode.sh)  
 -   Windows [slack-dark-mode.ps1](slack-dark-mode.ps1)  
 
-# Screenshot
+## Screenshot
 
 ![Screenshot](https://github.com/LanikSJ/slack-dark-mode/raw/master/images/screenshot.png "Screenshot")
 
-# Notice
+## Notice
 
 Due to the changes in Slack 4.0+ this project will not be compatible with Slack Version 3.4 or below.  
 If you're looking for 3.4.x compatible settings please refer to [this](https://github.com/LanikSJ/slack-dark-mode/tree/466ff22d5b606b6d5b2edeff54f4cd7a3bafc39c).
 
-# Usage
+## Usage
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e88f5c76dfdf418e9c2571943437ae23)](https://www.codacy.com/app/Lanik/slack-dark-mode?utm_source=github.com&utm_medium=referral&utm_content=LanikSJ/slack-dark-mode&utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/LanikSJ/slack-dark-mode/branch/master/graph/badge.svg)](https://codecov.io/gh/LanikSJ/slack-dark-mode)
@@ -79,19 +79,19 @@ PS ~/> .\slack-dark-mode.ps1 -UpdateOnly
 
 If you want to make your own tweaks to the css, you can create a file called `custom-dark-theme.css` in the root of the repository, which will be appended to the end of the main css so you can easily keep your changes through updates of the repo.
 
-# Attributions
+## Attributions
 
 Some scripts were "borrowed" from [mmrko](https://gist.github.com/mmrko) [Gist](https://gist.github.com/mmrko/9b0e65f6bcc1fca57089c32c2228aa39)  
 ©️ All rights reserved by the original authors.
 
-# Bugs
+## Bugs
 
 Please report any bugs or issues you find. Thanks!
 
-# License
+## License
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
-# Donate
+## Donate
 
 [![Patreon](https://img.shields.io/badge/patreon-donate-red.svg)](https://www.patreon.com/laniksj/overview)
