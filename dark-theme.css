@@ -4031,6 +4031,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: var(--secondary-text);
 }
 
+.p-channel_details__heading, .p-channel_details__subsection {
+  color: #f8f8f8
+}
+
 .p-channel_insights .c-member__title {
   color: #949494;
 }
