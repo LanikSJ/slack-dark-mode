@@ -4015,7 +4015,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: var(--main-text);
 }
 
-.p-dm_browser_modal__list_heading{
+.p-dm_browser_modal__list_heading {
   color: var(--main-text);
 }
 
@@ -4029,6 +4029,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .p-channel_browser_list_item__create_info {
   color: var(--secondary-text);
+}
+
+.p-channel_details__heading, .p-channel_details__subsection {
+  color: #f8f8f8
 }
 
 .p-channel_insights .c-member__title {
@@ -6894,7 +6898,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: var(--main-text);
 }
 
-.p-channel_name_input__label_title  {
+.p-channel_name_input__label_title {
   color: var(--secondary-text);
 }
 
