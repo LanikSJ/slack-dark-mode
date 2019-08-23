@@ -9642,3 +9642,7 @@ div[role=listbox] {
 .c-select_options_list__option--active {
   color: var(--main-text) !important;
 }
+
+.p-dm_browser_modal__list_row--active {
+  background-color: var(--main-dark-highlight) !important;
+}
