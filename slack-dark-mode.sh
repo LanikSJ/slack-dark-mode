@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Usage: ./slack-dark-mode.sh [-u] for update only.
+# Usage: ./slack-dark-mode.sh (see README.md for other commands)
 # Homebaked Slack Dark Mode. After executing this script restart Slack for changes to take effect.
 # Adopted from https://gist.github.com/a7madgamal/c2ce04dde8520f426005e5ed28da8608
 
@@ -46,19 +46,16 @@ fi
 if [[ -z $HOME ]]; then HOME=$(ls -d ~); fi
 
 if [[ "$LIGHT_MODE" == "true" ]]; then
-    echo "Removing Dark Theme.."
-    echo "Please refresh slack (ctrl/cmd + R)"
-    sudo rm -f $THEME_FILEPATH
+    echo "Removing Dark Theme... " && echo "Please refresh slack (ctrl/cmd + R)" && sudo rm -f $THEME_FILEPATH
     exit
 fi
 
 # Copy CSS to Slack Folder
 sudo cp -af dark-theme.css "$THEME_FILEPATH"
 
-# if we have a custom file, append to the end.
+# If we Have a Custom File, Append to the End
 if [[ -f custom-dark-theme.css ]]; then
-    echo "Adding custom css"
-    cat custom-dark-theme.css >> "$THEME_FILEPATH"
+    echo "Adding Custom CSS" && cat custom-dark-theme.css >> "$THEME_FILEPATH"
 fi
 
 if [[ "$UPDATE_ONLY" == "false" ]]; then
