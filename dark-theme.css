@@ -1355,6 +1355,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background-color: #616061;
 }
 
+.c-multi_pane_modal .c-sk-modal_header {
+  background-color: #222;
+}
+
 .c-multi_select_input__input--initial {
   background-color: #949494;
 }
@@ -1460,6 +1464,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .c-select_button__content {
   color: var(--main-text);
+}
+
+.c-sk-modal__content__inner, .c-sk-modal_footer {
+  background-color: var(--main-bg-color);
 }
 
 .c-tabs__tab {
