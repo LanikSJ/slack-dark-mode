@@ -9659,3 +9659,11 @@ div[role=listbox] {
 .p-dm_browser_modal__list_row--active {
   background-color: var(--main-dark-highlight) !important;
 }
+
+.p-call_button_base--active {
+  background-color: var(--main-highlight);
+}
+
+.p-calls_settings_panel {
+  background-color: var(--main-bg-color);
+}
