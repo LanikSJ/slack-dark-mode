@@ -9672,3 +9672,7 @@ div[role=listbox] {
 .p-calls_settings_panel {
   background-color: var(--main-bg-color);
 }
+
+.c-sk-modal_header {
+	background-color: var(--main-dark-highlight);
+}
