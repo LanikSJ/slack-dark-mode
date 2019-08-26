@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       if (localStorage.getItem(IS_DARK_KEY) === null) {
         localStorage.setItem(IS_DARK_KEY, true);
-        window.location.reload(true)
+        window.location.reload(true);
       }
 
       if (JSON.parse(localStorage.getItem(IS_DARK_KEY))) {
