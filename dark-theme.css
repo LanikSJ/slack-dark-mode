@@ -1466,7 +1466,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: var(--main-text);
 }
 
-.c-sk-modal__content__inner, .c-sk-modal_footer {
+.c-sk-modal__content__inner, .c-sk-modal_footer, .c-sk-modal_title_bar--pad_right {
   background-color: var(--main-bg-color);
 }
 
