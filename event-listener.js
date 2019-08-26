@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
   const fs = require('fs');
   const filePath = "SLACK_DARK_THEME_PATH";
