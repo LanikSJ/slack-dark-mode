@@ -4212,6 +4212,11 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #949494 !important;
 }
 
+.p-context_bar {
+  background: var(--main-bg-color);
+  color: var(--main-text);
+}
+
 .p-custom_status_input__clear_icon {
   color: #f8f8f8;
 }
