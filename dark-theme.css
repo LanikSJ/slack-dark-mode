@@ -4212,6 +4212,11 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: #949494 !important;
 }
 
+.p-context_bar {
+  background: var(--main-bg-color);
+  color: var(--main-text);
+}
+
 .p-custom_status_input__clear_icon {
   color: #f8f8f8;
 }
@@ -9658,4 +9663,12 @@ div[role=listbox] {
 
 .p-dm_browser_modal__list_row--active {
   background-color: var(--main-dark-highlight) !important;
+}
+
+.p-call_button_base--active {
+  background-color: var(--main-highlight);
+}
+
+.p-calls_settings_panel {
+  background-color: var(--main-bg-color);
 }
