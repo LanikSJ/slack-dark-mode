@@ -12,6 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
       const head = document.querySelector("head");
       styleEl.innerHTML = css;
 
+      if (localStorage.getItem(IS_DARK_KEY) === null) {
+        localStorage.setItem(IS_DARK_KEY, true);
+        window.location.reload(true);
+      }
+
       if (JSON.parse(localStorage.getItem(IS_DARK_KEY))) {
         head.append(styleEl);
       }
