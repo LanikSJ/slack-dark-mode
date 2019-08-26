@@ -128,7 +128,7 @@ If you want to make your own tweaks to the css, you can create a file called `cu
 
 ### Dark Mode Toggle
 
-If you want to toggle Dark Mode on or off you can use Ctrl + l on any OS.
+If you want to toggle Dark Mode on or off you can use Ctrl + L (lower case) on any OS.
 
 ## Attributions
 
