@@ -1,5 +1,3 @@
-#Requires -RunAsAdministrator
-
 Param(
     [string] $CSSUrl = "https://raw.githubusercontent.com/LanikSJ/slack-dark-mode/master/dark-theme.css",
     [string] $SlackBase = $null,
