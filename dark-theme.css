@@ -1205,10 +1205,15 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   border-bottom-color: rgb(86, 87, 88);
   border-left-color: rgb(86, 87, 88);
   border-top-color: rgb(86, 87, 88);
+  background-color: var(--main-bg-color);
 }
 
 .c-message_kit__file__meta {
   color: var(--main-text);
+}
+
+.c-message_kit__footer_channel, .c-message_kit__reaction_condensed {
+  color: #f8f8f8
 }
 
 .c-message_list .c-scrollbar__bar {
