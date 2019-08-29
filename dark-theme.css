@@ -3990,16 +3990,8 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: var(--main-bg-color);
 }
 
-.p-archives_banner {
-  background-color: var(--main-dark-highlight);
-}
-
-.p-archives_banner__data_range {
+.p-archives_banner, .p-archives_banner__data_range, .p-archives_banner__jump {
   background-color: var(--main-bg-color);
-  color: #f8f8f8;
-}
-
-.p-archives_banner__jump {
   color: #f8f8f8;
 }
 
@@ -4500,6 +4492,14 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .p-message_pane__foreword__description, .p-message_pane__limited_history_alert {
   color: var(--main-text);
+}
+
+.p-message_pane_input__disabled {
+  background-color: var(--main-bg-color);
+}
+
+.p-message_pane_input__disabled_text {
+  color: #f8f8f8;
 }
 
 .p-message_pane__limited_history_foreword {
