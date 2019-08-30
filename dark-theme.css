@@ -9594,6 +9594,11 @@ ts-thread {
   color: rgba(230, 230, 230, .7);
 }
 
+.p-classic_nav__model__title__info__topic--focus-within .p-classic_nav__model__title__info__topic__text:before,
+.p-classic_nav__model__title__info__topic:hover .p-classic_nav__model__title__info__topic__text:before {
+  background: var(--main-dark-highlight);
+}
+
 .p-classic_nav__model__title__is_you {
   color: var(--secondary-text);
 }
