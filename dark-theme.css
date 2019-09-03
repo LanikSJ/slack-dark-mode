@@ -9686,3 +9686,7 @@ div[role=listbox] {
 .p-call_subtype {
   background-color: var(--main-highlight) !important;
 }
+
+.p-call_subtype div span {
+  color: var(--main-text);
+}
