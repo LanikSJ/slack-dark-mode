@@ -20,12 +20,13 @@ title: Slack Dark Mode
     -   [For Windows Users](#for-windows-users)
         -   [Update CSS Only (Windows)](#update-css-only--windows-)
         -   [Revert to Light Mode (Windows)](#revert-to-light-mode--windows-)
+    -   [Dark Mode Toggle](#dark-mode-toggle)
 -   [Attributions](#attributions)
 -   [Bugs](#bugs)
 -   [License](#license)
 -   [Donate](#donate)
 
-# Purpose
+## Purpose
 
 Store scripts and Style sheets for Slack Desktop Dark Mode.
 Native Dark Mode in Slack isn't available as of this writing.
@@ -37,16 +38,16 @@ The following platforms are supported in this repo via scripts:
 -   Linux SNAP [snap-slack-dark-mode.sh](snap-slack-dark-mode.sh)
 -   Windows [slack-dark-mode.ps1](slack-dark-mode.ps1)
 
-# Screenshot
+## Screenshot
 
 ![Screenshot](https://github.com/LanikSJ/slack-dark-mode/raw/master/images/screenshot.png "Screenshot")
 
-# Notice
+## Notice
 
 Due to the changes in Slack 4.0+ this project will not be compatible with Slack Version 3.4 or below.
 If you're looking for 3.4.x compatible settings please refer to [this](https://github.com/LanikSJ/slack-dark-mode/tree/466ff22d5b606b6d5b2edeff54f4cd7a3bafc39c).
 
-# Usage
+## Usage
 
 In general, you should completely close out of Slack before or after you run the install scripts. This will ensure that everything is properly updated. Once the script has been run the first time, if you ever need to update the CSS styles, you can simply use `ctrl + r` or `cmd + r` in macOS to reload Slack and update the CSS, if the scripts below do not automatically close Slack for you.
 
@@ -125,11 +126,15 @@ Note: This script will automatically kill Slack each time you update.
 
 If you want to make your own tweaks to the css, you can create a file called `custom-dark-theme.css` in the root of the repository, which will be appended to the end of the main css so you can easily keep your changes through updates of the repo.
 
-# Attributions
+### Dark Mode Toggle
+
+If you want to toggle Dark Mode on or off you can use Ctrl + L (lower case) on any OS.
+
+## Attributions
 
 Scripts was "borrowed" from [mmrko](https://gist.github.com/mmrko) [Gist](https://gist.github.com/mmrko/9b0e65f6bcc1fca57089c32c2228aa39)
 ©️ All rights reserved by the original authors.
 
-# Bugs
+## Bugs
 
 Please report any bugs or issues you find. Thanks!

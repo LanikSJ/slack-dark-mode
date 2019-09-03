@@ -18,6 +18,8 @@ for arg in "$@"; do
     esac
 done
 
+if [[ -z $OSX_SLACK_RESOURCES_DIR ]] || [[ -z $LINUX_SLACK_RESOURCES_DIR ]]; then echo "Please make sure Slack is installed /Applications (macOS) or /usr/local/slack (Linux)" && exit 1; fi
+
 echo && echo "This script requires sudo privileges." && echo "You'll need to provide your password."
 
 type npx
