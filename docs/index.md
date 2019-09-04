@@ -152,6 +152,5 @@ Please report any bugs or issues you find. Thanks!
 
 ## Donate
 
-[![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ARJNJE9TBTPH4&currency_code=USD&source=url)
-
+[![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ARJNJE9TBTPH4&currency_code=USD&source=url)
 [![Patreon](https://img.shields.io/badge/patreon-donate-red.svg)](https://www.patreon.com/laniksj/overview)
