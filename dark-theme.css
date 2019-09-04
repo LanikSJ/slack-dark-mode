@@ -648,7 +648,6 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .c-dialog__body .c-input_character_count .c-input_character_count__characters-remaining {
   background-color: var(--main-dark-highlight);
-  color: var(--main-dark-highlight);
 }
 
 .c-dialog__body input.c-input_text {
