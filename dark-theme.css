@@ -4786,12 +4786,20 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background-color: var(--main-dark-highlight) !important;
 }
 
+.p-workspace__primary_view {
+  border: 1px solid var(--main-dark-highlight);
+}
+
 .p-workspace__primary_view_body {
   background-color: var(--main-bg-color) !important;
 }
 
 .p-workspace__sidebar {
   background: var(--sidebar-bg-color) !important;
+}
+
+.p-workspace__secondary_view {
+  border: none;
 }
 
 .p-workspace__secondary_view_contents {
