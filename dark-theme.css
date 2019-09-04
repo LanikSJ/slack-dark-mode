@@ -4796,7 +4796,6 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .p-workspace__sidebar {
   background: var(--sidebar-bg-color) !important;
-  border-top: 1px solid var(--main-dark-highlight);
 }
 
 .p-workspace__secondary_view_contents {
