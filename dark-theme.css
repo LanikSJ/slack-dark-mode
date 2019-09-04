@@ -564,6 +564,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: var(--text-hover);
 }
 
+.c-base_entity__subtext {
+  color: var(--secondary-text);
+}
+
 .c-button {
   background-color: var(--main-dark-highlight);
   color: var(--main-text);
@@ -875,6 +879,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .c-member--small .team_image.icon_16 {
   border-color: var(--main-dark-highlight);
+}
+
+.c-member__primary_content {
+  color: var(--main-text);
 }
 
 .c-menu {
@@ -1402,7 +1410,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: var(--main-bg-color);
 }
 
-.c-pillow_file_container .c-pillow_file__swap .c-pillow_file__slide {
+.c-pillow_file, .c-pillow_file_container .c-pillow_file__swap .c-pillow_file__slide {
   background-color: #000;
 }
 
@@ -4557,6 +4565,16 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   text-shadow: 0 1px rgba(0, 0, 0, 0.15);
 }
 
+.p-gallery_scroller__content, .p-multi_file_upload__container .p-galler_scroller__wrapper {
+  background: var(--main-bg-color);
+  border: 1px solid #1e1d1e;
+  border-radius: 0px;
+}
+
+.p-multi_file_upload__file_gallery {
+  background: var(--main-bg-color);
+}
+
 .p-notification_bar__section {
   color: #949494;
 }
@@ -4684,14 +4702,6 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .p-member_directory__member_row:hover {
   background: var(--main-dark-highlight);
-}
-
-.c-member__primary_content {
-  color: var(--main-text);
-}
-
-.c-base_entity__subtext {
-  color: var(--secondary-text);
 }
 
 .p-threads_view {
