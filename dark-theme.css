@@ -646,6 +646,11 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: var(--main-text);
 }
 
+.c-dialog__body .c-input_character_count .c-input_character_count__characters-remaining {
+  background-color: var(--main-dark-highlight);
+  color: var(--main-dark-highlight);
+}
+
 .c-dialog__body input.c-input_text {
   border-color: var(--main-dark-highlight);
 }
@@ -9220,7 +9225,8 @@ textarea:focus {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(130, 130, 130, 0.6);
 }
 
-textarea.c-input_textarea.c-input_textarea--with_hint {
+textarea.c-input_textarea.c-input_textarea--with_hint,
+textarea.c-input_textarea.c-input_textarea--with_character_count {
   background-color: var(--main-highlight);
   color: #f8f8f8;
 }
