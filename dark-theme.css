@@ -736,6 +736,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: var(--main-highlight);
 }
 
+.c-filter_input__input[type=text][placeholder] {
+  color: #f8f8f8; 
+}
+
 .c-fullscreen_modal__body {
   background-color: var(--main-bg-color);
   color: var(--main-text);
@@ -4796,12 +4800,20 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background-color: var(--main-dark-highlight) !important;
 }
 
+.p-workspace__primary_view {
+  border: 1px solid var(--main-dark-highlight);
+}
+
 .p-workspace__primary_view_body {
   background-color: var(--main-bg-color) !important;
 }
 
 .p-workspace__sidebar {
   background: var(--sidebar-bg-color) !important;
+}
+
+.p-workspace__secondary_view {
+  border: none;
 }
 
 .p-workspace__secondary_view_contents {
