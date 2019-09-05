@@ -4214,7 +4214,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .p-channel_sidebar__channel:hover, .p-channel_sidebar__link:hover {
-  background: var(--main-bg-color) !important;
+  background: var(--main-dark-highlight) !important;
 }
 
 .p-channel_browser_list_item:hover {
