@@ -8857,7 +8857,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 div[role=listbox] {
-  background-color: var(--main-dark-highlight) !important;
+  background-color: var(--main-bg-color) !important;
 }
 
 footer ul a, #autocomplete_menu.search_menu footer.unified ul a {
