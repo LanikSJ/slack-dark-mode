@@ -737,7 +737,7 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 }
 
 .c-filter_input__input[type=text][placeholder] {
-  color: #f8f8f8; 
+  color: #f8f8f8;
 }
 
 .c-fullscreen_modal__body {
@@ -4342,6 +4342,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 .p-downloads_list__shift_hint {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0), var(--main-dark-highlight) 25%, var(--main-dark-highlight));
   color: var(--main-text);
+}
+
+.p-edit_profile__rules {
+  color: #949494;
 }
 
 .p-emoji_picker {
