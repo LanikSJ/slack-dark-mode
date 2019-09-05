@@ -4229,10 +4229,6 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   color: var(--main-text) !important;
 }
 
-.p-channel_sidebar__jumper {
-  background: transparent !important;
-}
-
 .p-channel_sidebar__link--selected::before, .p-channel_sidebar__link--selected::after {
   color: var(--main-text);
 }
