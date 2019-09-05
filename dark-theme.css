@@ -4217,6 +4217,10 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background: var(--main-bg-color) !important;
 }
 
+.p-channel_browser_list_item:hover {
+  background: var(--main-dark-highlight) !important;
+}
+
 .p-channel_sidebar__close_container:hover {
   background: #000;
 }
