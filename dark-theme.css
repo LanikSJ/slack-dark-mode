@@ -613,10 +613,6 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background-color: var(--main-dark-highlight);
 }
 
-.c-fullscreen_modal__close--with_header .c-deprecated-icon {
-  color: var(--text-hover);
-}
-
 .c-dialog .p-custom_status_input__duration_picker_select .c-input_select__selected_value--placeholder {
   color: var(--main-text);
 }
@@ -747,6 +743,15 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
 
 .c-fullscreen_modal__header {
   background-color: var(--main-bg-color);
+}
+
+.c-fullscreen_modal__close--with_header .c-deprecated-icon {
+  color: var(--text-hover);
+}
+
+.c-fullscreen_modal__content--with_frameless_padding {
+  background: var(--main-bg-color);
+  margin-top: 0px;
 }
 
 .c-hint {
