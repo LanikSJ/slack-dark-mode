@@ -1534,6 +1534,11 @@ a.c-member_slug, .c-member_slug--link, .c-mrkdwn__subteam--link {
   background-color: var(--main-dark-highlight);
 }
 
+.c-texty_autocomplete--commands .c-texty_autocomplete__group {
+  background: #424242;
+  color: #f8f8f8;
+}
+
 .c-texty_input .ql-placeholder {
   color: var(--main-text);
 }
