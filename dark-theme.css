@@ -9722,3 +9722,8 @@ ts-thread ts-message.new_reply {
 ts-thread ts-message.new_reply:hover {
   background: var(--main-dark-highlight);
 }
+
+.p-message_pane_drag_overlay, .p-message_pane_drag_overlay--night {
+  color: var(--main-text);
+  background-color: #363636F2;
+}
