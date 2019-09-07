@@ -2,7 +2,8 @@ Param(
     [string] $CSSUrl = "https://raw.githubusercontent.com/LanikSJ/slack-dark-mode/master/dark-theme.css",
     [string] $SlackBase = $null,
     [switch] $UpdateOnly,
-    [switch] $LightMode
+    [switch] $LightMode,
+    [switch] $ForceSonicProtection
 )
 
 if (-not (Get-Command -Name "npx" -ErrorAction SilentlyContinue)) {
@@ -85,17 +86,25 @@ $patch
     Write-Output "Packing asar archive"
     &npx asar pack "$unpacked" "$asar"
 
-    Write-Output "Adding workaround to ensure theme boots"
+    # Prior to whatever sonic_v2 is, we have to force bootSonic to false in local settings to get the theme to load
+    # However, it appears sonic_v2 is slowly rolling out to users and we don't need to worry about setting this flag
+    # anymore. To fix users who are stuck in a crash-loop, remove read-only protection from the local settings.
     $localSettingsPath = Join-Path -Path $env:APPDATA -ChildPath "Slack" | Join-Path -ChildPath "local-settings.json"
-    $localSettings = Get-Content -Raw -Path $localSettingsPath | ConvertFrom-Json
-
-    if (-not ($localSettings | Get-Member -Name "bootSonic")) {
-        $localSettings | Add-Member -MemberType NoteProperty -Name "bootSonic" -Value "never"
+    if ($ForceSonicProtection) {
+        Write-Output "Adding workaround to ensure theme boots"
+        Write-Warning "If you are on Slack 4.0.2 or later you most likely do not need to use -ForceSonicProtection. If slack gets stuck in a crash-loop, re-run this script without -ForceSonicProtection"
+        $localSettings = Get-Content -Raw -Path $localSettingsPath | ConvertFrom-Json
+    
+        if (-not ($localSettings | Get-Member -Name "bootSonic")) {
+            $localSettings | Add-Member -MemberType NoteProperty -Name "bootSonic" -Value "never"
+        } else {
+            $localSettings.bootSonic = "never"
+        }
+    
+        Set-ItemProperty -Path $localSettingsPath -Name IsReadOnly -Value $false
+        $localSettings | ConvertTo-Json -Compress | Set-Content -Path $localSettingsPath
+        Set-ItemProperty -Path $localSettingsPath -Name IsReadOnly -Value $true
     } else {
-        $localSettings.bootSonic = "never"
+        Set-ItemProperty -Path $localSettingsPath -Name IsReadOnly -Value $false
     }
-
-    Set-ItemProperty -Path $localSettingsPath -Name IsReadOnly -Value $false
-    $localSettings | ConvertTo-Json -Compress | Set-Content -Path $localSettingsPath
-    Set-ItemProperty -Path $localSettingsPath -Name IsReadOnly -Value $true
 }
