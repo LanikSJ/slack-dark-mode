@@ -6,6 +6,12 @@ Param(
     [switch] $ForceSonicProtection
 )
 
+$default_npm_cache = &npm config get cache --global
+If ($default_npm_cache -match " "){
+    # if the path contains a space, then lets set to a temporary location until we finish.
+    &npm config set cache C:\tmp\nodejs\npm-cache --global
+}
+
 if (-not (Get-Command -Name "npx" -ErrorAction SilentlyContinue)) {
     throw "npx is required to unpack slack. Please install Node for your OS."
 }
@@ -107,4 +113,9 @@ $patch
     } else {
         Set-ItemProperty -Path $localSettingsPath -Name IsReadOnly -Value $false
     }
+}
+
+If ($default_npm_cache -match " "){
+    # if the path contains a space, then lets set it back to the original value.
+    &npm config set cache $default_npm_cache --global
 }
