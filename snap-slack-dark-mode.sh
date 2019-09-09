@@ -59,7 +59,7 @@ if [[ "$UPDATE_ONLY" == "false" ]]; then
     unmount_slack
 
     # Unpack Asar Archive for Slack
-    sudo npx asar extract $SLACK_RESOURCES_DIR/app.asar $ssb_js_dir/app.asar.unpacked
+    sudo "PATH=$PATH" npx asar extract $SLACK_RESOURCES_DIR/app.asar $ssb_js_dir/app.asar.unpacked
 
     # Add JS Code to Slack
     sudo bash -c "cat $SLACK_EVENT_LISTENER >> $SLACK_FILEPATH"
@@ -68,7 +68,7 @@ if [[ "$UPDATE_ONLY" == "false" ]]; then
     sudo sed -i -e s@SLACK_DARK_THEME_PATH@$THEME_FILEPATH@g $SLACK_FILEPATH
 
     # Pack the Asar Archive for Slack
-    sudo npx asar pack $ssb_js_dir/app.asar.unpacked $ssb_js_dir/app.asar
+    sudo "PATH=$PATH" npx asar pack $ssb_js_dir/app.asar.unpacked $ssb_js_dir/app.asar
 
     sudo mount --bind -o nodev,ro $ssb_js_dir/app.asar $SLACK_RESOURCES_DIR/app.asar
 
