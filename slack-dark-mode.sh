@@ -67,7 +67,7 @@ if [[ "$UPDATE_ONLY" == "false" ]]; then
     if [[ -f "$HOME/$SLACK_STORE_LOCAL_SETTINGS" ]]; then sudo sed -i 's/"bootSonic":"[^"]*"/"bootSonic":"never"/g' "$HOME/$SLACK_STORE_LOCAL_SETTINGS"; fi
 
     # Unpack Asar Archive for Slack
-    sudo npx asar extract $SLACK_RESOURCES_DIR/app.asar $SLACK_RESOURCES_DIR/app.asar.unpacked
+    sudo "PATH=$PATH" npx asar extract $SLACK_RESOURCES_DIR/app.asar $SLACK_RESOURCES_DIR/app.asar.unpacked
 
     # Add JS Code to Slack
     sudo tee -a "$SLACK_FILEPATH" > /dev/null < $SLACK_EVENT_LISTENER
@@ -76,7 +76,7 @@ if [[ "$UPDATE_ONLY" == "false" ]]; then
     sudo sed -i -e s@SLACK_DARK_THEME_PATH@$THEME_FILEPATH@g $SLACK_FILEPATH
 
     # Pack the Asar Archive for Slack
-    sudo npx asar pack $SLACK_RESOURCES_DIR/app.asar.unpacked $SLACK_RESOURCES_DIR/app.asar
+    sudo "PATH=$PATH" npx asar pack $SLACK_RESOURCES_DIR/app.asar.unpacked $SLACK_RESOURCES_DIR/app.asar
 fi
 
 echo && echo "Done! After executing this script restart Slack for changes to take effect."
