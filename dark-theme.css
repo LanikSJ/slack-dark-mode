@@ -9732,3 +9732,11 @@ ts-thread ts-message.new_reply:hover {
   color: var(--main-text);
   background-color: #363636F2;
 }
+
+.p-message_pane__unread_banner__close {
+  background: var(--main-dark-highlight);
+}
+
+.p-message_pane__unread_banner__close:hover {
+  background: var(--text-hover);
+}
