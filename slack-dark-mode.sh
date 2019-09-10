@@ -23,7 +23,7 @@ if [[ -z $OSX_SLACK_RESOURCES_DIR ]] || [[ -z $LINUX_SLACK_RESOURCES_DIR ]]; the
 echo && echo "This script requires sudo privileges." && echo "You'll need to provide your password."
 
 type npx
-if [[ "$?" != "0" ]]; then echo "Please install Node for your OS.  macOS users will also need to install Homebrew from https://brew.sh"; fi
+if [[ "$?" != "0" ]]; then echo "Please install NodeJS for your OS." && echo "macOS users will also need to install Homebrew from https://brew.sh" && exit 1; fi
 
 if [[ -d $OSX_SLACK_RESOURCES_DIR ]]; then
     SLACK_RESOURCES_DIR=$OSX_SLACK_RESOURCES_DIR
@@ -48,7 +48,7 @@ fi
 if [[ -z $HOME ]]; then HOME=$(ls -d ~); fi
 
 if [[ "$LIGHT_MODE" == "true" ]]; then
-    echo "Removing Dark Theme... " && echo "Please refresh slack (ctrl/cmd + R)" && sudo rm -f $THEME_FILEPATH
+    echo "Removing Dark Theme... " && echo "Please refresh/restart Slack (ctrl/cmd + R) for changes to take affect." && sudo rm -f $THEME_FILEPATH
     exit
 fi
 
@@ -57,7 +57,7 @@ sudo cp -af dark-theme.css "$THEME_FILEPATH"
 
 # If we Have a Custom File, Append to the End
 if [[ -f custom-dark-theme.css ]]; then
-    echo "Adding Custom CSS" && cat custom-dark-theme.css >> "$THEME_FILEPATH"
+    echo "Adding Custom CSS to Dark Theme... " && cat custom-dark-theme.css >> "$THEME_FILEPATH"
 fi
 
 if [[ "$UPDATE_ONLY" == "false" ]]; then
