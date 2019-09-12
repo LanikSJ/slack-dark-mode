@@ -22,7 +22,7 @@ if [[ -z $OSX_SLACK_RESOURCES_DIR ]] || [[ -z $LINUX_SLACK_RESOURCES_DIR ]]; the
 
 echo && echo "This script requires sudo privileges." && echo "You'll need to provide your password."
 
-type npx
+NPX_PATH=$(type -P npx)
 if [[ "$?" != "0" ]]; then echo "Please install NodeJS for your OS." && echo "macOS users will also need to install Homebrew from https://brew.sh" && exit 1; fi
 
 if [[ -d $OSX_SLACK_RESOURCES_DIR ]]; then
@@ -67,7 +67,7 @@ if [[ "$UPDATE_ONLY" == "false" ]]; then
     if [[ -f "$HOME/$SLACK_STORE_LOCAL_SETTINGS" ]]; then sudo sed -i 's/"bootSonic":"[^"]*"/"bootSonic":"never"/g' "$HOME/$SLACK_STORE_LOCAL_SETTINGS"; fi
 
     # Unpack Asar Archive for Slack
-    sudo "PATH=$PATH" npx asar extract $SLACK_RESOURCES_DIR/app.asar $SLACK_RESOURCES_DIR/app.asar.unpacked
+    sudo "PATH=$PATH" $NPX_PATH asar extract $SLACK_RESOURCES_DIR/app.asar $SLACK_RESOURCES_DIR/app.asar.unpacked
 
     # Add JS Code to Slack
     sudo tee -a "$SLACK_FILEPATH" > /dev/null < $SLACK_EVENT_LISTENER
@@ -76,7 +76,7 @@ if [[ "$UPDATE_ONLY" == "false" ]]; then
     sudo sed -i -e s@SLACK_DARK_THEME_PATH@$THEME_FILEPATH@g $SLACK_FILEPATH
 
     # Pack the Asar Archive for Slack
-    sudo "PATH=$PATH" npx asar pack $SLACK_RESOURCES_DIR/app.asar.unpacked $SLACK_RESOURCES_DIR/app.asar
+    sudo "PATH=$PATH" $NPX_PATH asar pack $SLACK_RESOURCES_DIR/app.asar.unpacked $SLACK_RESOURCES_DIR/app.asar
 fi
 
 echo && echo "Done! After executing this script restart Slack for changes to take effect."
