@@ -54,6 +54,8 @@ In general, you should completely close out of Slack before or after you run the
 
 ### For All Systems/OS
 
+__As of this writing Slack Supports Dark Mode Natively [#258](https://github.com/LanikSJ/slack-dark-mode/issues/258)__
+
 First, clone the repository
 
 ```bash
@@ -147,4 +149,4 @@ Please report any bugs or issues you find. Thanks!
 ## Donate
 
 [![Patreon](https://img.shields.io/badge/patreon-donate-red.svg)](https://www.patreon.com/laniksj/overview)
-[![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ARJNJE9TBTPH4&currency_code=USD&source=url)
+[![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ARJNJE9TBTPH4¤cy_code=USD&source=url)
