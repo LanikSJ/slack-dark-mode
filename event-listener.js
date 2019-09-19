@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         head.append(styleEl);
       }
 
-      document.addEventListener("keydown", event => {
+      document.addEventListener("keydown", (event) => {
         if (event.ctrlKey && event.keyCode === 76) {
           const isDark = JSON.parse(localStorage.getItem(IS_DARK_KEY));
           isDark ? head.removeChild(styleEl) : head.append(styleEl);
