@@ -7,28 +7,7 @@ title: Slack Dark Mode
 ---
 
 [![Build Status](https://travis-ci.com/LanikSJ/slack-dark-mode.svg?branch=master)](https://travis-ci.com/LanikSJ/slack-dark-mode)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=LanikSJ/slack-dark-mode)](https://dependabot.com)
 [![Known Vulnerabilities](https://snyk.io/test/github/laniksj/slack-dark-mode/badge.svg?targetFile=/docs/Gemfile.lock)](https://snyk.io/test/github/laniksj/slack-dark-mode?targetFile=/docs/Gemfile.lock)
-
--   [Purpose](#purpose)
--   [Screenshot](#screenshot)
--   [Notice](#notice)
--   [Usage](#usage)
-    -   [For All Systems/OS](#for-all-systems-os)
-    -   [For macOS and Linux](#for-macos-and-linux)
-        -   [Update CSS Only](#update-css-only)
-        -   [Revert to Light Mode](#revert-to-light-mode)
-    -   [For Linux SNAP](#for-linux-snap)
-        -   [Update CSS Only (SNAP)](#update-css-only--snap-)
-        -   [Revert to Light Mode (SNAP)](#revert-to-light-mode--snap-)
-    -   [For Windows Users](#for-windows-users)
-        -   [Update CSS Only (Windows)](#update-css-only--windows-)
-        -   [Revert to Light Mode (Windows)](#revert-to-light-mode--windows-)
-    -   [Dark Mode Toggle](#dark-mode-toggle)
--   [Attributions](#attributions)
--   [Bugs](#bugs)
--   [License](#license)
--   [Donate](#donate)
 
 ## Purpose
 
@@ -155,4 +134,3 @@ Please report any bugs or issues you find. Thanks!
 ## Donate
 
 [![Patreon](https://img.shields.io/badge/patreon-donate-red.svg)](https://www.patreon.com/laniksj/overview)
-[![PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ARJNJE9TBTPH4&currency_code=USD&source=url)
