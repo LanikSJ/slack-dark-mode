@@ -1,7 +1,6 @@
 # Slack Desktop Dark Mode
 
 [![Build Status](https://travis-ci.com/LanikSJ/slack-dark-mode.svg?branch=master)](https://travis-ci.com/LanikSJ/slack-dark-mode)
-[![Known Vulnerabilities](https://snyk.io/test/github/laniksj/slack-dark-mode/badge.svg?targetFile=/docs/Gemfile.lock)](https://snyk.io/test/github/laniksj/slack-dark-mode?targetFile=/docs/Gemfile.lock)
 
 -   [Purpose](#purpose)
 -   [Screenshot](#screenshot)

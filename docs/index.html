@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Slack Desktop Dark Mode : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+    <title>Slack Desktop Dark Mode</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/LanikSJ/slack-dark-mode">View on GitHub</a>
+
+          <h1 id="project_title">Slack Desktop Dark Mode</h1>
+          <h2 id="project_tagline"></h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><a href="https://travis-ci.com/LanikSJ/slack-dark-mode"><img src="https://travis-ci.com/LanikSJ/slack-dark-mode.svg?branch=master" alt="Build Status"></a></p>
+<ul>
+<li><a href="#purpose">Purpose</a></li>
+<li><a href="#screenshot">Screenshot</a></li>
+<li><a href="#notice">Notice</a></li>
+<li>
+<a href="#usage">Usage</a>
+<ul>
+<li><a href="#for-all-systems-os">For All Systems/OS</a></li>
+<li>
+<a href="#for-macos-and-linux">For macOS and Linux</a>
+<ul>
+<li><a href="#update-css-only">Update CSS Only</a></li>
+<li><a href="#revert-to-light-mode">Revert to Light Mode</a></li>
+</ul>
+</li>
+<li>
+<a href="#for-linux-snap">For Linux SNAP</a>
+<ul>
+<li><a href="#update-css-only--snap-">Update CSS Only (SNAP)</a></li>
+<li><a href="#revert-to-light-mode--snap-">Revert to Light Mode (SNAP)</a></li>
+</ul>
+</li>
+<li>
+<a href="#for-windows-users">For Windows Users</a>
+<ul>
+<li><a href="#update-css-only--windows-">Update CSS Only (Windows)</a></li>
+<li><a href="#revert-to-light-mode--windows-">Revert to Light Mode (Windows)</a></li>
+</ul>
+</li>
+<li><a href="#dark-mode-toggle">Dark Mode Toggle</a></li>
+</ul>
+</li>
+<li><a href="#attributions">Attributions</a></li>
+<li><a href="#bugs">Bugs</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#donate">Donate</a></li>
+</ul>
+<h2>
+<a id="purpose" class="anchor" href="#purpose" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Purpose</h2>
+<p>Store scripts and Style sheets for Slack Desktop Dark Mode.<br>
+Native Dark Mode in Slack isn't available as of this writing.</p>
+<p>The following platforms are supported in this repo via scripts:</p>
+<ul>
+<li>macOS <a href="slack-dark-mode.sh">slack-dark-mode.sh</a>
+</li>
+<li>Linux <a href="slack-dark-mode.sh">slack-dark-mode.sh</a>
+</li>
+<li>Linux SNAP <a href="snap-slack-dark-mode.sh">snap-slack-dark-mode.sh</a>
+</li>
+<li>Windows <a href="slack-dark-mode.ps1">slack-dark-mode.ps1</a>
+</li>
+</ul>
+<h2>
+<a id="screenshot" class="anchor" href="#screenshot" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Screenshot</h2>
+<p><img src="https://github.com/LanikSJ/slack-dark-mode/raw/master/images/screenshot.png" alt="Screenshot" title="Screenshot"></p>
+<h2>
+<a id="notice" class="anchor" href="#notice" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Notice</h2>
+<p>Due to the changes in Slack 4.0+ this project will not be compatible with Slack Version 3.4 or below.<br>
+If you're looking for 3.4.x compatible settings please refer to <a href="https://github.com/LanikSJ/slack-dark-mode/tree/466ff22d5b606b6d5b2edeff54f4cd7a3bafc39c">this</a>.</p>
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+<p><a href="https://www.codacy.com/app/Lanik/slack-dark-mode?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LanikSJ/slack-dark-mode&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/e88f5c76dfdf418e9c2571943437ae23" alt="Codacy Badge"></a>
+<a href="https://codecov.io/gh/LanikSJ/slack-dark-mode"><img src="https://codecov.io/gh/LanikSJ/slack-dark-mode/branch/master/graph/badge.svg" alt="codecov"></a></p>
+<p>As of this writing Slack Supports Dark Mode Natively <a href="https://github.com/LanikSJ/slack-dark-mode/issues/258">#258</a></p>
+<p>In general, you should completely close out of Slack before or after you run the install scripts. This will ensure that everything is properly updated. Once the script has been run the first time, if you ever need to update the CSS styles, you can simply use <code>ctrl + r</code> or <code>cmd + r</code> in macOS to reload Slack and update the CSS, if the scripts below do not automatically close Slack for you.</p>
+<h3>
+<a id="for-all-systemsos" class="anchor" href="#for-all-systemsos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>For All Systems/OS</h3>
+<p>First, clone the repository</p>
+<div class="highlight highlight-source-shell"><pre>git clone https://github.com/LanikSJ/slack-dark-mode
+<span class="pl-c1">cd</span> slack-dark-mode</pre></div>
+<p>Then shutdown Slack and please reference for your operating system:</p>
+<h3>
+<a id="for-macos-and-linux" class="anchor" href="#for-macos-and-linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>For macOS and Linux</h3>
+<div class="highlight highlight-source-shell"><pre>./slack-dark-mode.sh</pre></div>
+<h4>
+<a id="update-css-only" class="anchor" href="#update-css-only" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Update CSS Only</h4>
+<div class="highlight highlight-source-shell"><pre>./slack-dark-mode.sh -u</pre></div>
+<h4>
+<a id="revert-to-light-mode" class="anchor" href="#revert-to-light-mode" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Revert to Light Mode</h4>
+<div class="highlight highlight-source-shell"><pre>./slack-dark-mode.sh -l</pre></div>
+<h3>
+<a id="for-linux-snap" class="anchor" href="#for-linux-snap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>For Linux SNAP</h3>
+<p>Since snap is a 'read-only' file system, we have to mount the changes.
+The script automatically insert a new crontab so it will persist through reboots.
+Since the way SNAPS work are different, we can easily revert to light mode as well with the script.
+Note: This script will automatically kill Slack when the <code>-u</code> flag is not used to ensure the mount is not busy.</p>
+<div class="highlight highlight-source-shell"><pre>./snap-slack-dark-mode.sh</pre></div>
+<h4>
+<a id="update-css-only-snap" class="anchor" href="#update-css-only-snap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Update CSS Only (SNAP)</h4>
+<div class="highlight highlight-source-shell"><pre>./snap-slack-dark-mode.sh -u</pre></div>
+<h4>
+<a id="revert-to-light-mode-snap" class="anchor" href="#revert-to-light-mode-snap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Revert to Light Mode (SNAP)</h4>
+<div class="highlight highlight-source-shell"><pre>./snap-slack-dark-mode.sh -l</pre></div>
+<h3>
+<a id="for-windows-users" class="anchor" href="#for-windows-users" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>For Windows Users</h3>
+<p>Open Powershell in Admin mode:<br>
+Note: This script will automatically kill Slack each time you update.</p>
+<div class="highlight highlight-source-powershell"><pre>.\slack<span class="pl-k">-</span>dark<span class="pl-k">-</span>mode.ps1</pre></div>
+<h4>
+<a id="update-css-only-windows" class="anchor" href="#update-css-only-windows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Update CSS Only (Windows)</h4>
+<div class="highlight highlight-source-powershell"><pre>.\slack<span class="pl-k">-</span>dark<span class="pl-k">-</span>mode.ps1 <span class="pl-k">-</span>UpdateOnly</pre></div>
+<h4>
+<a id="revert-to-light-mode-windows" class="anchor" href="#revert-to-light-mode-windows" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Revert to Light Mode (Windows)</h4>
+<div class="highlight highlight-source-powershell"><pre>.\slack<span class="pl-k">-</span>dark<span class="pl-k">-</span>mode.ps1 <span class="pl-k">-</span>LightMode</pre></div>
+<p>If you want to make your own tweaks to the css, you can create a file called <code>custom-dark-theme.css</code> in the root of the repository, which will be appended to the end of the main css so you can easily keep your changes through updates of the repo.</p>
+<h3>
+<a id="dark-mode-toggle" class="anchor" href="#dark-mode-toggle" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dark Mode Toggle</h3>
+<p>If you want to toggle Dark Mode on or off you can use Ctrl + L (lower case) on any OS.</p>
+<h2>
+<a id="attributions" class="anchor" href="#attributions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Attributions</h2>
+<p>Some scripts were "borrowed" from <a href="https://gist.github.com/mmrko">mmrko</a> <a href="https://gist.github.com/mmrko/9b0e65f6bcc1fca57089c32c2228aa39">Gist</a><br>
+<g-emoji class="g-emoji" alias="copyright" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/00a9.png">©️</g-emoji> All rights reserved by the original authors.</p>
+<h2>
+<a id="bugs" class="anchor" href="#bugs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bugs</h2>
+<p>Please report any bugs or issues you find. Thanks!</p>
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+<p><a href="https://en.wikipedia.org/wiki/MIT_License"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License"></a></p>
+<h2>
+<a id="donate" class="anchor" href="#donate" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Donate</h2>
+<p><a href="https://www.patreon.com/laniksj/overview"><img src="https://img.shields.io/badge/patreon-donate-red.svg" alt="Patreon"></a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+
+
+  </body>
+</html>
