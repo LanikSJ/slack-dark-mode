@@ -2,13 +2,11 @@
 Slate Theme for GitHub Pages
 by Jason Costello, @jsncostello
 *******************************************************************************/
-
 @import url(github-light.css);
 
 /*******************************************************************************
 MeyerWeb Reset
 *******************************************************************************/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,10 +45,9 @@ table {
 /*******************************************************************************
 Theme Styles
 *******************************************************************************/
-
 body {
   box-sizing: border-box;
-  color:#373737;
+  color: #373737;
   background: #212121;
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
@@ -61,7 +58,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-weight: 700;
-  color:#222222;
+  color: #222222;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
@@ -105,7 +102,6 @@ a {
   text-decoration: none;
   color: #007edf;
   text-shadow: none;
-
   transition: color 0.5s ease;
   transition: text-shadow 0.5s ease;
   -webkit-transition: color 0.5s ease;
@@ -118,7 +114,9 @@ a {
   -ms-transition: text-shadow 0.5s ease;
 }
 
-a:hover, a:focus {text-decoration: underline;}
+a:hover, a:focus {
+  text-decoration: underline;
+}
 
 footer a {
   color: #F2F2F2;
@@ -140,7 +138,6 @@ img {
   padding: 5px;
   margin: 10px 0 10px 0;
   border: 1px solid #ebebeb;
-
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px #ebebeb;
   -moz-box-shadow: 0 0 5px #ebebeb;
@@ -161,10 +158,8 @@ pre, code {
   width: 100%;
   color: #222;
   background-color: #fff;
-
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 14px;
-
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -173,14 +168,14 @@ pre, code {
 pre {
   width: 100%;
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
   overflow: auto;
 }
 
 code {
   padding: 3px;
   margin: 0 3px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
 
 pre code {
@@ -194,7 +189,6 @@ blockquote {
   padding: 0 0 0 20px;
   border-left: 3px solid #bbb;
 }
-
 
 ul, ol, dl {
   margin-bottom: 15px
@@ -237,19 +231,19 @@ table {
   border: 1px solid #373737;
   margin-bottom: 20px;
   text-align: left;
- }
+}
 
 th {
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
   background: #373737;
   color: #fff;
- }
+}
 
 td {
   padding: 10px;
   border: 1px solid #373737;
- }
+}
 
 form {
   background: #f2f2f2;
@@ -259,7 +253,6 @@ form {
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
-
 .outer {
   width: 100%;
 }
@@ -274,14 +267,14 @@ Full-Width Styles
 #forkme_banner {
   display: block;
   position: absolute;
-  top:0;
+  top: 0;
   right: 10px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
   background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
   font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
@@ -329,7 +322,7 @@ Full-Width Styles
   display: block;
   float: right;
   width: 90px;
-  height:70px;
+  height: 70px;
   text-indent: -5000px;
   overflow: hidden;
   background: url(../images/sprite_download.png) no-repeat bottom left;
@@ -339,7 +332,7 @@ Full-Width Styles
   display: block;
   float: right;
   width: 90px;
-  height:70px;
+  height: 70px;
   text-indent: -5000px;
   overflow: hidden;
   background: url(../images/sprite_download.png) no-repeat bottom right;
@@ -368,15 +361,12 @@ Full-Width Styles
   background: #212121;
 }
 
-
-
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
-
 @media screen and (max-width: 480px) {
   body {
-    font-size:14px;
+    font-size: 14px;
   }
 
   #downloads {
@@ -389,7 +379,7 @@ Small Device Styles
   }
 
   #project_title {
-  font-size: 32px;
+    font-size: 32px;
   }
 
   h1 {
@@ -421,5 +411,4 @@ Small Device Styles
     max-width: 480px;
     font-size: 11px;
   }
-
 }
