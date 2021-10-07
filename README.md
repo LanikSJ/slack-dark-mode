@@ -36,7 +36,7 @@ The following platforms are supported in this repo via scripts:
 
 ## Screenshot
 
-![Screenshot](https://github.com/LanikSJ/slack-dark-mode/raw/master/images/screenshot.png "Screenshot")
+![Screenshot](https://github.com/LanikSJ/slack-dark-mode/raw/main/images/screenshot.png "Screenshot")
 
 ## Notice
 
