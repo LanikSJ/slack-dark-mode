@@ -1,7 +1,5 @@
 # Slack Desktop Dark Mode
 
-[![Build Status](https://travis-ci.com/LanikSJ/slack-dark-mode.svg?branch=master)](https://travis-ci.com/LanikSJ/slack-dark-mode)
-
 -   [Purpose](#purpose)
 -   [Screenshot](#screenshot)
 -   [Notice](#notice)
