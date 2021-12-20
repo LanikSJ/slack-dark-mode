@@ -45,7 +45,7 @@ If you're looking for 3.4.x compatible settings please refer to [this](https://g
 
 ## Usage
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e88f5c76dfdf418e9c2571943437ae23)](https://www.codacy.com/app/Lanik/slack-dark-mode?utm_source=github.com&utm_medium=referral&utm_content=LanikSJ/slack-dark-mode&utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a949da718a374e41a0067bdecaf7b48e)](https://www.codacy.com/gh/LanikSJ/slack-dark-mode/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LanikSJ/slack-dark-mode&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/LanikSJ/slack-dark-mode/branch/master/graph/badge.svg)](https://codecov.io/gh/LanikSJ/slack-dark-mode)
 
 As of this writing Slack Supports Dark Mode Natively [#258](https://github.com/LanikSJ/slack-dark-mode/issues/258)
