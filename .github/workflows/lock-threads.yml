@@ -2,7 +2,7 @@ name: 'Lock Threads'
 
 on:
   schedule:
-    - cron: '0 5 */14 * *'
+    - cron: '0 5 */30 * *'
   workflow_dispatch:
 
 permissions:
