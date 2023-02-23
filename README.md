@@ -22,7 +22,7 @@
 
 ## Purpose
 
-Store scripts and Style sheets for Slack Desktop Dark Mode.  
+Store scripts and Style sheets for Slack Desktop Dark Mode.
 Native Dark Mode in Slack isn't available as of this writing.
 
 The following platforms are supported in this repo via scripts:
@@ -38,7 +38,7 @@ The following platforms are supported in this repo via scripts:
 
 ## Notice
 
-Due to the changes in Slack 4.0+ this project will not be compatible with Slack Version 3.4 or below.  
+Due to the changes in Slack 4.0+ this project will not be compatible with Slack Version 3.4 or below.
 If you're looking for 3.4.x compatible settings please refer to [this](https://github.com/LanikSJ/slack-dark-mode/tree/466ff22d5b606b6d5b2edeff54f4cd7a3bafc39c).
 
 ## Usage
@@ -104,7 +104,7 @@ Note: This script will automatically kill Slack when the `-u` flag is not used t
 
 ### For Windows Users
 
-Open Powershell in Admin mode:  
+Open Powershell in Admin mode:
 Note: This script will automatically kill Slack each time you update.
 
 ```powershell
@@ -131,7 +131,7 @@ If you want to toggle Dark Mode on or off you can use Ctrl + L (lower case) on a
 
 ## Attributions
 
-Some scripts were "borrowed" from [mmrko](https://gist.github.com/mmrko) [Gist](https://gist.github.com/mmrko/9b0e65f6bcc1fca57089c32c2228aa39)  
+Some scripts were "borrowed" from [mmrko](https://gist.github.com/mmrko) [Gist](https://gist.github.com/mmrko/9b0e65f6bcc1fca57089c32c2228aa39)
 ©️ All rights reserved by the original authors.
 
 ## Bugs
