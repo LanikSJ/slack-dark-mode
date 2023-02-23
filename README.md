@@ -1,36 +1,36 @@
 # Slack Desktop Dark Mode
 
--   [Purpose](#purpose)
--   [Screenshot](#screenshot)
--   [Notice](#notice)
--   [Usage](#usage)
-    -   [For All Systems/OS](#for-all-systems-os)
-    -   [For macOS and Linux](#for-macos-and-linux)
-        -   [Update CSS Only](#update-css-only)
-        -   [Revert to Light Mode](#revert-to-light-mode)
-    -   [For Linux SNAP](#for-linux-snap)
-        -   [Update CSS Only (SNAP)](#update-css-only--snap-)
-        -   [Revert to Light Mode (SNAP)](#revert-to-light-mode--snap-)
-    -   [For Windows Users](#for-windows-users)
-        -   [Update CSS Only (Windows)](#update-css-only--windows-)
-        -   [Revert to Light Mode (Windows)](#revert-to-light-mode--windows-)
-    -   [Dark Mode Toggle](#dark-mode-toggle)
--   [Attributions](#attributions)
--   [Bugs](#bugs)
--   [License](#license)
--   [Donate](#donate)
+- [Purpose](#purpose)
+- [Screenshot](#screenshot)
+- [Notice](#notice)
+- [Usage](#usage)
+  - [For All Systems/OS](#for-all-systems-os)
+  - [For macOS and Linux](#for-macos-and-linux)
+    - [Update CSS Only](#update-css-only)
+    - [Revert to Light Mode](#revert-to-light-mode)
+  - [For Linux SNAP](#for-linux-snap)
+    - [Update CSS Only (SNAP)](#update-css-only--snap-)
+    - [Revert to Light Mode (SNAP)](#revert-to-light-mode--snap-)
+  - [For Windows Users](#for-windows-users)
+    - [Update CSS Only (Windows)](#update-css-only--windows-)
+    - [Revert to Light Mode (Windows)](#revert-to-light-mode--windows-)
+  - [Dark Mode Toggle](#dark-mode-toggle)
+- [Attributions](#attributions)
+- [Bugs](#bugs)
+- [License](#license)
+- [Donate](#donate)
 
 ## Purpose
 
-Store scripts and Style sheets for Slack Desktop Dark Mode.  
+Store scripts and Style sheets for Slack Desktop Dark Mode.
 Native Dark Mode in Slack isn't available as of this writing.
 
 The following platforms are supported in this repo via scripts:
 
--   macOS [slack-dark-mode.sh](slack-dark-mode.sh)  
--   Linux [slack-dark-mode.sh](slack-dark-mode.sh)  
--   Linux SNAP [snap-slack-dark-mode.sh](snap-slack-dark-mode.sh)  
--   Windows [slack-dark-mode.ps1](slack-dark-mode.ps1)  
+- macOS [slack-dark-mode.sh](slack-dark-mode.sh)
+- Linux [slack-dark-mode.sh](slack-dark-mode.sh)
+- Linux SNAP [snap-slack-dark-mode.sh](snap-slack-dark-mode.sh)
+- Windows [slack-dark-mode.ps1](slack-dark-mode.ps1)
 
 ## Screenshot
 
@@ -38,12 +38,12 @@ The following platforms are supported in this repo via scripts:
 
 ## Notice
 
-Due to the changes in Slack 4.0+ this project will not be compatible with Slack Version 3.4 or below.  
+Due to the changes in Slack 4.0+ this project will not be compatible with Slack Version 3.4 or below.
 If you're looking for 3.4.x compatible settings please refer to [this](https://github.com/LanikSJ/slack-dark-mode/tree/466ff22d5b606b6d5b2edeff54f4cd7a3bafc39c).
 
 ## Usage
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a949da718a374e41a0067bdecaf7b48e)](https://www.codacy.com/gh/LanikSJ/slack-dark-mode/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LanikSJ/slack-dark-mode&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a949da718a374e41a0067bdecaf7b48e)](https://www.codacy.com/gh/LanikSJ/slack-dark-mode/dashboard?utm_source=github.com&utm_medium=referral&utm_content=LanikSJ/slack-dark-mode&utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/LanikSJ/slack-dark-mode/branch/master/graph/badge.svg)](https://codecov.io/gh/LanikSJ/slack-dark-mode)
 
 As of this writing Slack Supports Dark Mode Natively [#258](https://github.com/LanikSJ/slack-dark-mode/issues/258)
@@ -104,7 +104,7 @@ Note: This script will automatically kill Slack when the `-u` flag is not used t
 
 ### For Windows Users
 
-Open Powershell in Admin mode:  
+Open Powershell in Admin mode:
 Note: This script will automatically kill Slack each time you update.
 
 ```powershell
@@ -131,7 +131,7 @@ If you want to toggle Dark Mode on or off you can use Ctrl + L (lower case) on a
 
 ## Attributions
 
-Some scripts were "borrowed" from [mmrko](https://gist.github.com/mmrko) [Gist](https://gist.github.com/mmrko/9b0e65f6bcc1fca57089c32c2228aa39)  
+Some scripts were "borrowed" from [mmrko](https://gist.github.com/mmrko) [Gist](https://gist.github.com/mmrko/9b0e65f6bcc1fca57089c32c2228aa39)
 ©️ All rights reserved by the original authors.
 
 ## Bugs
@@ -144,4 +144,4 @@ Please report any bugs or issues you find. Thanks!
 
 ## Donate
 
-[![Patreon](https://img.shields.io/badge/patreon-donate-red.svg)](https://www.patreon.com/laniksj/overview)
+[![Patreon](https://img.shields.io/badge/patreon-donate-blue.svg)](https://www.patreon.com/laniksj/overview)
