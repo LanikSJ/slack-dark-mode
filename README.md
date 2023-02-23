@@ -1,24 +1,24 @@
 # Slack Desktop Dark Mode
 
--   [Purpose](#purpose)
--   [Screenshot](#screenshot)
--   [Notice](#notice)
--   [Usage](#usage)
-    -   [For All Systems/OS](#for-all-systems-os)
-    -   [For macOS and Linux](#for-macos-and-linux)
-        -   [Update CSS Only](#update-css-only)
-        -   [Revert to Light Mode](#revert-to-light-mode)
-    -   [For Linux SNAP](#for-linux-snap)
-        -   [Update CSS Only (SNAP)](#update-css-only--snap-)
-        -   [Revert to Light Mode (SNAP)](#revert-to-light-mode--snap-)
-    -   [For Windows Users](#for-windows-users)
-        -   [Update CSS Only (Windows)](#update-css-only--windows-)
-        -   [Revert to Light Mode (Windows)](#revert-to-light-mode--windows-)
-    -   [Dark Mode Toggle](#dark-mode-toggle)
--   [Attributions](#attributions)
--   [Bugs](#bugs)
--   [License](#license)
--   [Donate](#donate)
+- [Purpose](#purpose)
+- [Screenshot](#screenshot)
+- [Notice](#notice)
+- [Usage](#usage)
+  - [For All Systems/OS](#for-all-systems-os)
+  - [For macOS and Linux](#for-macos-and-linux)
+    - [Update CSS Only](#update-css-only)
+    - [Revert to Light Mode](#revert-to-light-mode)
+  - [For Linux SNAP](#for-linux-snap)
+    - [Update CSS Only (SNAP)](#update-css-only--snap-)
+    - [Revert to Light Mode (SNAP)](#revert-to-light-mode--snap-)
+  - [For Windows Users](#for-windows-users)
+    - [Update CSS Only (Windows)](#update-css-only--windows-)
+    - [Revert to Light Mode (Windows)](#revert-to-light-mode--windows-)
+  - [Dark Mode Toggle](#dark-mode-toggle)
+- [Attributions](#attributions)
+- [Bugs](#bugs)
+- [License](#license)
+- [Donate](#donate)
 
 ## Purpose
 
@@ -27,10 +27,10 @@ Native Dark Mode in Slack isn't available as of this writing.
 
 The following platforms are supported in this repo via scripts:
 
--   macOS [slack-dark-mode.sh](slack-dark-mode.sh)  
--   Linux [slack-dark-mode.sh](slack-dark-mode.sh)  
--   Linux SNAP [snap-slack-dark-mode.sh](snap-slack-dark-mode.sh)  
--   Windows [slack-dark-mode.ps1](slack-dark-mode.ps1)  
+- macOS [slack-dark-mode.sh](slack-dark-mode.sh)
+- Linux [slack-dark-mode.sh](slack-dark-mode.sh)
+- Linux SNAP [snap-slack-dark-mode.sh](snap-slack-dark-mode.sh)
+- Windows [slack-dark-mode.ps1](slack-dark-mode.ps1)
 
 ## Screenshot
 
@@ -43,7 +43,7 @@ If you're looking for 3.4.x compatible settings please refer to [this](https://g
 
 ## Usage
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a949da718a374e41a0067bdecaf7b48e)](https://www.codacy.com/gh/LanikSJ/slack-dark-mode/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LanikSJ/slack-dark-mode&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a949da718a374e41a0067bdecaf7b48e)](https://www.codacy.com/gh/LanikSJ/slack-dark-mode/dashboard?utm_source=github.com&utm_medium=referral&utm_content=LanikSJ/slack-dark-mode&utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/LanikSJ/slack-dark-mode/branch/master/graph/badge.svg)](https://codecov.io/gh/LanikSJ/slack-dark-mode)
 
 As of this writing Slack Supports Dark Mode Natively [#258](https://github.com/LanikSJ/slack-dark-mode/issues/258)
